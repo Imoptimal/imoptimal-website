@@ -27,6 +27,7 @@ input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:f
 .imothm-container .imothm-content a:hover {box-shadow: none;}
 .imothm-container .full-post a {word-break: break-all;}
 .imothm-container .homepage-thumbnail a, .imothm-container .archive-thumbnail a {background-color: transparent !important;background-image: none !important;border: none !important;box-shadow: none !important;}
+.imothm-container .archive-thumbnail img, .imothm-container .full-image img {max-width: 90%;}
 .imothm-container .comments-area {border-top: solid 2px transparent;}
 .imothm-container .site-footer {background-image: none;background-color: #061228;color: #f2f3e5;padding: 5px 10px;margin: 0;box-shadow: none;}
 .imothm-container .site-footer .border-line {position: absolute;top: -30px;left: -10px;right: -10px;height: 50px;background-image: url("./img/icons.png");background-repeat: no-repeat;background-position: left 0 bottom 0;}
