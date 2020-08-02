@@ -80,11 +80,12 @@ a.gs-title b {color: #f2f3e5 !important;}
 .cookieinfo {background-color: #061228 !important;background-color: rgba(6,18,40,.85) !important;color: #f2f3e5 !important;text-align: left !important;}
 .cookieinfo a {color: #37b800 !important;}
 .cookieinfo-close {background-color: #37b800 !important;color: #061228 !important;cursor: pointer !important;z-index: 999 !important;}
+.calendly-popup {max-height: 67% !important;}
 .foogallery a {background-color: transparent !important;background-image: none !important;border: none !important;box-shadow: none !important;}
 .foogallery .fg-item-inner {overflow: hidden;border-radius: 50px 50px 50px 0;box-shadow: 5px 5px #37b800 !important;border: solid 2px #061228 !important;}
 .foogallery .fg-item-inner:hover {box-shadow: none !important;}
 .imoload-logo-container {width: 485px;height: 375px;background-image: url("./img/imoptimal-logo.png");background-repeat: no-repeat;background-position: left top;transform: scale(.5);}
-@media only screen and (max-width: 950px) {.imothm-container .site-header {min-height: 200px;}}
+@media only screen and (max-width: 950px) {.imothm-container .site-header {min-height: 220px;}}
 @media only screen and (max-width: 800px) {.home .imothm-container .wp-block-columns, .home .imothm-container .wp-block-latest-posts {flex-wrap: wrap !important;}
 	.home .imothm-container .wp-block-column, .home .imothm-container .wp-block-latest-posts li {flex-basis: 100% !important;margin: 10px auto;}}
 @media only screen and (max-width: 600px) {.google-form {min-height: 820px;}}
