@@ -60,7 +60,8 @@ input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:f
 .home .imothm-container .wp-block-latest-posts {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: stretch;}
 .home .imothm-container .wp-block-latest-posts li {flex-basis: 32%;display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-items: center;box-shadow: 5px 5px 10px #061228;padding: 15px;}
 .wp-block-latest-posts__featured-image img {min-width: 150px;}
-.wp-block-button a {color: #37b800;}
+.wp-block-button {color: #37b800;}
+.wp-block-button:hover {color: #f2f3e5;}
 .has-imochld-dark-background-color {background-color: #061228;}
 .has-imochld-dark-color {color: #061228;}
 .has-imochld-ice-background-color {background-color: #f2f3e5;}
