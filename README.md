@@ -6,4 +6,4 @@ Theme also available on GitHub @ [github/imoptimal-theme](https://github.com/Imo
 
 Theme demo @ [github/imoptimal-theme-demo](https://imoptimal.github.io/imoptimal-theme-demo/)
 
-Converted into static website by [WP2Static](https://wordpress.org/plugins/static-html-output-plugin/) plugin
+Converted into static website by [Static HTML Output](https://github.com/leonstafford/static-html-output/) plugin
