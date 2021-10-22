@@ -12,7 +12,7 @@
 	<atom:link href="https://www.imoptimal.com/tag/wordpress-theme/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.imoptimal.com/</link>
 	<description>Customization &#38; Optimization Specialist for Small Business Websites</description>
-	<lastBuildDate>Mon, 24 Aug 2020 23:38:36 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 22 Oct 2021 00:33:03 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -51,7 +51,8 @@
 		
 		<dc:creator><![CDATA[Ivan Maljukanović]]></dc:creator>
 		<pubDate>Sat, 19 May 2018 19:00:58 +0000</pubDate>
-				<category><![CDATA[My Work]]></category>
+				<category><![CDATA[Featured]]></category>
+		<category><![CDATA[My Work]]></category>
 		<category><![CDATA[wordpress theme]]></category>
 		<guid isPermaLink="false">http://www.imoptimal.local/?p=88</guid>
 
@@ -68,7 +69,8 @@
 		
 		<dc:creator><![CDATA[Ivan Maljukanović]]></dc:creator>
 		<pubDate>Thu, 17 May 2018 17:02:26 +0000</pubDate>
-				<category><![CDATA[My Work]]></category>
+				<category><![CDATA[Featured]]></category>
+		<category><![CDATA[My Work]]></category>
 		<category><![CDATA[wordpress theme]]></category>
 		<guid isPermaLink="false">http://www.imoptimal.local/?p=79</guid>
 
