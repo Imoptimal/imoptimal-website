@@ -8,8 +8,8 @@
 	>
 
 <channel>
-	<title>Imoptimal</title>
-	<atom:link href="http://localhost/feed/" rel="self" type="application/rss+xml" />
+	<title>Featured Archives - Imoptimal</title>
+	<atom:link href="http://localhost/category/featured/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.imoptimal.com/</link>
 	<description>Optimization &#38; Customization Specialist for WordPress</description>
 	<lastBuildDate>Wed, 13 Jul 2022 17:45:10 +0000</lastBuildDate>
@@ -22,7 +22,7 @@
 
 <image>
 	<url>https://www.imoptimal.com/wp-content/uploads/2020/07/imoptimal-logo-1-150x150.png</url>
-	<title>Imoptimal</title>
+	<title>Featured Archives - Imoptimal</title>
 	<link>https://www.imoptimal.com/</link>
 	<width>32</width>
 	<height>32</height>

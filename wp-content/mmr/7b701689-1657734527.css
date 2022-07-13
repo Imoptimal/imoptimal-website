@@ -1,0 +1,336 @@
+/*
+ Theme Name:   Twenty Twenty Two Custom Extension
+ Description:  For Wphowto.tv
+ Author:       Ivan Maljukanovic
+ Author URI:   https://imoptimal.com
+ Template:     twentytwentytwo
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twentytwentytwochild
+*/
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 2px 0 #37b800;
+    box-shadow: inset 2px 0 #37b800;
+    background-color: #061228;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #37b800;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #fbf0de !important;
+    color: #000000 !important;
+    margin-top: 50px;
+    overflow-x: hidden;
+    margin: 0 !important;
+}
+
+body * {
+    word-wrap: break-word !important;
+}
+
+a {
+    font-weight: bold;
+    color: #37b800 !important;
+    text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    color: #fbf0de !important;
+}
+
+button {
+    background-color: #061228 !important;
+    color: #37b800 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 10px !important;
+    border: none !important;
+    box-shadow: 5px 5px 5px #37b800 !important;
+}
+
+img {
+    max-width: 600px !important;
+    height: auto;
+}
+
+.wp-block-latest-posts,
+.wp-block-post-featured-image {
+    text-align: center !important;
+}
+
+.wp-block-latest-posts img {
+    max-height: 150px !important;
+    width: auto !important;
+    margin: 0 auto !important;
+}
+
+.wp-block-post-featured-image img,
+.wp-block-post-featured-image figure a img {
+    max-height: 200px !important;
+    width: auto !important;
+    margin: 0 auto !important;
+}
+
+.wp-block-button {
+    box-shadow: 5px 5px 5px #37b800 !important;
+}
+
+.wp-block-button a {
+    background-color: #061228 !important;
+    color: #37b800 !important;
+    font-weight: bold !important;
+}
+
+button:hover,
+.wp-block-button a:hover {
+    color: #fbf0de !important;
+    cursor: pointer !important;
+}
+
+select,
+option {
+    max-width: 90% !important;
+}
+
+iframe {
+    max-width: 90% !important;
+}
+
+header.wp-block-template-part,
+footer.wp-block-template-part,
+.wp-social-link {
+    background-color: #061228 !important;
+    margin-block-start: auto !important;
+    box-shadow: none !important;
+}
+
+footer.wp-block-template-part {
+    margin-top: 20px !important;
+}
+
+header.wp-block-template-part div,
+footer.wp-block-template-part div {
+    padding: 10px !important;
+}
+
+header.wp-block-template-part p,
+footer.wp-block-template-part p {
+    color: #fbf0de !important;
+    font-style: italic !important;
+}
+
+.custom-logo-link img {
+    width: 150px !important;
+    height: auto !important;
+}
+
+header.wp-block-template-part p {
+    color: #fbf0de;
+}
+
+main {
+    position: relative;
+    margin-block-start: auto !important;
+}
+
+.wp-block-post-featured-image {
+    max-width: 600px !important;
+}
+
+.wp-block-spacer,
+.wp-block-post-author__name {
+    display: none !important;
+}
+
+div.calendly {
+    text-align: center !important;
+}
+
+.calendly a {
+    margin: 0 auto !important;
+    text-decoration: none !important;
+}
+
+.privacy-policy,
+.license-disclosure,
+.about-me {
+    text-align: center;
+}
+
+.wp-block-latest-posts div,
+.privacy-policy p,
+.license-disclosure p,
+.about-me p {
+    text-align: left;
+}
+
+
+/* Cookies Consent Styling */
+
+.cc-cp-body-tabs-item-link {
+    background-color: black !important;
+}
+
+.cc-cp-body-tabs-item[active=true] a {
+    border: solid 2px #FBE81C !important;
+    background-color: black !important;
+}
+/*
+Theme Name: Twenty Twenty-Two
+Theme URI: https://wordpress.org/themes/twentytwentytwo/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
+Requires at least: 5.9
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentytwo
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments
+
+Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
+Twenty Twenty-Two is distributed under the terms of the GNU GPL.
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Text and navigation link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
+
+/*
+ * Search and File Block button styles.
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 0;
+	border: none;
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--font-size--medium);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+
+/*
+ * Button hover styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+}
+
+/*
+ * Alignment styles.
+ * These rules are temporary, and should not be relied on or
+ * modified too heavily by themes or plugins that build on
+ * Twenty Twenty-Two. These are meant to be a precursor to
+ * a global solution provided by the Block Editor.
+ *
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+ */
+
+.wp-site-blocks,
+body > .is-root-container,
+.edit-post-visual-editor__post-title-wrapper,
+.wp-block-group.alignfull,
+.wp-block-group.has-background,
+.wp-block-cover.alignfull,
+.is-root-container .wp-block[data-align="full"] > .wp-block-group,
+.is-root-container .wp-block[data-align="full"] > .wp-block-cover {
+	padding-left: var(--wp--custom--spacing--outer);
+	padding-right: var(--wp--custom--spacing--outer);
+}
+
+.wp-site-blocks .alignfull,
+.wp-site-blocks > .wp-block-group.has-background,
+.wp-site-blocks > .wp-block-cover,
+.wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background,
+.wp-site-blocks > .wp-block-template-part > .wp-block-cover,
+body > .is-root-container > .wp-block-cover,
+body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background,
+body > .is-root-container > .wp-block-template-part > .wp-block-cover,
+.is-root-container .wp-block[data-align="full"] {
+	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	width: unset;
+}
+
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+/* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
+.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: inherit;
+}
+
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding-top: var(--wp--custom--spacing--outer);
+	padding-bottom: var(--wp--custom--spacing--large);
+	padding-right: var(--wp--custom--spacing--outer);
+	padding-left: var(--wp--custom--spacing--outer);
+}
+
+

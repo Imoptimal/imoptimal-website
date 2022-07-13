@@ -7,9 +7,9 @@
 	>
 <channel>
 	<title>
-	Comments for Imoptimal	</title>
-	<atom:link href="http://localhost/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://www.imoptimal.com/</link>
+	Comments on: WP How to &#8211; WordPress platform/plugin	</title>
+	<atom:link href="http://localhost/featured/wp-how-to-wordpress-platform-plugin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.imoptimal.com/featured/wp-how-to-wordpress-platform-plugin/</link>
 	<description>Optimization &#38; Customization Specialist for WordPress</description>
 	<lastBuildDate>Wed, 13 Jul 2022 17:45:10 +0000</lastBuildDate>
 	<sy:updatePeriod>

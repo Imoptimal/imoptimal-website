@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>API Archives - Imoptimal</title>
+	<atom:link href="http://localhost/tag/api/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.imoptimal.com/</link>
+	<description>Optimization &#38; Customization Specialist for WordPress</description>
+	<lastBuildDate>Wed, 13 Jul 2022 17:45:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+
+<image>
+	<url>https://www.imoptimal.com/wp-content/uploads/2020/07/imoptimal-logo-1-150x150.png</url>
+	<title>API Archives - Imoptimal</title>
+	<link>https://www.imoptimal.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>WP How to &#8211; WordPress platform/plugin</title>
+		<link>https://www.imoptimal.com/featured/wp-how-to-wordpress-platform-plugin/</link>
+		
+		<dc:creator><![CDATA[Ivan Maljukanović]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2022 17:09:42 +0000</pubDate>
+				<category><![CDATA[Featured]]></category>
+		<category><![CDATA[My Work]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[custom design]]></category>
+		<category><![CDATA[logo design]]></category>
+		<category><![CDATA[plugin development]]></category>
+		<guid isPermaLink="false">https://www.imoptimal.com/?p=1413</guid>
+
+					<description><![CDATA[<p>Description: Web platform/WordPress plugin for video tutorials. Challenge: Creating a static website solution that is fast, secure and easy to navigate (given the fact that it contains tutorials for more than 10.000 plugins/topic related to WordPress). Building a plugin on top of the web platform was a challenge on its own &#8211; importing all of [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.imoptimal.com/featured/wp-how-to-wordpress-platform-plugin/">WP How to &#8211; WordPress platform/plugin</a> appeared first on <a rel="nofollow" href="https://www.imoptimal.com/">Imoptimal</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
