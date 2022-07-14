@@ -10,7 +10,7 @@
 <channel>
 	<title>Featured Archives - Imoptimal</title>
 	<atom:link href="http://localhost/category/featured/feed/" rel="self" type="application/rss+xml" />
-	<link>https://www.imoptimal.com/</link>
+	<link>/</link>
 	<description>Optimization &#38; Customization Specialist for WordPress</description>
 	<lastBuildDate>Wed, 13 Jul 2022 17:45:10 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,15 +21,15 @@
 	<generator>https://wordpress.org/?v=6.0.1</generator>
 
 <image>
-	<url>https://www.imoptimal.com/wp-content/uploads/2020/07/imoptimal-logo-1-150x150.png</url>
+	<url>/wp-content/uploads/2020/07/imoptimal-logo-1-150x150.png</url>
 	<title>Featured Archives - Imoptimal</title>
-	<link>https://www.imoptimal.com/</link>
+	<link>/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>WP How to &#8211; WordPress platform/plugin</title>
-		<link>https://www.imoptimal.com/featured/wp-how-to-wordpress-platform-plugin/</link>
+		<link>/featured/wp-how-to-wordpress-platform-plugin/</link>
 		
 		<dc:creator><![CDATA[Ivan Maljukanović]]></dc:creator>
 		<pubDate>Wed, 13 Jul 2022 17:09:42 +0000</pubDate>
@@ -39,10 +39,10 @@
 		<category><![CDATA[custom design]]></category>
 		<category><![CDATA[logo design]]></category>
 		<category><![CDATA[plugin development]]></category>
-		<guid isPermaLink="false">https://www.imoptimal.com/?p=1413</guid>
+		<guid isPermaLink="false">/?p=1413</guid>
 
 					<description><![CDATA[<p>Description: Web platform/WordPress plugin for video tutorials. Challenge: Creating a static website solution that is fast, secure and easy to navigate (given the fact that it contains tutorials for more than 10.000 plugins/topic related to WordPress). Building a plugin on top of the web platform was a challenge on its own &#8211; importing all of [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.imoptimal.com/featured/wp-how-to-wordpress-platform-plugin/">WP How to &#8211; WordPress platform/plugin</a> appeared first on <a rel="nofollow" href="https://www.imoptimal.com/">Imoptimal</a>.</p>
+<p>The post <a rel="nofollow" href="/featured/wp-how-to-wordpress-platform-plugin/">WP How to &#8211; WordPress platform/plugin</a> appeared first on <a rel="nofollow" href="/">Imoptimal</a>.</p>
 ]]></description>
 		
 		
@@ -50,7 +50,7 @@
 			</item>
 		<item>
 		<title>Custom WordPress Musical Theme</title>
-		<link>https://www.imoptimal.com/portfolio/custom-wordpress-musical-theme/</link>
+		<link>/portfolio/custom-wordpress-musical-theme/</link>
 		
 		<dc:creator><![CDATA[Ivan Maljukanović]]></dc:creator>
 		<pubDate>Sat, 19 May 2018 19:00:58 +0000</pubDate>
@@ -61,7 +61,7 @@
 		<guid isPermaLink="false">http://www.localhost:10004/?p=88</guid>
 
 					<description><![CDATA[<p>Description: Responsive website made for a musical group. Challenge: Creating a multimedia rich website, with one clear goal in mind &#8211; to funnel their online traffic from all of the social media they used (Facebook, Instagram, Youtube), and to establish online presence for their production company. Design and functionality of the website based on my [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.imoptimal.com/portfolio/custom-wordpress-musical-theme/">Custom WordPress Musical Theme</a> appeared first on <a rel="nofollow" href="https://www.imoptimal.com/">Imoptimal</a>.</p>
+<p>The post <a rel="nofollow" href="/portfolio/custom-wordpress-musical-theme/">Custom WordPress Musical Theme</a> appeared first on <a rel="nofollow" href="/">Imoptimal</a>.</p>
 ]]></description>
 		
 		
@@ -69,7 +69,7 @@
 			</item>
 		<item>
 		<title>Custom WordPress website for an accounting company</title>
-		<link>https://www.imoptimal.com/portfolio/custom-accounting-website/</link>
+		<link>/portfolio/custom-accounting-website/</link>
 		
 		<dc:creator><![CDATA[Ivan Maljukanović]]></dc:creator>
 		<pubDate>Thu, 17 May 2018 17:02:26 +0000</pubDate>
@@ -80,7 +80,7 @@
 		<guid isPermaLink="false">http://www.localhost:10004/?p=79</guid>
 
 					<description><![CDATA[<p>Description: Responsive website made for an accounting and consulting company. Challenge: Creating a full website design from scratch (logo design included), without much guidelines. The goal was to create content rich website that attracts potential clients with all of the latest news/regulation postings in accounting. Website also needed to be easily maintainable for the administrator [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.imoptimal.com/portfolio/custom-accounting-website/">Custom WordPress website for an accounting company</a> appeared first on <a rel="nofollow" href="https://www.imoptimal.com/">Imoptimal</a>.</p>
+<p>The post <a rel="nofollow" href="/portfolio/custom-accounting-website/">Custom WordPress website for an accounting company</a> appeared first on <a rel="nofollow" href="/">Imoptimal</a>.</p>
 ]]></description>
 		
 		
