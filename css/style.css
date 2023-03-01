@@ -1,0 +1,312 @@
+    /* Main Styles File */
+    
+     ::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 2px 0 #37b800;
+        box-shadow: inset 2px 0 #37b800;
+        background-color: #061228;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: #37b800;
+        border-radius: 10px;
+    }
+    
+    body {
+        background-color: #fbf0de;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 50px 0 0 0;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    
+    body * {
+        position: relative;
+        word-wrap: break-word !important;
+        text-align: left;
+    }
+    
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+    
+    a {
+        color: #37b800;
+        padding: 5px;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        color: #fbf0de;
+    }
+    
+    .container.content {
+        max-width: 1920px;
+        overflow-x: hidden;
+        margin: 0 auto;
+        background-color: #061228;
+        color: #fbf0de;
+    }
+    
+    .masthead {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 125px;
+        max-width: 1920px;
+        background-color: #061228;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .masthead .sitename {
+        display: block;
+        width: 125px;
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .masthead .sitename img {
+        width: 150px;
+    }
+    
+    .masthead .nav ul {
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        right: 2500px;
+    }
+    
+    .custom-content {
+        margin: 100px auto 0 auto;
+        padding: 0;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    
+    .section img {
+        width: 600px;
+        height: auto;
+    }
+    
+    .section .story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    
+    .section .story p {
+        background-color: #fbf0de;
+        font-size: 20px;
+        color: #061228;
+        font-weight: 400;
+        line-height: 1.5;
+        max-width: 400px;
+        box-shadow: 10px 10px grey;
+        margin-top: 25px;
+        padding: 10px;
+    }
+    
+    .section.one,
+    .section.three {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .section.one .story {
+        margin-right: -100px;
+        top: 50px;
+    }
+    
+    .section.two {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .section.two .story {
+        margin-left: -100px;
+    }
+    
+    .section.three .story,
+    .section.five .story {
+        margin-right: -100px;
+    }
+    
+    .section.four {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fbf0de;
+        color: #061228;
+        width: 105%;
+        padding: 10px 0;
+    }
+    
+    .section.four img.title {
+        align-self: flex-start;
+    }
+    
+    .section.four .story {
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+    
+    .section .step {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .section.four p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .collapsible {
+        background-color: #061228;
+        color: #37b800;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    
+    .collapsible:hover {
+        color: #fbf0de;
+    }
+    
+    .show-more {
+        position: absolute;
+        left: -2500px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #fbf0de;
+        z-index: -10;
+    }
+    
+    .show-more .close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #37b800;
+        background-color: #061228;
+        padding: 0;
+    }
+    
+    .show-more .close:hover {
+        color: #fbf0de;
+    }
+    
+    .section.five {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .section.five .contact-form {
+        flex-basis: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .section.five .contact-form form {
+        min-width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section.five .contact-form input,
+    .section.five .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-width: 0;
+        border-style: none;
+        border-bottom: #37b800 2px solid;
+        background-color: #061228;
+        color: #fbf0de;
+    }
+    
+     ::placeholder {
+        color: white;
+        opacity: 1;
+    }
+    
+     :-ms-input-placeholder {
+        color: white;
+    }
+    
+     ::-ms-input-placeholder {
+        color: white;
+    }
+    
+    .section.five .contact-form .submit {
+        width: 50%;
+        text-align: center;
+        border: none;
+        background-color: #37b800;
+        color: #061228;
+    }
+    
+    .calendly button {
+        background-color: #061228;
+        color: #37b800;
+        padding: 10px;
+        border: 2px solid #37b800;
+        border-radius: 25px;
+        margin: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+    
+    .calendly button a {
+        font-weight: bold;
+    }
+    /* Responsive design */
+    
+    @media screen and (max-width: 900px) {
+        .section.one img,
+        .section.two img,
+        .section.three img {
+            order: 1;
+        }
+        .section.one .story {
+            margin-right: 100px;
+        }
+        .section.two .story {
+            margin-left: 100px;
+            margin-bottom: -50px;
+        }
+        .section.three .story,
+        .section.five .story {
+            margin-right: 100px;
+            margin-bottom: -50px;
+        }
+    }
