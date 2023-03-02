@@ -1,22 +1,21 @@
 // When page has loaded
 document.addEventListener("DOMContentLoaded", function() {
+    //Cookie consent
+    cookieconsent.run({ "notice_banner_type": "headline", "consent_type": "simple", "palette": "light", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_privacy_policy_url": "https://imoptimal.com/privacy-policy/" });
     // Add collapsible sections
     var coll = document.getElementsByClassName("collapsible");
     var i;
     for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
             var content = this.nextElementSibling;
-            var contentHeight = content.offsetHeight;
             if (content.style.visibility === "visible") {
                 content.style.visibility = "hidden";
                 content.style.zIndex = "-10";
-                content.style.left = "-2500px";
-                content.style.bottom = "-2500px";
+                this.textContent = "Show more info about this step";
             } else {
                 content.style.visibility = "visible";
-                content.style.left = "0";
-                content.style.bottom = "-" + (contentHeight + 100) + "px";
                 content.style.zIndex = "10";
+                this.textContent = "Hide the info";
             }
         });
     }
@@ -26,17 +25,15 @@ document.addEventListener("DOMContentLoaded", function() {
     for (i = 0; i < close.length; i++) {
         close[i].addEventListener("click", function() {
             var showMore = this.parentElement;
-            var contentHeight = showMore.offsetHeight;
+            var buttonEl = showMore.previousElementSibling;
             if (showMore.style.visibility === "visible") {
                 showMore.style.visibility = "hidden";
                 showMore.style.zIndex = "-10";
-                showMore.style.left = "-2500px";
-                showMore.style.bottom = "-2500px";
+                buttonEl.textContent = "Show more info about this step";
             } else {
                 showMore.style.visibility = "visible";
-                showMore.style.left = "0";
-                showMore.style.bottom = "-" + (contentHeight + 100) + "px";
                 showMore.style.zIndex = "10";
+                buttonEl.textContent = "Hide the info";
             }
         });
     }
