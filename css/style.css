@@ -24,6 +24,7 @@
     }
     
     body * {
+        box-sizing: border-box;
         position: relative;
         word-wrap: break-word !important;
         text-align: left;
@@ -198,76 +199,82 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 10px;
-        margin-top: 50px;
+        margin: 0 25px 75px 0;
     }
     
-    .section .step .card {
-        width: 100%;
-        height: 100%;
+    .flip-card {
+        width: 300px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: transparent;
+        perspective: 1000px;
     }
     
-    .section.four p {
+    .flip-card img {
+        width: 100%;
+        height: 300px;
+        max-width: 100% !important;
+        box-shadow: 5px 10px 0 grey;
+    }
+    
+    .flip-card-inner {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-back {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-back p {
+        background-color: #061228 !important;
+        color: #fbf0de !important;
         font-size: 24px;
         font-weight: bold;
-    }
-    
-    .collapsible {
-        background-color: #061228;
-        color: #37b800;
-        cursor: pointer;
-        padding: 10px;
-        border: none;
-        outline: none;
-        font-size: 15px;
-        text-transform: uppercase;
-    }
-    
-    .collapsible:hover {
-        color: #fbf0de;
-    }
-    
-    .show-more {
-        position: absolute;
-        top: -25px;
-        left: 0;
-        width: 100%;
-        height: 80%;
-        padding: 10px;
-        overflow-x: hidden;
+        width: 100% !important;
+        height: 300px !important;
         overflow-y: scroll;
-        background-color: #fbf0de;
-        z-index: -100;
-        visibility: hidden;
-        transition: none;
-        -webkit-transition: none;
-        -moz-transition: none;
-        -ms-transition: none;
-        -o-transition: none;
+        overflow-x: hidden;
+        box-shadow: 5px 10px 0 grey !important;
+        margin: 0 !important;
     }
     
-    .show-more .close {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: #37b800;
-        background-color: #061228;
-        padding: 2px;
-        cursor: pointer;
-        transition: none;
-        -webkit-transition: none;
-        -moz-transition: none;
-        -ms-transition: none;
-        -o-transition: none;
+    .flip-card .show-more {
+        margin-top: -50px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
     }
     
-    .show-more .close:hover {
-        color: #fbf0de;
+    .flip-card:hover .show-more {
+        display: none;
+    }
+    
+    .flip-card .show-more p {
+        text-align: center !important;
+        font-size: 16px !important;
+        background-color: transparent !important;
+        color: #37b800 !important;
+        text-transform: uppercase !important;
+        box-shadow: none !important;
     }
     
     .section.five {
@@ -336,6 +343,7 @@
     }
     
     .footer {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -343,6 +351,7 @@
     }
     
     .footer-images {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
