@@ -38,12 +38,14 @@
     img {
         max-width: 90%;
         height: auto;
+        user-select: none;
     }
     
     a {
         color: #37b800;
         padding: 5px;
         text-decoration: underline;
+        cursor: pointer;
     }
     
     a:hover {
@@ -350,6 +352,31 @@
         align-items: center;
     }
     
+    .footer .links {
+        align-self: flex-end;
+        margin: 50px;
+        display: flex;
+    }
+    
+    #cms {
+        display: none;
+    }
+    
+    #cms.displayed {
+        display: block;
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
+    }
+    
+    .footer #cms {
+        flex-basis: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #fbf0de;
+        color: #061228;
+        width: 100%;
+    }
+    
     .footer-images {
         width: 100%;
         display: flex;
@@ -388,6 +415,16 @@
     
     .footer .calendly {
         align-self: flex-start;
+    }
+    /* Animations */
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     /* Responsive design */
     

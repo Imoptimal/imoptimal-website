@@ -8,7 +8,6 @@
     <meta name="description" content="Small business website design & development services">
     <meta name="author" content="Ivan Maljukanovic (Imoptimal)">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/style.css">
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -138,9 +137,6 @@
             </div>
         </div>
 
-        <!-- CMS -->
-        <!--<div id="cms"></div>-->
-
         <!-- Footer -->
         <footer class="footer">
             <!-- Calendly link widget begin -->
@@ -152,9 +148,11 @@
                 </button>
             </div>
             <div class="links">
-                <a href="#/privacy-policy">Privacy Policy</a>
-                <a href="#/license-disclosure">License Disclosure</a>
+                <a class="show-cms" data-href="/pages/privacy-policy.html">Privacy Policy</a>
+                <a class="show-cms" data-href="/pages/license-disclosure.html">License Disclosure</a>
             </div>
+            <!-- CMS -->
+            <div id="cms"></div>
             <!-- Calendly link widget end -->
             <div class="footer-images">
                 <img class="left" loading="lazy" src="./images/small-business-website-footer-left.png" alt="Tetris piece for the footer." />
@@ -162,15 +160,8 @@
             </div>
         </footer>
     </div>
-
-    <!-- ES5 Polyfills -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.14/es5-shim.min.js"></script>
-    <!-- CMS.js -->
-    <script src="./js/cms.js"></script>
-    <!-- Config -->
-    <script src="./js/config.js"></script>
     <script src="https://www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"></script>
-    <script src="./js/additional.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
