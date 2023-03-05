@@ -1,4 +1,4 @@
-## imoptimal-static-cms
+## imoptimal-website
 
 - Use the <div id="cms"> for the destination element of the CMS content (fetched by JavaScript).
 
