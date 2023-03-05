@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             e.stopPropagation();
         });
     }
-    var gitHubRepo = 'https://raw.githubusercontent.com/imoptimal/imoptimal-static-cms/main/';
+    var gitHubRepo = 'https://raw.githubusercontent.com/imoptimal/imoptimal-website/main/';
     var footerCms = document.querySelector('.footer #cms');
     var footerLinks = document.querySelectorAll('.footer .links a');
     var footerLinksParent = document.querySelector('.footer .links');
