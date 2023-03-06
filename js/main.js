@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             closeButton.classList.add("close-cms");
             closeButton.setAttribute('title', 'Close this section');
             cmsEl.append("X", closeButton);
+            console.log(closeButton);
             window.addEventListener('click', function() {
                 if (cmsEl.classList.contains('displayed')) {
                     var displayedEl = document.querySelectorAll('displayed');

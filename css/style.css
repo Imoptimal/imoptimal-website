@@ -372,8 +372,8 @@
     }
     
     .footer .links a.displayed {
-        animation: footerLink 1s;
-        -webkit-animation: footerLink 1s;
+        animation: footerLink 1s forwards;
+        -webkit-animation: footerLink 1s forwards;
     }
     
     #cms {
@@ -382,8 +382,8 @@
     
     #cms.displayed {
         display: block;
-        animation: fadeIn 1s;
-        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s forwards;
+        -webkit-animation: fadeIn 1s forwards;
     }
     
     #cms .close-cms {
@@ -413,6 +413,23 @@
         font-weight: bold;
         text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
         letter-spacing: 2px;
+    }
+    
+    .footer #cms input {
+        border: solid 2px #061228;
+    }
+    
+    .footer #cms input:hover {
+        border: solid 2px #37b800;
+    }
+    
+    .footer #cms input.submit {
+        backgroud-color: #061228;
+        color: #37b800;
+    }
+    
+    .footer #cms input.submit:hover {
+        color: #fbf0de;
     }
     
     .footer-images {
