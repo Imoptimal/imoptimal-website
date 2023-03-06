@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             // Parse the text
                             var page = parser.parseFromString(html, "text/html");
                             var content = page.querySelector('.cms').innerHTML;
-                            cmsEl.innerHTML = content;
+                            cmsEl.innerHTML += content;
                         });
                 }
             });
