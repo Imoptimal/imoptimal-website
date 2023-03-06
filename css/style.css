@@ -371,9 +371,16 @@
         display: flex;
     }
     
+    .footer .links a {
+        border-right: none;
+        border-top: none;
+        border-left: none;
+    }
+    
     .footer .links a.displayed {
-        animation: footerLink 1s forwards;
-        -webkit-animation: footerLink 1s forwards;
+        border-right: solid 2px #fbf0de;
+        border-top: solid 2px #fbf0de;
+        border-left: solid 2px #fbf0de;
     }
     
     #cms {
@@ -382,8 +389,8 @@
     
     #cms.displayed {
         display: block;
-        animation: fadeIn 1s forwards;
-        -webkit-animation: fadeIn 1s forwards;
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
     }
     
     #cms .close-cms {
@@ -490,19 +497,6 @@
         }
         100% {
             opacity: 1;
-        }
-    }
-    
-    @keyframes footerLink {
-        0% {
-            border-right: solid 2px transparent;
-            border-top: solid 2px transparent;
-            border-left: solid 2px transparent;
-        }
-        100% {
-            border-right: solid 2px #fbf0de;
-            border-top: solid 2px #fbf0de;
-            border-left: solid 2px #fbf0de;
         }
     }
     /* 7. Responsive Design */
