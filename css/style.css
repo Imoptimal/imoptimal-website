@@ -1,4 +1,15 @@
-    /* Main Styles File */
+    /* Main Styles File 
+    Content
+    0. General Styles
+    1. Header
+    2. Main Content
+    3. Footer
+    4. Calendly
+    5. Cookies Consent
+    6. Animations
+    7. Responsive Design
+    */
+    /* 0. General Styles */
     
      ::-webkit-scrollbar {
         width: 20px;
@@ -59,6 +70,7 @@
         background-color: #061228;
         color: #fbf0de;
     }
+    /* 1. Header */
     
     .masthead {
         position: fixed;
@@ -111,6 +123,7 @@
         top: 0;
         right: 2500px;
     }
+    /* 2. Main Content */
     
     .custom-content {
         margin: 100px auto 0 auto;
@@ -343,6 +356,7 @@
         background-color: #fbf0de;
         color: #061228;
     }
+    /* 3. Footer */
     
     .footer {
         width: 100%;
@@ -354,8 +368,12 @@
     
     .footer .links {
         align-self: flex-end;
-        margin: 50px;
         display: flex;
+    }
+    
+    .footer .links a.displayed {
+        animation: footerLink 1s;
+        -webkit-animation: footerLink 1s;
     }
     
     #cms {
@@ -364,8 +382,8 @@
     
     #cms.displayed {
         display: block;
-        animation: fadeIn 2s;
-        -webkit-animation: fadeIn 2s;
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
     }
     
     .footer #cms {
@@ -377,6 +395,10 @@
         width: 100%;
     }
     
+    .footer #cms a {
+        background-color: #061228;
+    }
+    
     .footer-images {
         width: 100%;
         display: flex;
@@ -384,6 +406,7 @@
         justify-content: space-between;
         align-items: flex-end;
     }
+    /* 4. Calendly */
     
     .calendly {
         margin-top: 25px;
@@ -416,7 +439,16 @@
     .footer .calendly {
         align-self: flex-start;
     }
-    /* Animations */
+    /* 5. Cookies Consent */
+    
+    .cc-cp-body-tabs-item-link {
+        background-color: #061228 !important;
+    }
+    
+    .cc-cp-body-tabs-item[active=true] a {
+        border: solid 2px #37b800 !important;
+    }
+    /* 6. Animations */
     
     @keyframes fadeIn {
         0% {
@@ -426,7 +458,20 @@
             opacity: 1;
         }
     }
-    /* Responsive design */
+    
+    @keyframes footerLink {
+        0% {
+            border-right: solid 2px transparent;
+            border-top: solid 2px transparent;
+            border-left: solid 2px transparent;
+        }
+        100% {
+            border-right: solid 2px #fbf0de;
+            border-top: solid 2px #fbf0de;
+            border-left: solid 2px #fbf0de;
+        }
+    }
+    /* 7. Responsive Design */
     
     @media screen and (max-width: 1200px) {
         .footer {
@@ -458,13 +503,4 @@
             margin-right: 100px;
             margin-bottom: -50px;
         }
-    }
-    /* Cookies Consent Styling */
-    
-    .cc-cp-body-tabs-item-link {
-        background-color: #061228 !important;
-    }
-    
-    .cc-cp-body-tabs-item[active=true] a {
-        border: solid 2px #37b800 !important;
     }

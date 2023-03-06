@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var clickedEl = e.target;
                 var file = rawGithubUrl + clickedEl.dataset.href;
                 if (clickedEl.classList.contains('show-cms')) {
+                    clickedEl.classList.add('displayed');
                     cmsEl.classList.add('displayed');
                     fetch(file)
                         .then(function(response) {
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         window.addEventListener('click', function() {
             if (cmsEl.classList.contains('displayed')) {
                 cmsEl.classList.remove('displayed');
+                clickedEl.classList.remove('displayed');
             }
         });
         // Parent element
