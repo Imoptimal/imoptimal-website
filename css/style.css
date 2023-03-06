@@ -372,9 +372,9 @@
     }
     
     .footer .links a {
-        border-right: none;
-        border-top: none;
-        border-left: none;
+        border-right: solid 2px transparent;
+        border-top: solid 2px transparent;
+        border-left: solid 2px transparent;
     }
     
     .footer .links a.displayed {
@@ -412,7 +412,7 @@
     .footer #cms {
         flex-basis: 100%;
         padding: 10px;
-        margin: 10px 0;
+        margin: 0 0 10px 0;
         background-color: #fbf0de;
         color: #061228;
         width: 100%;
