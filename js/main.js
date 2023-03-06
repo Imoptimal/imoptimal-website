@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
             });
             // Hide CMS content
             var closeButton = document.createElement("div");
+            closeButton.innerHTML += 'X';
             closeButton.classList.add("close-cms");
             closeButton.setAttribute('title', 'Close this section');
-            cmsEl.append("X", closeButton);
-            console.log(closeButton);
+            cmsEl.append(closeButton);
             window.addEventListener('click', function() {
                 if (cmsEl.classList.contains('displayed')) {
                     var displayedEl = document.querySelectorAll('displayed');
