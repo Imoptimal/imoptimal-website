@@ -394,6 +394,7 @@
         background-color: #061228;
         color: #37b800;
         cursor: pointer;
+        text-decoration: none;
     }
     
     #cms .close-cms:hover {
