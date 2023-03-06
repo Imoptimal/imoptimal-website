@@ -28,17 +28,17 @@ document.addEventListener("DOMContentLoaded", function() {
                         });
                 }
             });
-        });
-        // Hide CMS content
-        window.addEventListener('click', function() {
-            if (cmsEl.classList.contains('displayed')) {
-                cmsEl.classList.remove('displayed');
-                clickedEl.classList.remove('displayed');
-            }
-        });
-        // Parent element
-        linksParent.addEventListener('click', function(e) {
-            e.stopPropagation();
+            // Hide CMS content
+            var closeButton = document.createElement("div");
+            closeButton.classList.add("close-cms");
+            closeButton.setAttribute('title', 'Close this section');
+            cmsEl.append("X", closeButton);
+            window.addEventListener('click', function() {
+                if (cmsEl.classList.contains('displayed')) {
+                    cmsEl.classList.remove('displayed');
+                    clickedEl.classList.remove('displayed');
+                }
+            });
         });
     }
     var gitHubRepo = 'https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master';

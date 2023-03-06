@@ -386,6 +386,20 @@
         -webkit-animation: fadeIn 1s;
     }
     
+    #cms .close-cms {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 5px;
+        background-color: #061228;
+        color: #37b800;
+        cursor: pointer;
+    }
+    
+    #cms .close-cms:hover {
+        color: #fbf0de;
+    }
+    
     .footer #cms {
         flex-basis: 100%;
         padding: 10px;
