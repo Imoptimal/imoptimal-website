@@ -37,6 +37,20 @@ document.addEventListener("DOMContentLoaded", function() {
                             var content = page.querySelector('.cms').innerHTML;
                             cmsEl.innerHTML = content;
                             
+                var closeButton = document.querySelector('.close-cms');
+                var parent = closeButton.parentNode;
+                var clone = closeButton.cloneNode(true);
+                // Remove eventListeners
+                parent.replaceChild(clone, closeButton);
+                closeButton.addEventListener('click', function () {
+                if (cmsEl.classList.contains('displayed')) {
+                    var displayedEl = document.querySelectorAll('displayed');
+                    displayedEl.forEach(function(el) {
+                        el.classList.remove('displayed');
+                    });
+                }
+            })
+                            
                         });
                 }
             });
