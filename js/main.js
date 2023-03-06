@@ -35,8 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
             cmsEl.append("X", closeButton);
             window.addEventListener('click', function() {
                 if (cmsEl.classList.contains('displayed')) {
-                    cmsEl.classList.remove('displayed');
-                    clickedEl.classList.remove('displayed');
+                    var displayedEl = document.querySelectorAll('displayed');
+                    displayedEl.forEach(function(el) {
+                        el.classList.remove('displayed');
+                    });
                 }
             });
         });
