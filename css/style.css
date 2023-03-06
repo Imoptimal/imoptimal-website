@@ -381,6 +381,7 @@
         border-right: solid 2px #fbf0de;
         border-top: solid 2px #fbf0de;
         border-left: solid 2px #fbf0de;
+        color: #fbf0de;
     }
     
     #cms {
@@ -484,10 +485,12 @@
     
     .cc-cp-body-tabs-item-link {
         background-color: #061228 !important;
+        color: #37b800 !important;
     }
     
     .cc-cp-body-tabs-item[active=true] a {
         border: solid 2px #37b800 !important;
+        color: #fbf0de !important;
     }
     /* 6. Animations */
     
