@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cookieconsent.run({ "notice_banner_type": "headline", "consent_type": "simple", "palette": "light", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_privacy_policy_url": "https://imoptimal.com/privacy-policy/" });
 
     // Display CMS content
-    function displayCMS(rawGithubUrl, cmsEl, links, linksParent) {
+    function displayCMS(rawGithubUrl, cmsEl, links) {
         links.forEach(function(link) {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -44,6 +44,5 @@ document.addEventListener("DOMContentLoaded", function() {
     var gitHubRepo = 'https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master';
     var footerCms = document.querySelector('.footer #cms');
     var footerLinks = document.querySelectorAll('.footer .links a');
-    var footerLinksParent = document.querySelector('.footer .links');
-    displayCMS(gitHubRepo, footerCms, footerLinks, footerLinksParent);
+    displayCMS(gitHubRepo, footerCms, footerLinks);
 });
