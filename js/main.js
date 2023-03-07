@@ -22,12 +22,33 @@ document.addEventListener("DOMContentLoaded", function() {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
+    // On load
+    function lazyLoadImages(imgs) {
+        imgs.forEach(function(img) {
+            var visible = isElementInViewport(img);
+            if (visible === true) {
+                var imgSrc = img.dataset.src;
+                img.setAttribute('src', imgSrc);
+                img.classList.remove('lazy-loading');
+            }
+        });
+    }
     var lazyImgs = document.querySelectorAll('img.lazy-loading');
-    lazyImgs.forEach(function(img) {
-        var visible = isElementInViewport(img);
-        console.log(img);
-        console.log(visible);
-    });
+    lazyLoadImages(lazyImgs);
+    // On scroll, resize, orientationChange
+    function triggerOnChange() {
+        console.log('triggered!');
+        var lazyImgs = document.querySelectorAll('img.lazy-loading');
+        if (lazyImgs.length > 0) {
+            lazyLoadImages(lazyImgs);
+        } else {
+            return;
+        }
+    }
+    // On scroll, resize, orientationChange
+    document.addEventListener("scroll", triggerOnChange);
+    window.addEventListener("resize", triggerOnChange);
+    window.addEventListener("orientationChange", triggerOnChange);
 
     // Hide CMS content
     /*function closeCmsSection() {
