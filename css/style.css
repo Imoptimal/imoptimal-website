@@ -84,7 +84,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: #fbf0de 2px solid;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .masthead.scrolling {
+        border-bottom: 2px solid #fbf0de;
     }
     
     .masthead .sitename {

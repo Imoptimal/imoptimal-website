@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    // Scroll to top of page first
+    window.scrollTo(0, 0);
     // Lazy loading images
     function isElementInViewport(element) {
         var rect = element.getBoundingClientRect();
@@ -55,17 +57,17 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("resize", triggerOnChange);
     window.addEventListener("orientationChange", triggerOnChange);
 
-
-    // Hide CMS content
-    /*function closeCmsSection() {
-        if (cmsEl.classList.contains('displayed')) {
-            var displayedEl = document.querySelectorAll('displayed');
-            displayedEl.forEach(function(el) {
-                el.classList.remove('displayed');
-            });
-
+    // Add border to header on scroll
+    function headerScroll(header) {
+        var y = window.scrollY;
+        if (y >= 150) {
+            header.classList.add('scrolling');
+        } else {
+            header.classList.remove('scrolling');
         }
-    }*/
+    };
+    var pageHeader = document.querySelector(".masthead");
+    headerScroll(pageHeader);
 
     // Display CMS content
     function displayCMS(rawGithubUrl, cmsEl, links) {
