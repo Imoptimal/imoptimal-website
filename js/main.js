@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             var page = parser.parseFromString(html, "text/html");
                             var content = page.querySelector('.cms').innerHTML;
                             cmsEl.innerHTML = content;
-
+                            // Close the section
                             var closeButton = document.querySelector('.close-cms');
                             var parent = closeButton.parentNode;
                             var clone = closeButton.cloneNode(true);
@@ -97,8 +97,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             parent.replaceChild(clone, closeButton);
                             clone.addEventListener('click', function() {
                                 if (cmsEl.classList.contains('displayed')) {
-                                    cmsEl.classList.remove('displayed');
-                                    clickedEl.classList.remove('displayed');
+                                    var allDisplayed = document.querySelectorAll('.displayed');
+                                    allDisplayed.forEach(function(item) {
+                                        item.classList.remove('displayed');
+                                    });
+                                    /*cmsEl.classList.remove('displayed');
+                                    clickedEl.classList.remove('displayed');*/
                                 }
                             })
 

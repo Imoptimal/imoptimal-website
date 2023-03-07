@@ -408,6 +408,7 @@
         color: #37b800;
         cursor: pointer;
         text-decoration: none;
+        font-weight: bold;
     }
     
     #cms .close-cms:hover {
