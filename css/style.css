@@ -418,6 +418,10 @@
         margin: 10px;
     }
     
+    #cms .section h3 {
+        width: 100%;
+    }
+    
     .footer #cms {
         flex-basis: 100%;
         padding: 10px;
