@@ -308,6 +308,10 @@
         align-items: flex-start;
     }
     
+    .section.five .contact-form h3 {
+        width: 75%;
+    }
+    
     .section.five .contact-form form {
         min-width: 75%;
         display: flex;
@@ -407,6 +411,10 @@
     
     #cms .close-cms:hover {
         color: #fbf0de;
+    }
+    
+    #cms .section {
+        margin: 10px;
     }
     
     .footer #cms {
