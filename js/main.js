@@ -37,80 +37,81 @@ document.addEventListener("DOMContentLoaded", function() {
     lazyLoadImages(lazyImgs);
     // On scroll, resize, orientationChange
     function triggerOnChange() {
-        console.log('triggered!');
-        var lazyImgs = document.querySelectorAll('img.lazy-loading');
-        if (lazyImgs.length > 0) {
-            lazyLoadImages(lazyImgs);
-        } else {
-            return;
-        }
-    }
-    // On scroll, resize, orientationChange
-    document.addEventListener("scroll", triggerOnChange);
-    window.addEventListener("resize", triggerOnChange);
-    window.addEventListener("orientationChange", triggerOnChange);
-
-    // Hide CMS content
-    /*function closeCmsSection() {
-        if (cmsEl.classList.contains('displayed')) {
-            var displayedEl = document.querySelectorAll('displayed');
-            displayedEl.forEach(function(el) {
-                el.classList.remove('displayed');
-            });
-
-        }
-    }*/
-
-    // Display CMS content
-    function displayCMS(rawGithubUrl, cmsEl, links) {
-        links.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                var clickedEl = e.target;
-                var file = rawGithubUrl + clickedEl.dataset.href;
-                if (clickedEl.classList.contains('show-cms')) {
-                    clickedEl.classList.add('displayed');
-                    cmsEl.classList.add('displayed');
-                    fetch(file)
-                        .then(function(response) {
-                            // When the page is loaded convert it to text
-                            return response.text()
-                        })
-                        .then(function(html) {
-                            // Initialize the DOM parser
-                            var parser = new DOMParser();
-                            // Parse the text
-                            var page = parser.parseFromString(html, "text/html");
-                            var content = page.querySelector('.cms').innerHTML;
-                            cmsEl.innerHTML = content;
-
-                            var closeButton = document.querySelector('.close-cms');
-                            console.log(closeButton);
-                            var parent = closeButton.parentNode;
-                            console.log(parent);
-                            var clone = closeButton.cloneNode(true);
-                            console.log(clone);
-                            // Remove eventListeners
-                            parent.replaceChild(clone, closeButton);
-                            console.log(closeButton);
-                            console.log(clone);
-                            clone.addEventListener('click', function() {
-                                console.log('CLICKED');
-                                if (cmsEl.classList.contains('displayed')) {
-                                    var displayedEl = document.querySelectorAll('displayed');
-                                    displayedEl.forEach(function(el) {
-                                        el.classList.remove('displayed');
-                                    });
-                                }
-                            })
-
-                        });
+        setTimeout(
+            function() {
+                console.log('triggered');
+                var lazyImgs = document.querySelectorAll('img.lazy-loading');
+                if (lazyImgs.length > 0) {
+                    console.log('more images');
+                    lazyLoadImages(lazyImgs);
+                } else {
+                    console.log('no images').
+                    return;
                 }
-            });
-        });
+            }, 100);
     }
-    var gitHubRepo = 'https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master';
-    var footerCms = document.querySelector('.footer #cms');
-    var footerLinks = document.querySelectorAll('.footer .links a');
-    displayCMS(gitHubRepo, footerCms, footerLinks);
+}
+
+// Hide CMS content
+/*function closeCmsSection() {
+    if (cmsEl.classList.contains('displayed')) {
+        var displayedEl = document.querySelectorAll('displayed');
+        displayedEl.forEach(function(el) {
+            el.classList.remove('displayed');
+        });
+
+    }
+}*/
+
+// Display CMS content
+function displayCMS(rawGithubUrl, cmsEl, links) {
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var clickedEl = e.target;
+            var file = rawGithubUrl + clickedEl.dataset.href;
+            if (clickedEl.classList.contains('show-cms')) {
+                clickedEl.classList.add('displayed');
+                cmsEl.classList.add('displayed');
+                fetch(file)
+                    .then(function(response) {
+                        // When the page is loaded convert it to text
+                        return response.text()
+                    })
+                    .then(function(html) {
+                        // Initialize the DOM parser
+                        var parser = new DOMParser();
+                        // Parse the text
+                        var page = parser.parseFromString(html, "text/html");
+                        var content = page.querySelector('.cms').innerHTML;
+                        cmsEl.innerHTML = content;
+
+                        var closeButton = document.querySelector('.close-cms');
+                        console.log(closeButton);
+                        var parent = closeButton.parentNode;
+                        console.log(parent);
+                        var clone = closeButton.cloneNode(true);
+                        console.log(clone);
+                        // Remove eventListeners
+                        parent.replaceChild(clone, closeButton);
+                        console.log(closeButton);
+                        console.log(clone);
+                        clone.addEventListener('click', function() {
+                            console.log('CLICKED');
+                            if (cmsEl.classList.contains('displayed')) {
+                                var displayedEl = document.querySelectorAll('displayed');
+                                displayedEl.forEach(function(el) {
+                                    el.classList.remove('displayed');
+                                });
+                            }
+                        })
+
+                    });
+            }
+        });
+    });
+}
+var gitHubRepo = 'https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master';
+var footerCms = document.querySelector('.footer #cms');
+var footerLinks = document.querySelectorAll('.footer .links a'); displayCMS(gitHubRepo, footerCms, footerLinks);
 });
