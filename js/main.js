@@ -46,8 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             cmsEl.innerHTML = content;
 
                             var closeButton = document.querySelector('.close-cms');
+                            console.log(closeButton);
                             var parent = closeButton.parentNode;
+                            console.log(parent);
                             var clone = closeButton.cloneNode(true);
+                            console.log(clone);
                             // Remove eventListeners
                             parent.replaceChild(clone, closeButton);
                             clone.addEventListener('click', function() {
