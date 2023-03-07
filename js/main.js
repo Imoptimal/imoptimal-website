@@ -53,7 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
                             console.log(clone);
                             // Remove eventListeners
                             parent.replaceChild(clone, closeButton);
+                            console.log(closeButton);
+                            console.log(clone);
                             clone.addEventListener('click', function() {
+                                console.log('CLICKED');
                                 if (cmsEl.classList.contains('displayed')) {
                                     var displayedEl = document.querySelectorAll('displayed');
                                     displayedEl.forEach(function(el) {
