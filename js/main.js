@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function triggerOnChange() {
         setTimeout(
             function() {
-                console.log('triggered');
                 var lazyImgs = document.querySelectorAll('img.lazy-loading');
                 if (lazyImgs.length > 0) {
                     lazyLoadImages(lazyImgs);
