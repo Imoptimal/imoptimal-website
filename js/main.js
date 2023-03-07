@@ -97,11 +97,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             parent.replaceChild(clone, closeButton);
                             clone.addEventListener('click', function() {
                                 if (cmsEl.classList.contains('displayed')) {
-                                    var displayedEl = document.querySelectorAll('displayed');
-                                    console.log(displayedEl);
-                                    displayedEl.forEach(function(el) {
-                                        el.classList.remove('displayed');
-                                    });
+                                    cmsEl.classList.remove('displayed');
+                                    clickedEl.classList.remove('displayed');
                                 }
                             })
 
