@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add border to header on scroll
     function headerScroll(header) {
         var y = window.scrollY;
+        console.log(y);
         if (y >= 150) {
             header.classList.add('scrolling');
         } else {
