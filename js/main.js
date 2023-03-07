@@ -42,10 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log('triggered');
                 var lazyImgs = document.querySelectorAll('img.lazy-loading');
                 if (lazyImgs.length > 0) {
-                    console.log('');
                     lazyLoadImages(lazyImgs);
                 } else {
-                    console.log('no images').
+                    document.removeEventListener("scroll", triggerOnChange);
                     return;
                 }
             }, 100);
