@@ -4,10 +4,11 @@
     1. Header
     2. Main Content
     3. Footer
-    4. Calendly
-    5. Cookies Consent
-    6. Animations
-    7. Responsive Design
+    4. Lazy Loading
+    5. Calendly
+    6. Cookies Consent
+    7. Animations
+    8. Responsive Design
     */
     /* 0. General Styles */
     
@@ -50,12 +51,6 @@
         max-width: 90%;
         height: auto;
         user-select: none;
-    }
-    
-    img.lazy-loading {
-        display: block;
-        width: 300px;
-        height: 300px;
     }
     
     a {
@@ -462,7 +457,14 @@
         justify-content: space-between;
         align-items: flex-end;
     }
-    /* 4. Calendly */
+    /* 4. Lazy Loading */
+    
+    img.lazy-loading {
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+    /* 5. Calendly */
     
     .calendly {
         margin-top: 25px;
@@ -495,7 +497,7 @@
     .footer .calendly {
         align-self: flex-start;
     }
-    /* 5. Cookies Consent */
+    /* 6. Cookies Consent */
     
     .cc-cp-body-tabs-item-link {
         background-color: #061228 !important;
@@ -506,7 +508,7 @@
         border: solid 2px #37b800 !important;
         color: #fbf0de !important;
     }
-    /* 6. Animations */
+    /* 7. Animations */
     
     @keyframes fadeIn {
         0% {
@@ -516,7 +518,7 @@
             opacity: 1;
         }
     }
-    /* 7. Responsive Design */
+    /* 8. Responsive Design */
     
     @media screen and (max-width: 1200px) {
         .footer {
