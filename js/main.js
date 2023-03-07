@@ -43,8 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 var lazyImgs = document.querySelectorAll('img.lazy-loading');
                 if (lazyImgs.length > 0) {
                     lazyLoadImages(lazyImgs);
-                } else {
+                } else { // No images - remove eventListeners
                     document.removeEventListener("scroll", triggerOnChange);
+                    window.removeEventListener("resize", triggerOnChange);
+                    window.removeEventListener("orientationChange", triggerOnChange);
                     return;
                 }
             }, 100);
