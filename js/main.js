@@ -91,19 +91,14 @@ document.addEventListener("DOMContentLoaded", function() {
                             cmsEl.innerHTML = content;
 
                             var closeButton = document.querySelector('.close-cms');
-                            console.log(closeButton);
                             var parent = closeButton.parentNode;
-                            console.log(parent);
                             var clone = closeButton.cloneNode(true);
-                            console.log(clone);
                             // Remove eventListeners
                             parent.replaceChild(clone, closeButton);
-                            console.log(closeButton);
-                            console.log(clone);
                             clone.addEventListener('click', function() {
-                                console.log('CLICKED');
                                 if (cmsEl.classList.contains('displayed')) {
                                     var displayedEl = document.querySelectorAll('displayed');
+                                    console.log(displayedEl);
                                     displayedEl.forEach(function(el) {
                                         el.classList.remove('displayed');
                                     });
