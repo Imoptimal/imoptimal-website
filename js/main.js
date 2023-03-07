@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
     var pageHeader = document.querySelector(".masthead");
-    headerScroll(pageHeader);
+    document.addEventListener("scroll", headerScroll(pageHeader));
 
     // Display CMS content
     function displayCMS(rawGithubUrl, cmsEl, links) {
@@ -103,8 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
                                     allDisplayed.forEach(function(item) {
                                         item.classList.remove('displayed');
                                     });
-                                    /*cmsEl.classList.remove('displayed');
-                                    clickedEl.classList.remove('displayed');*/
                                 }
                             })
 
