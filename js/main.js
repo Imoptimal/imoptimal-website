@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add border to header on scroll
     function headerOnScroll(headerEl) {
         if (window.pageYOffset > headerEl.offsetTop) {
-            header.classList.add("scrolling");
+            headerEl.classList.add("scrolling");
         } else {
-            header.classList.remove("scrolling");
+            headerEl.classList.remove("scrolling");
         }
     }
     var pageHeader = document.querySelector(".masthead");
