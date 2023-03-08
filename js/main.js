@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function lazyLoadImages(imgs) {
         imgs.forEach(function(img) {
             var visible = isElementInViewport(img);
+            console.log(visible);
             if (visible === true) {
                 var imgSrc = img.dataset.src;
                 img.setAttribute('src', imgSrc);
