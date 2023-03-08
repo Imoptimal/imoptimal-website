@@ -91,9 +91,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     var menuButton = document.querySelector('.masthead .nav button');
-    menuButton.addEventListener('click', function() {
+    menuButton.addEventListener('click', slideMenu(menuButton));
 
-    });
     /* 6. Display CMS content */
     function displayCMS(rawGithubUrl, cmsEl, links) {
         links.forEach(function(link) {
