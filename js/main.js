@@ -59,10 +59,8 @@ document.addEventListener("DOMContentLoaded", function() {
             function() {
                 var pageHeader = document.querySelector(".masthead");
                 if (window.pageYOffset > pageHeader.offsetTop) {
-                    console.log('yes');
                     pageHeader.classList.add("scrolling");
                 } else {
-                    console.log('no');
                     pageHeader.classList.remove("scrolling");
                 }
             }, 1000);
