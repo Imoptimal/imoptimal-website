@@ -470,6 +470,12 @@
     
     img.lazy-loading {
         display: block;
+        width: 600px;
+        height: 600px;
+    }
+    
+    .flip-card img.lazy-loading {
+        display: block;
         width: 300px;
         height: 300px;
     }

@@ -11,17 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Scroll to top of page first
-    window.scrollTo(0, 0);
     // Lazy loading images
     function isElementInViewport(element) {
-        var rect = element.getBoundingClientRect();
+        var el = element.getBoundingClientRect();
 
         return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= ((window.innerHeight + 100) || (document.documentElement.clientHeight + 100)) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            el.top >= 0 &&
+            el.left >= 0 &&
+            el.top <= (window.innerHeight || document.documentElement.clientHeight)
         );
     }
     // On load
