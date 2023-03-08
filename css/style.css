@@ -4,11 +4,10 @@
     1. Header
     2. Main Content
     3. Footer
-    4. Lazy Loading
-    5. Calendly
-    6. Cookies Consent
-    7. Animations
-    8. Responsive Design
+    4. Calendly
+    5. Cookies Consent
+    6. Animations
+    7. Responsive Design
     */
     /* 0. General Styles */
     
@@ -466,19 +465,7 @@
         justify-content: space-between;
         align-items: flex-end;
     }
-    /* 4. Lazy Loading */
-    /* img.lazy-loading {
-        display: block;
-        width: 600px;
-        height: 600px;
-    }
-    
-    .flip-card img.lazy-loading {
-        display: block;
-        width: 300px;
-        height: 300px;
-    }*/
-    /* 5. Calendly */
+    /* 4. Calendly */
     
     .calendly {
         margin-top: 25px;
@@ -522,7 +509,7 @@
         border: solid 2px #37b800 !important;
         color: #fbf0de !important;
     }
-    /* 7. Animations */
+    /* 6. Animations */
     
     @keyframes fadeIn {
         0% {
@@ -532,7 +519,7 @@
             opacity: 1;
         }
     }
-    /* 8. Responsive Design */
+    /* 7. Responsive Design */
     
     @media screen and (max-width: 1200px) {
         .footer {
