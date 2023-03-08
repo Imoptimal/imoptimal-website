@@ -54,17 +54,20 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("orientationChange", triggerOnChange);
 
     // Add border to header on scroll
-    function headerOnScroll(headerEl) {
-        if (window.pageYOffset > headerEl.offsetTop) {
-            console.log('yes');
-            headerEl.classList.add("scrolling");
-        } else {
-            console.log('no');
-            headerEl.classList.remove("scrolling");
-        }
+    function headerOnScroll() {
+        setTimeout(
+            function() {
+                var pageHeader = document.querySelector(".masthead");
+                if (window.pageYOffset > pageHeader.offsetTop) {
+                    console.log('yes');
+                    pageHeader.classList.add("scrolling");
+                } else {
+                    console.log('no');
+                    pageHeader.classList.remove("scrolling");
+                }
+            }, 100);
     }
-    var pageHeader = document.querySelector(".masthead");
-    document.addEventListener("scroll", headerOnScroll(pageHeader));
+    document.addEventListener("scroll", headerOnScroll);
 
     // Display CMS content
     function displayCMS(rawGithubUrl, cmsEl, links) {
