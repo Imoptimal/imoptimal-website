@@ -500,12 +500,19 @@
     }
     /* 6. Cookies Consent */
     
+    #freeprivacypolicy-com---nb {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+    }
+    
     .cc-cp-body-tabs-item-link {
         background-color: #061228 !important;
         color: #37b800 !important;
     }
     
-    .cc-cp-body-tabs-item[active=true] a {
+    .cc-cp-body-tabs-item[active=true] button {
         border: solid 2px #37b800 !important;
         color: #fbf0de !important;
     }
