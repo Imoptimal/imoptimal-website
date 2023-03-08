@@ -1,5 +1,5 @@
     /* Main Styles File 
-    Content
+    Content:
     0. General Styles
     1. Header
     2. Main Content
@@ -116,17 +116,25 @@
         cursor: pointer;
     }
     
-    .masthead .nav button:hover {
+    .masthead .nav button:hover,
+    .masthead .nav button.clicked {
         background-color: #061228;
         color: #fbf0de;
         border: 5px solid #fbf0de;
     }
     
-    .masthead .nav ul {
+    .masthead .nav .slide-in {
         position: absolute;
         visibility: hidden;
         top: 0;
+        bottom: 0;
         right: 2500px;
+    }
+    
+    .masthead .nav .slide-in.clicked {
+        visibility: visible;
+        right: 0;
+        z-index: 105;
     }
     /* 2. Main Content */
     

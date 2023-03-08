@@ -1,9 +1,18 @@
+/* Main Script File 
+    Content:
+    1. Cookie consent
+    2. Prevent img right click
+    3. Lazy loading images
+    4. Add border to header on scroll
+    5. Menu slide in
+    6. Display CMS content
+    */
 // When page has loaded
 document.addEventListener("DOMContentLoaded", function() {
-    // Cookie consent
+    /* 1. Cookie consent */
     cookieconsent.run({ "notice_banner_type": "headline", "consent_type": "simple", "palette": "light", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_privacy_policy_url": "https://imoptimal.com/privacy-policy/" });
 
-    // Prevent img right click
+    /* 2. Prevent img right click */
     var imgs = document.querySelectorAll('img');
     imgs.forEach(function(img) {
         img.addEventListener('contextmenu', function(e) {
@@ -11,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Lazy loading images
+    /* 3. Lazy loading images */
     function isElementInViewport(element) {
         var el = element.getBoundingClientRect();
 
@@ -53,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("resize", triggerOnChange);
     window.addEventListener("orientationChange", triggerOnChange);
 
-    // Add border to header on scroll
+    /* 4. Add border to header on scroll */
     function headerOnScroll() {
         setTimeout(
             function() {
@@ -70,7 +79,22 @@ document.addEventListener("DOMContentLoaded", function() {
     // On scroll
     document.addEventListener("scroll", headerOnScroll);
 
-    // Display CMS content
+    /* 5. Menu slide in */
+    function slideMenu(menuButton) {
+        var slideIn = document.querySelector('.masthead .nav .slide-in');
+        if (slideIn.classList.contains('clicked')) {
+            menuButton.classList.remove('clicked');
+            slideIn.classList.remove('clicked');
+        } else {
+            menuButton.classList.add('clicked');
+            slideIn.classList.add('clicked');
+        }
+    }
+    var menuButton = document.querySelector('.masthead .nav button');
+    menuButton.addEventListener('click', function() {
+
+    });
+    /* 6. Display CMS content */
     function displayCMS(rawGithubUrl, cmsEl, links) {
         links.forEach(function(link) {
             link.addEventListener('click', function(e) {
