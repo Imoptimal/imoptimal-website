@@ -65,6 +65,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }, 1000);
     }
+    // On load
+    headerOnScroll();
+    // On scroll
     document.addEventListener("scroll", headerOnScroll);
 
     // Display CMS content

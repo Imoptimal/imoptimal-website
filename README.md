@@ -8,5 +8,5 @@
 
 - Add the \<div class="links"> with \<a class="show-cms" data-href="/pathToFile.html> elements inside, as the elements that pulls the specified data on click.
 
-- Add images as the \<img class="lazy-loading" data-src="./images/image-name.png" alt="Description." draggable="false" />.
+- Add images as the \<img class="lazy-loading" data-src="./images/image-name.png" alt="Description." draggable="false" width="pictureWidth" height="pictureHeight"/>.
 
