@@ -25,12 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function lazyLoadImages(imgs) {
         imgs.forEach(function(img) {
             var visible = isElementInViewport(img);
-            console.log(visible);
             if (visible === true) {
                 var imgSrc = img.dataset.src;
                 img.setAttribute('src', imgSrc);
                 img.classList.remove('lazy-loading');
-            }
+            } else { return; }
         });
     }
     var lazyImgs = document.querySelectorAll('img.lazy-loading');
@@ -55,17 +54,15 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("orientationChange", triggerOnChange);
 
     // Add border to header on scroll
-    function headerScroll(header) {
-        var y = window.scrollY;
-        console.log(y);
-        if (y >= 150) {
-            header.classList.add('scrolling');
+    function headerOnScroll(headerEl) {
+        if (window.pageYOffset > headerEl.offsetTop) {
+            header.classList.add("scrolling");
         } else {
-            header.classList.remove('scrolling');
+            header.classList.remove("scrolling");
         }
-    };
+    }
     var pageHeader = document.querySelector(".masthead");
-    document.addEventListener("scroll", headerScroll(pageHeader));
+    document.addEventListener("scroll", headerOnScroll(pageHeader));
 
     // Display CMS content
     function displayCMS(rawGithubUrl, cmsEl, links) {
