@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     console.log('no');
                     pageHeader.classList.remove("scrolling");
                 }
-            }, 100);
+            }, 1000);
     }
     document.addEventListener("scroll", headerOnScroll);
 
