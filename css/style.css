@@ -103,6 +103,7 @@
     }
     
     .masthead .nav {
+        position: static;
         margin-right: 50px;
     }
     
@@ -130,6 +131,7 @@
         right: 2500px;
         background-color: #000000;
         height: 100vh;
+        width: 75vw;
     }
     
     .masthead .nav .slide-in.clicked {
