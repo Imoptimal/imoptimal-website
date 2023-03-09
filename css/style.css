@@ -128,7 +128,7 @@
         position: absolute;
         visibility: hidden;
         top: 0;
-        right: 2500px;
+        right: -2500px;
         background-color: #000000;
         height: 100vh;
         width: 75vw;
