@@ -132,6 +132,7 @@
         background-color: #000000;
         height: 100vh;
         width: 75vw;
+        margin-top: 25px;
     }
     
     .masthead .nav .slide-in.clicked {
@@ -153,7 +154,6 @@
     }
     
     .masthead .social a {
-        display: block;
         width: 50px;
         height: 100%;
     }
