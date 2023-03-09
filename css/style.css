@@ -132,7 +132,7 @@
         background-color: #000000;
         height: 100vh;
         width: 75vw;
-        margin-top: 25px;
+        padding-top: 75px;
     }
     
     .masthead .nav .slide-in.clicked {
