@@ -93,7 +93,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     var menuButton = document.querySelector('.masthead .nav button');
     menuButton.addEventListener('click', slideMenu);
-
+    // Close the menu
+    var closeMenu = document.querySelector('.masthead .nav .close');
+    closeMenu.addEventListener('click', slideMenu);
     /* 6. Display CMS content */
     function displayCMS(rawGithubUrl, cmsEl, links) {
         links.forEach(function(link) {

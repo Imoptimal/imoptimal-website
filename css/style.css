@@ -152,17 +152,36 @@
         font-weight: bold;
     }
     
+    .masthead .social a {
+        display: block;
+        width: 50px;
+        height: 100%;
+    }
+    
     .masthead .social img {
         width: 50px;
         height: auto;
     }
     
     .masthead .social img:hover {
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    
+    .masthead .slide-in .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #37b800;
+    }
+    
+    .masthead .slide-in .close:hover {
+        color: #fbf0de;
     }
     /* 2. Main Content */
     
