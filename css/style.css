@@ -136,6 +136,30 @@
         right: 0;
         z-index: 105;
     }
+    
+    .masthead .slide-in .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .masthead .social span {
+        display: block;
+        font-weight: bold;
+    }
+    
+    .masthead .social img {
+        width: 50px;
+        height: auto;
+    }
+    
+    .masthead .social img:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
     /* 2. Main Content */
     
     .custom-content {

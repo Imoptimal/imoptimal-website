@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("scroll", headerOnScroll);
 
     /* 5. Menu slide in */
-    /*function slideMenu(menuButton) {
+    function slideMenu(menuButton) {
         var slideIn = document.querySelector('.masthead .nav .slide-in');
         if (slideIn.classList.contains('clicked')) {
             menuButton.classList.remove('clicked');
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     var menuButton = document.querySelector('.masthead .nav button');
-    menuButton.addEventListener('click', slideMenu(menuButton));*/
+    menuButton.addEventListener('click', slideMenu(menuButton));
 
     /* 6. Display CMS content */
     function displayCMS(rawGithubUrl, cmsEl, links) {
