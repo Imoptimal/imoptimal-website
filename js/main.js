@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     /* 1. Cookie consent */
     cookieconsent.run({
         "notice_banner_type": "simple",
-        "consent_type": "express",
+        "consent_type": "headline",
         "palette": "light",
         "language": "en",
         "page_load_consent_levels": ["strictly-necessary"],
