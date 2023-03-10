@@ -382,7 +382,6 @@
      ::-ms-input-placeholder {
         color: white;
     }
-    
     /* 3. Footer */
     
     .footer {
@@ -534,6 +533,12 @@
     .cc-cp-body-tabs-item[active=true] button {
         border: solid 2px #37b800 !important;
         color: #fbf0de !important;
+    }
+    
+    .cc-cp-body-tabs-item:nth-child(3),
+    .cc-cp-body-tabs-item:nth-child(4),
+    .cc-cp-body-tabs-item:nth-child(5) {
+        display: none !important;
     }
     /* 6. Animations */
     
