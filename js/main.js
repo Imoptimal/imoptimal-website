@@ -22,6 +22,16 @@ document.addEventListener("DOMContentLoaded", function() {
         "website_name": "Small Business Website Expert - imoptimal.com",
         "website_privacy_policy_url": "https://imoptimal.com/#privacy"
     });
+    // 
+    var aTags = document.querySelectorAll(".cc-cp-body-content-entry-text a");
+    var searchText = "Privacy Policy";
+
+    for (var i = 0; i < aTags.length; i++) {
+        if (aTags[i].textContent == searchText) {
+            aTags[i].innerText = "Homepage (scroll down to footer section)."
+            break;
+        }
+    }
 
     /* 2. Prevent img right click */
     var imgs = document.querySelectorAll('img');
