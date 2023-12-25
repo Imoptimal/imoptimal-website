@@ -82,7 +82,7 @@
         background-color: #061228;
         z-index: 100;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         border-bottom: 2px solid transparent;
     }
