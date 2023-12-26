@@ -117,10 +117,9 @@
     }
 
     .masthead .nav button {
-        border-bottom: 2px solid #37b800;
+        border-bottom: 5px solid #37b800;
             color: #37b800;
             background-color: #061228;
-        border: none;
         padding: 10px;
         font-weight: bold;
         font-size: 20px;
