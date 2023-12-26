@@ -113,11 +113,10 @@
 
     .masthead .nav {
         position: static;
-        margin-right: 50px;
     }
 
     .masthead .nav button {
-        border-bottom: 5px solid #37b800;
+        border: 5px solid #37b800;
             color: #37b800;
             background-color: #061228;
         padding: 10px;
