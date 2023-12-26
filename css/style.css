@@ -9,23 +9,22 @@
     6. Animations
     7. Responsive Design
     */
-    /* 0. General Styles */
-    
-     ::-webkit-scrollbar {
+
+                                                                                                                                                                                                                                                                /* 0. General Styles */
+::-webkit-scrollbar {
         width: 20px;
-    }
+}
     
-     ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 2px 0 #37b800;
         box-shadow: inset 2px 0 #37b800;
         background-color: #061228;
-    }
-    
-     ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
         background: #37b800;
         border-radius: 10px;
     }
-    
+
     body {
         position: relative;
         background-color: #fbf0de;
@@ -34,7 +33,7 @@
         overflow-x: hidden;
         text-align: center;
     }
-    
+
     body * {
         box-sizing: border-box;
         position: relative;
@@ -46,24 +45,24 @@
         -ms-transition: all 0.2s linear;
         -o-transition: all 0.2s linear;
     }
-    
+
     img {
         max-width: 90%;
         height: auto;
         user-select: none;
     }
-    
+
     a {
         color: #37b800;
         padding: 5px;
         text-decoration: underline;
         cursor: pointer;
     }
-    
+
     a:hover {
         color: #fbf0de;
     }
-    
+
     .container.content {
         max-width: 1920px;
         overflow-x: hidden;
@@ -71,59 +70,68 @@
         background-color: #061228;
         color: #fbf0de;
     }
+
     /* 1. Header */
-    
+
     .masthead {
         position: fixed;
         top: 0;
         width: 100%;
-        height: 125px;
+        height: 175px;
         max-width: 1920px;
         background-color: #061228;
         z-index: 100;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding: 0 50px;
         border-bottom: 2px solid transparent;
     }
-    
+
     .masthead.scrolling {
         border-bottom: 2px solid #fbf0de;
     }
-    
+
     .masthead .sitename {
         display: block;
-        width: 125px;
+        width: 150px;
         height: 100%;
+        min-height: 150px;
         cursor: pointer;
     }
-    
+.masthead .sitename:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+        
     .masthead .sitename img {
         width: 150px;
     }
-    
+
     .masthead .nav {
         position: static;
         margin-right: 50px;
     }
-    
+
     .masthead .nav button {
-        background-color: #37b800;
-        color: #061228;
+        border-bottom: 2px solid #37b800;
+            color: #37b800;
         border: none;
         padding: 10px;
         font-weight: bold;
         font-size: 20px;
         cursor: pointer;
     }
-    
+
     .masthead .nav button:hover,
     .masthead .nav button.clicked {
-        background-color: #061228;
-        color: #fbf0de;
-        border: 5px solid #fbf0de;
+        background-color: #37b800;
+            color: #061228;
     }
-    
+
     .masthead .nav .slide-in {
         position: absolute;
         visibility: hidden;
@@ -138,13 +146,13 @@
         justify-content: flex-start;
         align-items: center;
     }
-    
+
     .masthead .nav .slide-in.clicked {
         visibility: visible;
         right: 0;
         z-index: 105;
     }
-    
+
     .masthead .slide-in .social {
         position: absolute;
         align-self: flex-end;
@@ -156,22 +164,22 @@
         right: 0;
         width: 100%;
     }
-    
+
     .masthead .social span {
         display: block;
         font-weight: bold;
     }
-    
+
     .masthead .social a {
         width: 50px;
         height: 100%;
     }
-    
+
     .masthead .social img {
         width: 50px;
         height: auto;
     }
-    
+
     .masthead .social img:hover {
         transform: scale(1.2);
         -webkit-transform: scale(1.2);
@@ -179,7 +187,7 @@
         -ms-transform: scale(1.2);
         -o-transform: scale(1.2);
     }
-    
+
     .masthead .slide-in .close {
         position: absolute;
         top: 15px;
@@ -189,30 +197,31 @@
         color: #37b800;
         font-size: 25px;
     }
-    
+
     .masthead .slide-in .close:hover {
         color: #fbf0de;
     }
+
     /* 2. Main Content */
-    
+
     .custom-content {
         margin: 100px auto 0 auto;
         padding: 0;
     }
-    
+
     .section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 10px 0;
     }
-    
+
     .section img,
     .footer-images img {
         width: 600px;
         height: auto;
     }
-    
+
     .section .story {
         display: flex;
         flex-direction: column;
@@ -220,7 +229,7 @@
         align-items: center;
         z-index: 2;
     }
-    
+
     .section .story p {
         background-color: #fbf0de;
         font-size: 20px;
@@ -231,32 +240,32 @@
         box-shadow: 10px 10px grey;
         padding: 10px;
     }
-    
+
     .section.one,
     .section.three {
         justify-content: flex-end;
         align-items: flex-start;
     }
-    
+
     .section.one .story {
         margin-right: -100px;
         top: 50px;
     }
-    
+
     .section.two {
         justify-content: flex-start;
         align-items: center;
     }
-    
+
     .section.two .story {
         margin-left: -100px;
     }
-    
+
     .section.three .story,
     .section.five .story {
         margin-right: -100px;
     }
-    
+
     .section.four {
         flex-direction: column;
         justify-content: center;
@@ -266,17 +275,17 @@
         width: 105%;
         padding: 10px 0;
     }
-    
+
     .section.four img.title {
         align-self: flex-start;
     }
-    
+
     .section.four .story {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 25px;
     }
-    
+
     .section .step {
         width: 300px;
         height: 300px;
@@ -286,7 +295,7 @@
         align-items: center;
         margin: 0 25px 75px 0;
     }
-    
+
     .flip-card {
         width: 300px;
         height: 300px;
@@ -297,14 +306,14 @@
         background-color: transparent;
         perspective: 1000px;
     }
-    
+
     .flip-card img {
         width: 100%;
         height: 300px;
         max-width: 100% !important;
         box-shadow: 5px 10px 0 grey;
     }
-    
+
     .flip-card-inner {
         width: 100%;
         height: 100%;
@@ -312,11 +321,11 @@
         transition: transform 0.6s;
         transform-style: preserve-3d;
     }
-    
+
     .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
     }
-    
+
     .flip-card-front,
     .flip-card-back {
         position: absolute;
@@ -325,11 +334,11 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
-    
+
     .flip-card-back {
         transform: rotateY(180deg);
     }
-    
+
     .flip-card-back p {
         background-color: #061228 !important;
         color: #fbf0de !important;
@@ -342,17 +351,17 @@
         box-shadow: 5px 10px 0 grey !important;
         margin: 0 !important;
     }
-    
+
     .flip-card .show-more {
         margin-top: -50px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.75);
     }
-    
+
     .flip-card:hover .show-more {
         display: none;
     }
-    
+
     .flip-card .show-more p {
         text-align: center !important;
         font-size: 16px !important;
@@ -361,7 +370,7 @@
         text-transform: uppercase !important;
         box-shadow: none !important;
     }
-    
+
     .section.five {
         flex-direction: row;
         flex-wrap: wrap;
@@ -370,20 +379,19 @@
         z-index: 1;
     }
     
-     ::placeholder {
+::placeholder {
         color: white;
         opacity: 1;
-    }
-    
-     :-ms-input-placeholder {
+}
+:-ms-input-placeholder {
+        color: white;
+}
+::-ms-input-placeholder {
         color: white;
     }
-    
-     ::-ms-input-placeholder {
-        color: white;
-    }
+
     /* 3. Footer */
-    
+
     .footer {
         width: 100%;
         display: flex;
@@ -391,35 +399,35 @@
         justify-content: flex-end;
         align-items: center;
     }
-    
+
     .footer .links {
         align-self: flex-end;
         display: flex;
     }
-    
+
     .footer .links a {
         border-right: solid 2px transparent;
         border-top: solid 2px transparent;
         border-left: solid 2px transparent;
     }
-    
+
     .footer .links a.displayed {
         border-right: solid 2px #fbf0de;
         border-top: solid 2px #fbf0de;
         border-left: solid 2px #fbf0de;
         color: #fbf0de;
     }
-    
+
     #cms {
         display: none;
     }
-    
+
     #cms.displayed {
         display: block;
         animation: fadeIn 1s;
         -webkit-animation: fadeIn 1s;
     }
-    
+
     #cms .close-cms {
         position: absolute;
         right: 10px;
@@ -431,19 +439,19 @@
         text-decoration: none;
         font-weight: bold;
     }
-    
+
     #cms .close-cms:hover {
         color: #fbf0de;
     }
-    
+
     #cms .section {
         margin: 10px;
     }
-    
+
     #cms .section h3 {
         width: 100%;
     }
-    
+
     .footer #cms {
         flex-basis: 100%;
         padding: 10px;
@@ -452,30 +460,30 @@
         color: #061228;
         width: 100%;
     }
-    
+
     .footer #cms a {
         font-weight: bold;
         text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
         letter-spacing: 2px;
     }
-    
+
     .footer #cms input {
         border: solid 2px #061228;
     }
-    
+
     .footer #cms input:hover {
         border: solid 2px #37b800;
     }
-    
+
     .footer #cms input.submit {
         background-color: #061228;
         color: #37b800;
     }
-    
+
     .footer #cms input.submit:hover {
         color: #fbf0de;
     }
-    
+
     .footer-images {
         width: 100%;
         display: flex;
@@ -483,12 +491,13 @@
         justify-content: space-between;
         align-items: flex-end;
     }
+
     /* 4. Calendly */
-    
+
     .calendly {
         margin-top: 25px;
     }
-    
+
     .calendly button {
         text-align: center;
         background-color: #061228;
@@ -503,21 +512,22 @@
         -ms-border-radius: 25px;
         -o-border-radius: 25px;
     }
-    
+
     .calendly button:hover {
         border: 2px solid #fbf0de;
     }
-    
+
     .calendly button a {
         font-weight: bold;
         text-decoration: none;
     }
-    
+
     .footer .calendly {
         align-self: flex-start;
     }
+
     /* 6. Cookies Consent */
-    
+
     #freeprivacypolicy-com---nb {
         position: absolute !important;
         bottom: 0 !important;
@@ -526,63 +536,72 @@
         min-width: 100% !important;
         max-width: 100% !important;
     }
-    
+
     .cc-nb-main-container {
         width: 100% !important;
     }
-    
+
     .cc-cp-body-tabs-item-link {
         background-color: #061228 !important;
         color: #37b800 !important;
     }
-    
+
     .cc-cp-body-tabs-item[active=true] button {
         border: solid 2px #37b800 !important;
         color: #fbf0de !important;
     }
-    
+
     .cc-cp-body-tabs-item:nth-child(3),
     .cc-cp-body-tabs-item:nth-child(4),
     .cc-cp-body-tabs-item:nth-child(5) {
         display: none !important;
     }
+
     /* 6. Animations */
-    
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
         }
+
         100% {
             opacity: 1;
         }
     }
+
     /* 7. Responsive Design */
-    
+
     @media screen and (max-width: 1200px) {
         .footer {
             align-items: flex-start;
         }
+
         .footer .calendly {
             align-self: flex-end;
         }
+
         .footer-images .left {
             display: none;
         }
     }
-    
+
     @media screen and (max-width: 900px) {
+
         .section.one img,
         .section.two img,
         .section.three img {
             order: 1;
         }
+
         .section.one .story {
             margin-right: 100px;
         }
+
         .section.two .story {
             margin-left: 100px;
             margin-bottom: -50px;
         }
+
         .section.three .story,
         .section.five .story {
             margin-right: 100px;
