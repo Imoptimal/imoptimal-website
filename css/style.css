@@ -246,7 +246,7 @@
         align-items: flex-start;
     }
 
-        #homepage .section.one .story {
+    #homepage .section.one .story {
         margin-right: -100px;
         top: 50px;
     }
@@ -256,16 +256,16 @@
         align-items: center;
     }
 
-        #homepage .section.two .story {
+    #homepage .section.two .story {
         margin-left: -100px;
     }
 
-        #homepage .section.three .story,
-        #homepage .section.five .story {
+    #homepage .section.three .story,
+    #homepage .section.five .story {
         margin-right: -100px;
     }
 
-        #homepage .section.four {
+    #homepage .section.four {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -275,11 +275,11 @@
         padding: 10px 0;
     }
 
-        #homepage .section.four img.title {
+    #homepage .section.four img.title {
         align-self: flex-start;
     }
 
-        #homepage .section.four .story {
+    #homepage .section.four .story {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 25px;
@@ -293,6 +293,10 @@
         justify-content: center;
         align-items: center;
         margin: 0 25px 75px 0;
+    }
+
+    .section .step h3 {
+        text-align: center;
     }
 
     .flip-card {
