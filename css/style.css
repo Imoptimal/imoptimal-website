@@ -252,12 +252,14 @@
         top: 50px;
     }
 
-    .section.two {
+    .section.two,
+    .section.six {
         justify-content: flex-start;
         align-items: center;
     }
 
-    #homepage .section.two .story {
+    #homepage .section.two .story,
+    #homepage .section.six .story {
         margin-left: -100px;
     }
 
@@ -383,16 +385,18 @@
         z-index: 1;
     }
     
-::placeholder {
-        color: white;
-        opacity: 1;
-}
-:-ms-input-placeholder {
-        color: white;
-}
-::-ms-input-placeholder {
-        color: white;
+    ::placeholder {
+            color: white;
+            opacity: 1;
     }
+
+    :-ms-input-placeholder {
+            color: white;
+    }
+    
+    ::-ms-input-placeholder {
+            color: white;
+        }
 
     /* 3. Footer */
 
@@ -593,7 +597,8 @@
 
         .section.one img,
         .section.two img,
-        .section.three img {
+        .section.three img,
+        .section.six img {
             order: 1;
         }
 
@@ -601,7 +606,8 @@
             margin-right: 100px;
         }
 
-        #homepage .section.two .story {
+        #homepage .section.two .story,
+        #homepage .section.six .story {
             margin-left: 100px;
             margin-bottom: -50px;
         }
