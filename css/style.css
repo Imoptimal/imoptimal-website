@@ -99,13 +99,14 @@
         min-height: 150px;
         cursor: pointer;
     }
-.masthead .sitename:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
+
+    .masthead .sitename:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
         
     .masthead .sitename img {
         width: 150px;
@@ -596,17 +597,17 @@
             order: 1;
         }
 
-        .section.one .story {
+        #homepage .section.one .story {
             margin-right: 100px;
         }
 
-        .section.two .story {
+        #homepage .section.two .story {
             margin-left: 100px;
             margin-bottom: -50px;
         }
 
-        .section.three .story,
-        .section.five .story {
+        #homepage .section.three .story,
+        #homepage .section.five .story {
             margin-right: 100px;
             margin-bottom: -50px;
         }
