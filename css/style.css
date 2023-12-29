@@ -442,13 +442,6 @@
     }
 
     #about-me .section.six {
-        justify-content: flex-end !important;
-        align-items: baseline !important;
-        margin-right: 50px !important;
-        margin-bottom: 50px !important;
-    }
-
-    #about-me .section.seven {
         justify-content: center !important;
         align-items: flex-start !important;
     }
@@ -476,8 +469,7 @@
         box-shadow: none !important;
     }
 
-    #about-me .section.six p,
-    #about-me .section.seven p {
+    #about-me .section.six p {
         background-color: #fbf0de;
         font-size: 20px;
         color: #061228;
@@ -694,10 +686,6 @@
         #about-me .section .story {
             order: 2 !important;
             width: 90% !important;
-        }
-
-        #about-me .section.six {
-            margin-bottom: 10px !important;
         }
     }
 
