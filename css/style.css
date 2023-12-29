@@ -418,6 +418,10 @@
     }
 
     .section.just-text {
+        text-align: center;
+    }
+
+    .section.just-text p {
         background-color: #fbf0de;
         font-size: 20px;
         color: #061228;
@@ -425,6 +429,7 @@
         line-height: 1.5;
         max-width: 90%;
         box-shadow: 10px 10px grey;
+        margin: 0 auto;
         padding: 10px;
     }
 
@@ -455,6 +460,7 @@
     #about-me .section .story p {
         background-color: #061228 !important;
         color: #fbf0de !important;
+        box-shadow: none !important;
     }
 
     /* 3. Footer */
