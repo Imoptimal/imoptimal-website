@@ -422,6 +422,18 @@
         margin: 50px 0;
     }
 
+    .section.just-text p {
+        background-color: #fbf0de;
+        font-size: 20px;
+        color: #061228;
+        font-weight: 400;
+        line-height: 1.5;
+        box-shadow: 10px 10px grey;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 500px;
+    }
+
     #about-me .section.one,
     #about-me .section.three,
     #about-me .section.five {
@@ -430,13 +442,15 @@
     }
 
     #about-me .section.six {
-        justify-content: center !important;
+        justify-content: flex-end !important;
         align-items: baseline !important;
+        margin-right: 50px !important;
+        margin-bottom: 100px !important;
     }
 
     #about-me .section.seven {
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: center !important;
+        align-items: flex-start !important;
     }
 
     #about-me .section.one .story,
@@ -462,7 +476,6 @@
         box-shadow: none !important;
     }
 
-    .section.just-text p,
     #about-me .section.six p,
     #about-me .section.seven p {
         background-color: #fbf0de;
@@ -471,7 +484,6 @@
         font-weight: 400;
         line-height: 1.5;
         box-shadow: 10px 10px grey;
-        margin: 0 auto;
         padding: 10px;
         max-width: 500px;
     }
