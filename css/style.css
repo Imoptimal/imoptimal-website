@@ -428,12 +428,31 @@
         padding: 10px;
     }
 
-    #about-me .section {
-        justify-content: space-around !important;
-        align-items: flex-end !important;
+    #about-me .section.one,
+    #about-me .section.three,
+    #about-me .section.five {
+        justify-content: flex-start !important;
+        align-items: center !important;
     }
 
-    #about-me .section .story {
+    #about-me .section.one .story,
+    #about-me .section.three .story,
+    #about-me .section.five .story {
+        margin-left: 100px !important;
+    }
+
+    #about-me .section.two,
+    #about-me .section.four {
+        justify-content: flex-end !important;
+        align-items: center !important;
+    }
+
+    #about-me .section.two .story,
+    #about-me .section.four .story {
+        margin-right: 100px !important;
+    }
+
+    #about-me .section .story p {
         background-color: #061228 !important;
         color: #fbf0de !important;
     }
