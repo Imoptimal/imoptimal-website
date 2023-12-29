@@ -396,6 +396,17 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
+
+    #homepage .section.six a {
+        padding: 5px;
+        background-color: #061228;
+        border: 2px solid #37b800;
+    }
+
+    #homepage .section.six a:hover {
+        color: #fbf0de;
+        border: none;
+    }
     
     ::placeholder {
             color: white;
@@ -490,6 +501,9 @@
 
     #about-me .show-more {
         width: auto !important;
+    }
+
+    #about-me .show-more p {
         font-weight: bolder !important;
     }
 
