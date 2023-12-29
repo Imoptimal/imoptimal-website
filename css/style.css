@@ -445,7 +445,7 @@
         justify-content: flex-end !important;
         align-items: baseline !important;
         margin-right: 50px !important;
-        margin-bottom: 100px !important;
+        margin-bottom: 50px !important;
     }
 
     #about-me .section.seven {
@@ -681,6 +681,10 @@
         #about-me .section .story {
             order: 2 !important;
             width: 90% !important;
+        }
+
+        #about-me .section.six {
+            margin-bottom: 10px !important;
         }
     }
 
