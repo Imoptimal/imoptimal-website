@@ -654,6 +654,10 @@
         .footer-images .left {
             display: none;
         }
+
+        #about-me .section .story {
+            order: 2 !important;
+        }
     }
 
     @media screen and (max-width: 1000px) {
