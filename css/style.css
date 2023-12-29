@@ -432,7 +432,7 @@
         box-shadow: 10px 10px grey;
         margin: 0 auto;
         padding: 10px;
-        max-width: 600px;
+        max-width: 500px;
     }
 
     #about-me .section.one,
@@ -697,5 +697,9 @@
     @media screen and (max-width: 600px) {
         .masthead {
             padding: 0 20px;
+        }
+
+        .section.just-text p {
+            width: 90% !important;
         }
     }
