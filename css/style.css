@@ -241,10 +241,10 @@
         padding: 10px;
     }
 
-    .section.one,
-    .section.three {
+    #homepage .section.one {
         justify-content: flex-end;
         align-items: flex-start;
+        margin-top: 50px;
     }
 
     #homepage .section.one .story {
@@ -252,19 +252,21 @@
         top: 50px;
     }
 
-    .section.two,
-    .section.six {
+    #homepage .section.two {
         justify-content: flex-start;
         align-items: center;
     }
 
-    #homepage .section.two .story,
-    #homepage .section.six .story {
+    #homepage .section.two .story {
         margin-left: -100px;
     }
 
-    #homepage .section.three .story,
-    #homepage .section.five .story {
+    #homepage .section.three {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    #homepage .section.three .story {
         margin-right: -100px;
     }
 
@@ -377,12 +379,15 @@
         box-shadow: none !important;
     }
 
-    .section.five {
-        flex-direction: row;
-        flex-wrap: wrap;
+    #homepage .section.five {
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
         z-index: 1;
+    }
+
+    #homepage .section.six {
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     
     ::placeholder {
@@ -606,14 +611,12 @@
             margin-right: 100px;
         }
 
-        #homepage .section.two .story,
-        #homepage .section.six .story {
+        #homepage .section.two .story {
             margin-left: 100px;
             margin-bottom: -50px;
         }
 
-        #homepage .section.three .story,
-        #homepage .section.five .story {
+        #homepage .section.three .story {
             margin-right: 100px;
             margin-bottom: -50px;
         }
