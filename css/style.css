@@ -488,6 +488,19 @@
         max-width: 500px;
     }
 
+    #about-me .flip-card-front {
+        text-align: center !important;
+    }
+
+    #about-me .flip-card img {
+        width: auto !important;
+    }
+
+    #about-me .show-more {
+        width: auto !important;
+        font-weight: bolder !important;
+    }
+
     /* 3. Footer */
 
     .footer {
