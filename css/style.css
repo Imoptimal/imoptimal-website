@@ -422,24 +422,21 @@
         margin: 50px 0;
     }
 
-    .section.just-text p {
-        background-color: #fbf0de;
-        font-size: 20px;
-        color: #061228;
-        font-weight: 400;
-        line-height: 1.5;
-        max-width: 90%;
-        box-shadow: 10px 10px grey;
-        margin: 0 auto;
-        padding: 10px;
-        max-width: 500px;
-    }
-
     #about-me .section.one,
     #about-me .section.three,
     #about-me .section.five {
         justify-content: flex-start !important;
         align-items: center !important;
+    }
+
+    #about-me .section.six {
+        justify-content: center !important;
+        align-items: baseline !important;
+    }
+
+    #about-me .section.seven {
+        justify-content: center;
+        align-items: flex-start;
     }
 
     #about-me .section.one .story,
@@ -463,6 +460,20 @@
         background-color: #061228 !important;
         color: #fbf0de !important;
         box-shadow: none !important;
+    }
+
+    .section.just-text p,
+    #about-me .section.six .story p,
+    #about-me .section.seven .story p {
+        background-color: #fbf0de;
+        font-size: 20px;
+        color: #061228;
+        font-weight: 400;
+        line-height: 1.5;
+        box-shadow: 10px 10px grey;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 500px;
     }
 
     /* 3. Footer */
