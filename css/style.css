@@ -93,7 +93,9 @@
     }
 
     .masthead .sitename {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 150px;
         height: 100%;
         min-height: 150px;
@@ -244,7 +246,10 @@
     #homepage .section.one {
         justify-content: flex-end;
         align-items: flex-start;
-        margin-top: 50px;
+    }
+
+    #homepage .section.one img {
+        margin-top: 30px;
     }
 
     #homepage .section.one .story {
@@ -598,7 +603,7 @@
         }
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1000px) {
 
         .section.one img,
         .section.two img,
@@ -619,5 +624,16 @@
         #homepage .section.three .story {
             margin-right: 100px;
             margin-bottom: -50px;
+        }
+
+        #homepage .section.five .story,
+        #homepage .section.six .story {
+            margin-bottom: -50px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .masthead {
+            padding: 0 20px;
         }
     }
