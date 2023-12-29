@@ -463,8 +463,8 @@
     }
 
     .section.just-text p,
-    #about-me .section.six .story p,
-    #about-me .section.seven .story p {
+    #about-me .section.six p,
+    #about-me .section.seven p {
         background-color: #fbf0de;
         font-size: 20px;
         color: #061228;
