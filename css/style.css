@@ -443,7 +443,7 @@
 
     #about-me .section.six {
         justify-content: center !important;
-        align-items: flex-start !important;
+        align-items: center !important;
     }
 
     #about-me .section.one .story,
