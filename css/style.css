@@ -538,10 +538,10 @@
     #slide-in {
         display: none;
         position: fixed;
-        top: 250px;
+        top: 200px;
         right: 0;
         width: 0;
-        height: 80vh;
+        height: 250px;
     }
 
     #slide-in.displayed {
@@ -562,17 +562,18 @@
     }
 
     #slide-in .icon img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     #slide-in .loaded-content {
         border: #37b800 solid 5px;
         background-color: #061228;
         box-shadow: #000000 5px 5px 10px;
-        width: 90%;
+        width: 100%;
         height: 100%;
         padding: 10px;
+        overflow-y: scroll;
     }
 
     #slide-in .close-slide-in {
@@ -594,6 +595,7 @@
 
     #slide-in .section {
         margin: 10px;
+        padding: 5px;
         background-color: #fbf0de;
         color: #061228;
         width: 100%;
