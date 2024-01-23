@@ -109,37 +109,40 @@ document.addEventListener("DOMContentLoaded", function() {
   var closeMenu = document.querySelector(".masthead .nav .close");
   closeMenu.addEventListener("click", slideMenu);
   /* 6. Display loaded pages in slide-in */
-  function openSlideInLinks(url, slideInContentEl, links, github == true) {
+  function openSlideInLinks(url, slideInContentEl, links, github = true) {
     links.forEach(function (link) {
       link.addEventListener("click", function (e) {
         e.preventDefault();
         var clickedEl = e.target;
         // If getting a github html file data for local files
         if (github == true) {
-        var file = url + clickedEl.dataset.href;
-        if (clickedEl.classList.contains("slide-in")) {
-          clickedEl.classList.add("displayed");
-          slideInContentEl.classList.add("displayed");
-          fetch(file)
-            .then(function (response) {
-              // When the page is loaded convert it to text
-              return response.text();
-            })
-            .then(function (html) {
-              // Initialize the DOM parser
-              var parser = new DOMParser();
-              // Parse the text
-              var page = parser.parseFromString(html, "text/html");
-              var partialContent = page.querySelector(".slide-in-page").innerHTML;
-              slideInContentEl.innerHTML = partialContent;
-            });
-        }
-    } else if (github == false) { // if getting outside links
-        var link = clickedEl.dataset.href;
-        if (clickedEl.classList.contains("slide-in")) {
+          var file = url + clickedEl.dataset.href;
+          if (clickedEl.classList.contains("slide-in")) {
             clickedEl.classList.add("displayed");
             slideInContentEl.classList.add("displayed");
-            fetch(link).then(function (response) {
+            fetch(file)
+              .then(function (response) {
+                // When the page is loaded convert it to text
+                return response.text();
+              })
+              .then(function (html) {
+                // Initialize the DOM parser
+                var parser = new DOMParser();
+                // Parse the text
+                var page = parser.parseFromString(html, "text/html");
+                var partialContent =
+                  page.querySelector(".slide-in-page").innerHTML;
+                slideInContentEl.innerHTML = partialContent;
+              });
+          }
+        } else if (github == false) {
+          // if getting outside links
+          var link = clickedEl.dataset.href;
+          if (clickedEl.classList.contains("slide-in")) {
+            clickedEl.classList.add("displayed");
+            slideInContentEl.classList.add("displayed");
+            fetch(link)
+              .then(function (response) {
                 // When the page is loaded convert it to text
                 return response.text();
               })
@@ -148,10 +151,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 var parser = new DOMParser();
                 // Parse the text
                 var fullPage = parser.parseFromString(html, "text/html");
-              slideInContentEl.innerHTML = fullPage;
-            });
+                slideInContentEl.innerHTML = fullPage;
+              });
+          }
         }
-    }
       });
     });
     // Close the section
