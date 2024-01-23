@@ -535,17 +535,38 @@
         color: #fbf0de;
     }
 
-    #cms {
+    #slide-in {
         display: none;
+        position: absolute;
+        top: 250px;
+        right: 0;
+        width: 0;
+        height: 80vh;
     }
 
-    #cms.displayed {
-        display: block;
+    #slide-in.displayed {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
         animation: fadeIn 1s;
         -webkit-animation: fadeIn 1s;
+        z-index: 103;
     }
 
-    #cms .close-cms {
+    #slide-in .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #slide-in .loaded-content {
+        border: #37b800 solid 5px;
+        box-shadow: #000000 5px 5px 10px;
+        width: 90%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    #slide-in .close-slide-in {
         position: absolute;
         right: 10px;
         top: 10px;
@@ -555,49 +576,44 @@
         cursor: pointer;
         text-decoration: none;
         font-weight: bold;
+        z-index: 104;
     }
 
-    #cms .close-cms:hover {
+    #slide-in .close-slide-in:hover {
         color: #fbf0de;
     }
 
-    #cms .section {
+    #slide-in .section {
         margin: 10px;
-    }
-
-    #cms .section h3 {
-        width: 100%;
-    }
-
-    .footer #cms {
-        flex-basis: 100%;
-        padding: 10px;
-        margin: 0 0 10px 0;
         background-color: #fbf0de;
         color: #061228;
         width: 100%;
     }
 
-    .footer #cms a {
+    #slide-in .section h3 {
+        width: 100%;
+    }
+
+    #slide-in .section a {
         font-weight: bold;
         text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
         letter-spacing: 2px;
     }
 
-    .footer #cms input {
+    #slide-in .section input {
         border: solid 2px #061228;
     }
 
-    .footer #cms input:hover {
+    #slide-in .section input:hover {
         border: solid 2px #37b800;
     }
 
-    .footer #cms input.submit {
+    #slide-in .section input.submit {
         background-color: #061228;
         color: #37b800;
     }
 
-    .footer #cms input.submit:hover {
+    #slide-in .section input.submit:hover {
         color: #fbf0de;
     }
 
