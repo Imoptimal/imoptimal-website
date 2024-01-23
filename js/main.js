@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   var gitHubRepo =
     "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master";
-  var footerCms = document.querySelector(".footer #cms");
+  var displayEl = document.querySelector("#slide-in");
   var footerLinks = document.querySelectorAll(".footer .links a");
-  openSlideInLinks(gitHubRepo, footerCms, footerLinks);
+  openSlideInLinks(gitHubRepo, displayEl, footerLinks);
 });
