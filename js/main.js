@@ -110,11 +110,11 @@ document.addEventListener("DOMContentLoaded", function() {
   closeMenu.addEventListener("click", slideMenu);
   /* 6. Display loaded pages in slide-in */
   function openSlideInLinks(url, slideInEl, links, github = true) {
+    var contentEl = document.querySelector("#slide-in .loaded-content");
     links.forEach(function (link) {
       link.addEventListener("click", function (e) {
         e.preventDefault();
         var clickedEl = e.target;
-        var contentEl = document.querySelector("#slide-in .loaded-content");
         // If getting a github html file data for local files
         if (github == true) {
           var file = url + clickedEl.dataset.href;
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var page = parser.parseFromString(html, "text/html");
                 var partialContent =
                   page.querySelector(".slide-in-page").innerHTML;
-                  contentEl.innerHTML = partialContent;
+                contentEl.innerHTML = partialContent;
               });
           }
         } else if (github == false) {
