@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
       link.addEventListener("click", function (e) {
         e.preventDefault();
         var clickedEl = e.target;
+        contentEl.scrollTop = 0;
         // If getting a github html file data for local files
         if (github == true) {
           var file = url + clickedEl.dataset.href;
@@ -158,7 +159,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-    contentEl.scrollTop = 0;
     // Close the section
     var closeButton = document.querySelector(".close-slide-in");
     closeButton.addEventListener("click", function () {
