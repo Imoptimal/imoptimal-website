@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
       link.addEventListener("click", function (e) {
         e.preventDefault();
         var clickedEl = e.target;
-        var contentEl = document.querySelector(".#slide-in .loaded-content");
+        var contentEl = document.querySelector("#slide-in .loaded-content");
         // If getting a github html file data for local files
         if (github == true) {
           var file = url + clickedEl.dataset.href;
