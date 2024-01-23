@@ -158,6 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
+    contentEl.scrollTop = 0;
     // Close the section
     var closeButton = document.querySelector(".close-slide-in");
     closeButton.addEventListener("click", function () {
