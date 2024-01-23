@@ -109,17 +109,18 @@ document.addEventListener("DOMContentLoaded", function() {
   var closeMenu = document.querySelector(".masthead .nav .close");
   closeMenu.addEventListener("click", slideMenu);
   /* 6. Display loaded pages in slide-in */
-  function openSlideInLinks(url, slideInContentEl, links, github = true) {
+  function openSlideInLinks(url, slideInEl, links, github = true) {
     links.forEach(function (link) {
       link.addEventListener("click", function (e) {
         e.preventDefault();
         var clickedEl = e.target;
+        var contentEl = document.querySelector(".#slide-in .loaded-content");
         // If getting a github html file data for local files
         if (github == true) {
           var file = url + clickedEl.dataset.href;
           if (clickedEl.classList.contains("slide-in")) {
             clickedEl.classList.add("displayed");
-            slideInContentEl.classList.add("displayed");
+            slideInEl.classList.add("displayed");
             fetch(file)
               .then(function (response) {
                 // When the page is loaded convert it to text
@@ -132,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var page = parser.parseFromString(html, "text/html");
                 var partialContent =
                   page.querySelector(".slide-in-page").innerHTML;
-                slideInContentEl.innerHTML = partialContent;
+                  contentEl.innerHTML = partialContent;
               });
           }
         } else if (github == false) {
@@ -140,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
           var link = clickedEl.dataset.href;
           if (clickedEl.classList.contains("slide-in")) {
             clickedEl.classList.add("displayed");
-            slideInContentEl.classList.add("displayed");
+            slideInEl.classList.add("displayed");
             fetch(link)
               .then(function (response) {
                 // When the page is loaded convert it to text
@@ -151,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var parser = new DOMParser();
                 // Parse the text
                 var fullPage = parser.parseFromString(html, "text/html");
-                slideInContentEl.innerHTML = fullPage;
+                contentEl.innerHTML = fullPage;
               });
           }
         }
@@ -160,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Close the section
     var closeButton = document.querySelector(".close-slide-in");
     closeButton.addEventListener("click", function () {
-      if (slideInContentEl.classList.contains("displayed")) {
+      if (slideInEl.classList.contains("displayed")) {
         var allDisplayed = document.querySelectorAll(".displayed");
         allDisplayed.forEach(function (item) {
           item.classList.remove("displayed");

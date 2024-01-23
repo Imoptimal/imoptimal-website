@@ -537,7 +537,7 @@
 
     #slide-in {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 250px;
         right: 0;
         width: 0;
