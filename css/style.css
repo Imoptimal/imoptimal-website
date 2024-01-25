@@ -398,14 +398,9 @@
     }
 
     #homepage .section.six a {
-        padding: 5px;
-        background-color: #061228;
-        border: 2px solid #37b800;
-    }
-
-    #homepage .section.six a:hover {
-        color: #fbf0de;
-        border: 2px solid #fbf0de;
+        font-weight: bold;
+        text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
+        letter-spacing: 2px;
     }
     
     ::placeholder {
@@ -532,7 +527,7 @@
         top: 50px;
         right: 0;
         width: 0;
-        height: 90vh;
+        height: 80vh;
     }
 
     #slide-in.displayed {
@@ -549,7 +544,8 @@
     }
 
     #slide-in .close-slide-in {
-        margin-left: 50%;
+        width: 30px;
+        align-self: flex-end;
         padding: 5px;
         background-color: #061228;
         border: #37b800 solid 5px;
@@ -576,7 +572,7 @@
     }
 
     #slide-in .section {
-        margin: 10px;
+        margin: 0;
         padding: 5px;
         background-color: #fbf0de;
         color: #061228;
