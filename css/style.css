@@ -82,7 +82,7 @@
         color: #fbf0de;
     }
 
-                .container {
+    .container {
         max-width: 1920px;
         overflow-x: hidden;
         margin: 0 auto;
@@ -397,6 +397,7 @@
     .flip-card .show-more p {
         text-align: center !important;
         font-size: 16px !important;
+        font-weight: bold;
         background-color: transparent !important;
         color: #37b800 !important;
         text-transform: uppercase !important;
@@ -469,27 +470,20 @@
         align-items: center !important;
     }
 
-    #about-me .section.one .story,
-    #about-me .section.three .story,
-    #about-me .section.five .story {
-        margin-left: 100px !important;
-    }
-
     #about-me .section.two,
     #about-me .section.four {
         justify-content: flex-end !important;
         align-items: center !important;
     }
 
-    #about-me .section.two .story,
-    #about-me .section.four .story {
-        margin-right: 100px !important;
-    }
-
     #about-me .section .story p {
         background-color: #061228 !important;
         color: #fbf0de !important;
         box-shadow: none !important;
+    }
+
+    #about-me .section.six {
+        flex-direction: column !important;
     }
 
     #about-me .section.six p {
