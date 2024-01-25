@@ -19,14 +19,14 @@
 
     #progressBarContainer {
         position: fixed;
-        z-index: 10;
+        z-index: 200;
         background: rgba(255, 255, 255, 0.05);
     }
 
     #progressBar {
         position: absolute;
         will-change: transform, opacity;
-        background: linear-gradient(to top, #fbf0de, #37b800);
+        background: linear-gradient(to top, #37b800, #fbf0de);
         transform-origin: top center;
         transform: scale(1, 0);
         opacity: 0;
