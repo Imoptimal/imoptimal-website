@@ -12,19 +12,36 @@
     7. Responsive Design
     */
 
-                                                                                                                                                                                                                                                                /* 0. General Styles */
-::-webkit-scrollbar {
-        width: 20px;
-}
-    
-::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 2px 0 #37b800;
-        box-shadow: inset 2px 0 #37b800;
-        background-color: #061228;
-}
-::-webkit-scrollbar-thumb {
-        background: #37b800;
-        border-radius: 10px;
+/* 0. General Styles */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #progressBarContainer {
+        position: fixed;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: absolute;
+        will-change: transform, opacity;
+        background: linear-gradient(to top, #fbf0de, #37b800);
+        transform-origin: top center;
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+
+    #progressBarContainer,
+    #progressBar {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 10px;
+    }
+
+    html {
+        scrollbar-width: none;
     }
 
     body {
