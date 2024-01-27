@@ -189,27 +189,27 @@ document.addEventListener("DOMContentLoaded", function() {
   let totalPageHeight = document.body.scrollHeight - window.innerHeight;
   let debounceResize;
 
-  window.addEventListener(
-    "scroll",
-    () => {
-      let newProgressHeight = window.pageYOffset / totalPageHeight;
-      progressBar.style.transform = `scale(1,${newProgressHeight})`;
-      progressBar.style.opacity = `${newProgressHeight}`;
-    },
-    {
-      capture: true,
-      passive: true,
-    }
-  );
-
-  window.addEventListener("resize", () => {
-    clearTimeout(debounceResize);
-    debounceResize = setTimeout(() => {
-      totalPageHeight = document.body.scrollHeight - window.innerHeight;
-    }, 250);
-  });
-
   if (progressBarContainer) {
+    window.addEventListener(
+      "scroll",
+      () => {
+        let newProgressHeight = window.pageYOffset / totalPageHeight;
+        progressBar.style.transform = `scale(1,${newProgressHeight})`;
+        progressBar.style.opacity = `${newProgressHeight}`;
+      },
+      {
+        capture: true,
+        passive: true,
+      }
+    );
+
+    window.addEventListener("resize", () => {
+      clearTimeout(debounceResize);
+      debounceResize = setTimeout(() => {
+        totalPageHeight = document.body.scrollHeight - window.innerHeight;
+      }, 250);
+    });
+
     progressBarContainer.addEventListener("click", (e) => {
       let newPageScroll =
         (e.clientY / progressBarContainer.offsetHeight) * totalPageHeight;
@@ -219,4 +219,5 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
 });
