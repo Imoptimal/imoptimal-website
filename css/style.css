@@ -545,27 +545,28 @@
         margin: 0 auto;
         max-width: 550px;
     }
-    
+
     #services .important {
         font-weight: bold;
+        margin: 5px auto;
     }
     
     #services .ecsp {
-        color: #fbf0de !important;
-        background-color: #061228 !important;
+        color: #fbf0de;
+        background-color: #061228;
     }
 
     #services .ecsp form button {
-        background-color: #061228 !important;
-        border: #37b800 5px solid !important;
-        color: #37b800 !important;
-        font-weight: bold !important;
-        margin: 5px auto !important;
+        background-color: #061228;
+        border: #37b800 5px solid;
+        color: #37b800;
+        font-weight: bold;
+        margin: 5px auto ;
     }
 
     #services .ecsp form button:hover {
-        border: #fbf0de 5px solid !important;
-        color: #fbf0de !important;
+        border: #fbf0de 5px solid;
+        color: #fbf0de;
     }
 
     #services .convincing {
