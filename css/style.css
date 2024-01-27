@@ -482,6 +482,10 @@
         box-shadow: none !important;
     }
 
+        #about-me .section .story p span {
+            font-weight: bold;
+            font-size: 24px;
+        }
     #about-me .section.six {
         flex-direction: column !important;
     }
