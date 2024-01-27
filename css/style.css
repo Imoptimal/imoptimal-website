@@ -181,6 +181,7 @@
     .masthead .slide-in li a {
         font-size: 30px;
         font-weight: bold;
+        margin: 10px;
     }
 
     .masthead .slide-in .social {
