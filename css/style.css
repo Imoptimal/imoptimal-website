@@ -532,19 +532,19 @@
     }
 
     #services .ecsp form {
-        background-color: #061228;
-        color: #fbf0de
+        background-color: #061228 !important;
+        color: #fbf0de !important;
     }
 
     #services .ecsp form button {
-        border: #37b800 5px solid;
-        color: #37b800;
-        font-weight: bold;
+        border: #37b800 5px solid !important;
+        color: #37b800 !important;
+        font-weight: bold !important;
     }
 
-    #services .ecsp form button:hove {
-        border: #fbf0de 5px solid;
-        color: #fbf0de;
+    #services .ecsp form button:hover {
+        border: #fbf0de 5px solid !important;
+        color: #fbf0de !important;
     }
 
     /* 3. Footer */
