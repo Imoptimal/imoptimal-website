@@ -523,13 +523,21 @@
         background-color: #fbf0de;
         color: #061228;
         text-align: center;
-        margin: 10px;
+        margin: 10px auto;
         padding: 10px;
         max-width: 550px;
     }
 
     #services .service h3 {
         text-align: center;
+    }
+
+    #services .important {
+        font-weight: bold;
+    }
+    
+    #services .ecsp {
+        color: #fbf0de !important;
     }
 
     #services .ecsp form {
@@ -542,11 +550,17 @@
         border: #37b800 5px solid !important;
         color: #37b800 !important;
         font-weight: bold !important;
+        margin: 5px !important;
     }
 
     #services .ecsp form button:hover {
         border: #fbf0de 5px solid !important;
         color: #fbf0de !important;
+    }
+
+    #services .convincing {
+        margin: 10px;
+        color: #fbf0de;
     }
 
     /* 3. Footer */
