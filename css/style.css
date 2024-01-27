@@ -538,11 +538,7 @@
     
     #services .ecsp {
         color: #fbf0de !important;
-    }
-
-    #services .ecsp form {
         background-color: #061228 !important;
-        color: #fbf0de !important;
     }
 
     #services .ecsp form button {
@@ -550,7 +546,7 @@
         border: #37b800 5px solid !important;
         color: #37b800 !important;
         font-weight: bold !important;
-        margin: 5px !important;
+        margin: 5px auto !important;
     }
 
     #services .ecsp form button:hover {
@@ -559,8 +555,10 @@
     }
 
     #services .convincing {
-        margin: 10px;
         color: #fbf0de;
+        margin: 10px auto;
+        padding: 10px;
+        max-width: 550px;
     }
 
     /* 3. Footer */
