@@ -517,6 +517,20 @@
         font-weight: bolder !important;
     }
 
+    /* 2b. Services Page */
+
+    #services .service {
+        background-color: #fbf0de;
+        color: #061228;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #services .service h3 {
+        text-align: center;
+    }
+
     /* 3. Footer */
 
     .footer {
