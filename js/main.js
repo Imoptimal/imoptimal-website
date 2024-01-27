@@ -209,12 +209,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 250);
   });
 
-  progressBarContainer.addEventListener("click", (e) => {
-    let newPageScroll =
-      (e.clientY / progressBarContainer.offsetHeight) * totalPageHeight;
-    window.scrollTo({
-      top: newPageScroll,
-      behavior: "smooth",
+  if (progressBarContainer) {
+    progressBarContainer.addEventListener("click", (e) => {
+      let newPageScroll =
+        (e.clientY / progressBarContainer.offsetHeight) * totalPageHeight;
+      window.scrollTo({
+        top: newPageScroll,
+        behavior: "smooth",
+      });
     });
-  });
+  }
 });
