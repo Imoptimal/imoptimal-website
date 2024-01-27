@@ -179,7 +179,7 @@
     }
 
     .masthead .slide-in li a {
-        font-size: 30px;
+        font-size: 22px;
         font-weight: bold;
         margin: 10px;
     }
@@ -533,15 +533,19 @@
         background-color: #fbf0de;
         color: #061228;
         text-align: center;
-        margin: 10px auto;
+        margin: 10px 0;
         padding: 10px;
-        max-width: 550px;
     }
 
     #services .service h3 {
         text-align: center;
     }
 
+    #services .service .description {
+        margin: 0 auto;
+        max-width: 550px;
+    }
+    
     #services .important {
         font-weight: bold;
     }
