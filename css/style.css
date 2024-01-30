@@ -492,10 +492,11 @@
         box-shadow: none !important;
     }
 
-        #about-me .section .story p span {
-            font-weight: bold;
-            font-size: 24px;
-        }
+    #about-me .section .story p span {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
     #about-me .section.six {
         flex-direction: column !important;
     }
@@ -554,10 +555,14 @@
     #services .ecsp {
         color: #fbf0de !important;
         background-color: #061228 !important;
+        text-align: center !important;
     }
     
-    #services .ecsp div {
+    #services .ecsp div,
+    #services .ecsp label,
+    #services .ecsp span {
         color: #fbf0de !important;
+        margin: 5px auto !important;
     }
 
     #services .ecsp button {
