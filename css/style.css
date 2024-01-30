@@ -563,6 +563,7 @@
     #services .ecsp span {
         color: #fbf0de !important;
         margin: 5px auto !important;
+        text-align: center !important;
     }
 
     #services .ecsp button {
