@@ -559,11 +559,16 @@
     }
     
     #services .ecsp div,
-    #services .ecsp label,
-    #services .ecsp span {
+    #services .ecsp label {
         color: #fbf0de !important;
         margin: 5px auto !important;
         text-align: center !important;
+    }
+
+    #services .ecsp span {
+        color: #fbf0de !important;
+        margin: 5px auto !important;
+        text-align: left !important;
     }
 
     #services .ecsp button {
@@ -578,6 +583,11 @@
         border: #fbf0de 5px solid !important;
         color: #fbf0de !important;
     }
+
+    #services .ec-minicart {
+        position: fixed !important;
+        bottom: 25px !important;
+        right: 25px !important;
 
     #services .convincing {
         color: #fbf0de;
