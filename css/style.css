@@ -174,14 +174,14 @@ a:hover {
     z-index: 105;
 }
 
-.masthead .slide-in ul {
-    list-style-type: none;
+.masthead .slide-in ul li {
+    margin: 25px 0;
+    padding: 0 10px;
 }
 
 .masthead .slide-in li a {
     font-size: 22px;
     font-weight: bold;
-    margin: 10px;
 }
 
 .masthead .slide-in .social {
@@ -468,7 +468,16 @@ a:hover {
     max-width: 500px;
 }
 
-#about-me .section.one,
+#about-me .section.one {
+    background-color: #fbf0de;
+    color: #061228;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
 #about-me .section.three,
 #about-me .section.five {
     justify-content: flex-start !important;
@@ -476,6 +485,11 @@ a:hover {
 }
 
 #about-me .section.six {
+    background-color: #fbf0de;
+    color: #061228;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
     justify-content: center !important;
     align-items: center !important;
 }
@@ -549,7 +563,8 @@ a:hover {
 
 #services .important {
     font-weight: bold;
-    margin: 5px auto;
+    margin: 5px;
+    text-align: center;
 }
 
 #services .ecsp {
