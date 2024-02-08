@@ -506,17 +506,6 @@ a:hover {
     flex-direction: column !important;
 }
 
-#about-me .section.six p {
-    background-color: #fbf0de;
-    font-size: 20px;
-    color: #061228;
-    font-weight: 400;
-    line-height: 1.5;
-    box-shadow: 10px 10px grey;
-    padding: 10px;
-    max-width: 500px;
-}
-
 #about-me .flip-card-front {
     text-align: center !important;
 }
