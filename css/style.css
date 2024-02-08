@@ -451,7 +451,7 @@ a:hover {
     text-align: center;
 }
 
-.section.just-text {
+#about-me .section.just-text {
     text-align: center;
     padding: 10px;
     margin: 50px 0;
@@ -460,7 +460,8 @@ a:hover {
     text-align: center;
 }
 
-.section.just-text p {
+#about-me .section.just-text p,
+#about-me .section.six p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
