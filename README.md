@@ -1,6 +1,6 @@
 ## imoptimal-website
 
-- Add everything in between coments of <-- Site Header - Start --> and <-- Site Header - End -->, and <-- Site Footer - Start --> and <-- Site Footer - End --> to each page (copy from index.html). Those sections need to be updated manually on each page. Just add to unique id to container div (for customization of each page - #homepage, #about-me, #services), and page titles (first part before the slogan).
+- Add everything in between coments of <-- Site Header - Start --> and <-- Site Header - End -->, and <-- Site Footer - Start --> and <-- Site Footer - End --> to each page (copy from index.html). Those sections need to be updated manually on each page. Just add to unique id to container div (for customization of each page - #homepage, #about-me, #services, #why-website, #why-wordpress), and page titles (first part before the slogan).
 
 - Add images as the \<img class="lazy-loading" data-src="./images/image-name.png" alt="Description." draggable="false" width="pictureWidth" height="pictureHeight"/>. All images are hosted on https://cloudinary.com/
 
