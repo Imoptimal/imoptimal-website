@@ -877,6 +877,11 @@ a:hover {
         margin-left: 125px;
         margin-bottom: -50px;
     }
+
+    #why-website .section.just-text p,
+    #why-wordpress .section.just-text p {
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 600px) {
