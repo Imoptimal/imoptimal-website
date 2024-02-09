@@ -454,7 +454,8 @@ a:hover {
 }
 
 #about-me .section.just-text,
-#why-website .section.just-text {
+#why-website .section.just-text,
+#why-wordpress .section.just-text {
     text-align: center;
     padding: 10px;
     margin: 50px 0;
@@ -476,7 +477,9 @@ a:hover {
 #about-me .section.five,
 #why-website .section.one,
 #why-website .section.three,
-#why-website .section.five {
+#why-website .section.five,
+#why-wordpress .section.one,
+#why-wordpress .section.three {
     justify-content: flex-start !important;
     align-items: center !important;
 }
@@ -484,13 +487,15 @@ a:hover {
 #about-me .section.two,
 #about-me .section.four,
 #why-website .section.two,
-#why-website .section.four {
+#why-website .section.four,
+#why-wordpress .section.two {
     justify-content: flex-end !important;
     align-items: center !important;
 }
 
 #about-me .section .story p,
-#why-website .section .story p {
+#why-website .section .story p,
+#why-wordpress .section .story p {
     background-color: #061228 !important;
     color: #fbf0de !important;
     box-shadow: none !important;
@@ -607,7 +612,8 @@ a:hover {
 
 /* 2c. Why Website Page */
 
-#why-website .section.just-text p {
+#why-website .section.just-text p,
+#why-wordpress .section.just-text p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -615,12 +621,14 @@ a:hover {
     max-width: 51%;
 }
 
-#why-website .section h3 {
+#why-website .section h3,
+#why-wordpress .section h3 {
     width: 99%;
     text-align: center;
 }
 
-#why-website .section .calendly {
+#why-website .section .calendly,
+#why-wordpress .calendly {
     text-align: center;
 }
 
