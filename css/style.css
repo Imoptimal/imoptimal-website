@@ -5,6 +5,8 @@ Content:
 2. Main Content
     2a. About Me Page
     2b. Services Page
+    2c. Why Website Page
+    2d. Why Wordpress Page
 3. Footer
 4. Calendly
 5. Cookies Consent
@@ -451,7 +453,8 @@ a:hover {
     text-align: center;
 }
 
-#about-me .section.just-text {
+#about-me .section.just-text,
+#why-website .section.just-text {
     text-align: center;
     padding: 10px;
     margin: 50px 0;
@@ -460,7 +463,8 @@ a:hover {
     text-align: center;
 }
 
-#about-me .section.just-text p {
+#about-me .section.just-text p,
+#why-website .section.just-text p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -470,13 +474,18 @@ a:hover {
 
 #about-me .section.one,
 #about-me .section.three,
-#about-me .section.five {
+#about-me .section.five,
+#why-website .section.one,
+#why-website .section.three,
+#why-website .section.five {
     justify-content: flex-start !important;
     align-items: center !important;
 }
 
 #about-me .section.two,
-#about-me .section.four {
+#about-me .section.four,
+#why-website .section.two,
+#why-website .section.four {
     justify-content: flex-end !important;
     align-items: center !important;
 }
@@ -595,6 +604,10 @@ a:hover {
     padding: 10px;
     max-width: 550px;
 }
+
+/* 2c. Why Website Page */
+
+/* 2d. Why Wordpress Page */
 
 /* 3. Footer */
 
