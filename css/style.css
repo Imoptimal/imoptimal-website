@@ -830,15 +830,21 @@ a:hover {
         align-items: flex-start;
     }
 
-        .footer-images .left {
-            display: none;
-        }
+    .footer-images .left {
+        display: none;
+    }
 
-        #about-me .section .story {
-            order: 2 !important;
-            width: 90% !important;
-        }
-        }
+    #about-me .section .story {
+        order: 2 !important;
+        width: 90% !important;
+    }
+
+    #why-website .section .story,
+    #why-wordpress .section .story {
+        order: 3 !important;
+        width: 90% !important;
+    }
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -849,29 +855,29 @@ a:hover {
             order: 1;
         }
 
-        #homepage .section.one .story {
-            margin-right: 100px;
-        }
+    #homepage .section.one .story {
+        margin-right: 100px;
+    }
 
-        #homepage .section.two .story {
-            margin-left: 100px;
-            margin-bottom: -50px;
-        }
+    #homepage .section.two .story {
+        margin-left: 100px;
+        margin-bottom: -50px;
+    }
 
-        #homepage .section.three .story {
-            margin-right: 100px;
-            margin-bottom: -50px;
-        }
+    #homepage .section.three .story {
+        margin-right: 100px;
+        margin-bottom: -50px;
+    }
 
-        #homepage .section.five .story {
-            margin-bottom: -50px;
-        }
+    #homepage .section.five .story {
+        margin-bottom: -50px;
+    }
 
-        #homepage .section.six .story {
-            margin-left: 125px;
-            margin-bottom: -50px;
-        }
-        }
+    #homepage .section.six .story {
+        margin-left: 125px;
+        margin-bottom: -50px;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .masthead {
