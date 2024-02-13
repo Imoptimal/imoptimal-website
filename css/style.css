@@ -550,7 +550,7 @@ a:hover {
     padding: 10px;
 }
 
-#services .service h3 {
+#services .service h2 {
     text-align: center;
 }
 
@@ -621,8 +621,8 @@ a:hover {
     max-width: 51%;
 }
 
-#why-website .section h3,
-#why-wordpress .section h3 {
+#why-website .section h2,
+#why-wordpress .section h2 {
     width: 99%;
     text-align: center;
 }
