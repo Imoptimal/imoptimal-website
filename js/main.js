@@ -147,12 +147,14 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (github == false) {
           // if getting outside links
           var link = clickedEl.dataset.href;
+          console.log(link);
           if (clickedEl.classList.contains("slide-in")) {
             clickedEl.classList.add("displayed");
             slideInEl.classList.add("displayed");
             fetch(link)
               .then(function (response) {
                 // When the page is loaded convert it to text
+                console.log(response);
                 return response.text();
               })
               .then(function (html) {
@@ -161,6 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Parse the text
                 var fullPage = parser.parseFromString(html, "text/html");
                 contentEl.innerHTML = fullPage;
+                console.log(fullPage);
               });
           }
         }
