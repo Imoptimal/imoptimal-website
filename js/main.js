@@ -7,6 +7,7 @@
     5. Menu slide in
     6. Open links in slide-in
     7. Custom progress bar instead of default scrollbar
+    8. Mark current page in menu
     */
 // When page has loaded
 document.addEventListener("DOMContentLoaded", function() {
@@ -220,4 +221,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
+  /* 8. Mark current page in menu */
+  var menuLinks = document.querySelectorAll(".masthead .slide-in ul li a");
+  if (menuLinks) {
+    // Get current page url and compare it to menuLinks, and add class name current to the item that matches
+    var currentPage = window.location.href;
+    menuLinks.forEach(function (link) {
+      if (link.href == currentPage) {
+        link.classList.add("current");
+      }
+    });
+  }
 });
