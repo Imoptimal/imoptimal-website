@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
   closeMenu.addEventListener("click", slideMenu);
 
   /* 6. Display loaded pages in slide-in */
-  function openSlideInLinks(url, slideInEl, links, github = true) {
+  function openSlideInLinks(slideInEl, links, github = true) {
     var contentEl = document.querySelector("#slide-in .loaded-content");
     var pageHeader = document.querySelector(".masthead");
     links.forEach(function (link) {
@@ -123,7 +123,9 @@ document.addEventListener("DOMContentLoaded", function() {
         pageHeader.classList.add("hidden");
         // If getting a github html file data for local files
         if (github == true) {
-          var file = url + clickedEl.dataset.href;
+          var file =
+            "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master" +
+            clickedEl.dataset.href;
           if (clickedEl.classList.contains("slide-in")) {
             clickedEl.classList.add("displayed");
             slideInEl.classList.add("displayed");
@@ -178,11 +180,13 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   }
-  var gitHubRepo =
-    "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master";
   var displayEl = document.querySelector("#slide-in");
   var footerLinks = document.querySelectorAll(".footer .links a");
-  openSlideInLinks(gitHubRepo, displayEl, footerLinks);
+  openSlideInLinks(displayEl, footerLinks);
+  var pluginLinks = document.querySelectorAll(
+    ".container .custom-content .open-slide"
+  );
+  openSlideInLinks(displayEl, pluginLinks, false);
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
