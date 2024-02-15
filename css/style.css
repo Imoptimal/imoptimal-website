@@ -633,7 +633,8 @@ a:hover {
 }
 
 #why-website .calendly,
-#why-wordpress .calendly {
+#why-wordpress .calendly,
+#wordpress-plugins .calendly {
     text-align: center;
 }
 
@@ -653,6 +654,16 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start !important;
     align-items: flex-end !important;
+}
+
+#wordpress-plugins .section.odd {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+}
+
+#wordpress-plugins .section.even {
+    flex-direction: column !important;
+    align-items: flex-start !important;
 }
 
 #wordpress-plugins .section h2 {
