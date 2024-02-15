@@ -642,6 +642,13 @@ a:hover {
 
 /* 2e. WordPress Plugins Page */
 
+#wordpress-plugins h2,
+#wordpress-plugins .section h2,
+#wordpress-plugins .section h3 {
+    width: 100%;
+    text-align: center;
+}
+
 #wordpress-plugins .section.one,
 #wordpress-plugins .section.three {
     flex-direction: column;
@@ -664,11 +671,6 @@ a:hover {
 #wordpress-plugins .section.even {
     flex-direction: column !important;
     align-items: flex-start !important;
-}
-
-#wordpress-plugins .section h2 {
-    width: 100%;
-    text-align: center;
 }
 
 #wordpress-plugins .section .story {
