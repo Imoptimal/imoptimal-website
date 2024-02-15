@@ -665,12 +665,12 @@ a:hover {
 
 #wordpress-plugins .section.odd {
     flex-direction: column !important;
-    align-items: flex-end !important;
+    align-items: flex-start !important;
 }
 
 #wordpress-plugins .section.even {
     flex-direction: column !important;
-    align-items: flex-start !important;
+    align-items: flex-end !important;
 }
 
 #wordpress-plugins .section .story {
