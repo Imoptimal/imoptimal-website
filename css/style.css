@@ -428,7 +428,8 @@ a:hover {
     align-items: flex-start;
 }
 
-#homepage .section.six a {
+#homepage .section.six a,
+.just-text a {
     font-weight: bold;
     text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
     letter-spacing: 2px;
@@ -480,9 +481,7 @@ a:hover {
 #why-website .section.one,
 #why-website .section.three,
 #why-website .section.five,
-#why-wordpress .section.two,
-#wordpress-plugins .section.two,
-#wordpress-plugins .section.four {
+#why-wordpress .section.two {
     justify-content: flex-start !important;
     align-items: center !important;
 }
@@ -492,9 +491,7 @@ a:hover {
 #why-website .section.two,
 #why-website .section.four,
 #why-wordpress .section.one,
-#why-wordpress .section.three,
-#wordpress-plugins .section.one,
-#wordpress-plugins .section.three   {
+#why-wordpress .section.three {
     justify-content: flex-end !important;
     align-items: center !important;
 }
@@ -643,7 +640,19 @@ a:hover {
 /* 2d. Why Wordpress Page */
 
 /* 2e. WordPress Plugins Page */
-#wordpress-plugins 
+#wordpress-plugins .section.one,
+#wordpress-plugins .section.three {
+    flex-direction: column;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+}
+
+#wordpress-plugins .section.two,
+#wordpress-plugins .section.four {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-end !important;
+}
 
 /* 3. Footer */
 
