@@ -151,20 +151,10 @@ document.addEventListener("DOMContentLoaded", function() {
           if (clickedEl.classList.contains("slide-in")) {
             clickedEl.classList.add("displayed");
             slideInEl.classList.add("displayed");
-            fetch(link)
-              .then(function (response) {
-                // When the page is loaded convert it to text
-                console.log(response);
-                return response.text();
-              })
-              .then(function (html) {
-                // Initialize the DOM parser
-                var parser = new DOMParser();
-                // Parse the text
-                var fullPage = parser.parseFromString(html, "text/html");
-                contentEl.innerHTML = fullPage;
-                console.log(fullPage);
-              });
+            // Append iframe to slide-in, with the link as src
+            var iframe = document.createElement("iframe");
+            iframe.setAttribute("src", link);
+            slideInEl.appendChild(iframe);
           }
         }
       });
