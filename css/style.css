@@ -164,7 +164,7 @@ a:hover {
     background-color: #000000;
     height: 100vh;
     width: 75vw;
-    padding-top: 75px;
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -183,8 +183,9 @@ a:hover {
 }
 
 .masthead .slide-in ul li {
-    margin: 10px 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: #fbf0de solid 5px;
 }
 
 .masthead .slide-in li a {
@@ -203,7 +204,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    bottom: 75px;
+    bottom: 25px;
     right: 0;
     width: 100%;
 }
