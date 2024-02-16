@@ -8,6 +8,7 @@ Content:
     2c. Why Website Page
     2d. Why Wordpress Page
     2e. WordPress Plugins Page
+        2f. Beyond WordPress Page
 3. Footer
 4. Calendly
 5. Cookies Consent
@@ -688,6 +689,7 @@ a:hover {
     width: 100%;
 }
 
+/* 2f. Beyond WordPress Page */
 /* 3. Footer */
 
 .footer {
