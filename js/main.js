@@ -147,14 +147,21 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (github == false) {
           // if getting outside links
           var link = clickedEl.dataset.href;
-          console.log(link);
           if (clickedEl.classList.contains("slide-in")) {
             clickedEl.classList.add("displayed");
             slideInEl.classList.add("displayed");
-            // Append iframe to slide-in, with the link as src
-            var iframe = document.createElement("iframe");
-            iframe.setAttribute("src", link);
-            slideInEl.appendChild(iframe);
+            fetch(link)
+              .then(function (response) {
+                // When the page is loaded convert it to text
+                return response.text();
+              })
+              .then(function (html) {
+                // Initialize the DOM parser
+                var parser = new DOMParser();
+                // Parse the text
+                var fullPage = parser.parseFromString(html, "text/html");
+                contentEl.innerHTML = fullPage;
+              });
           }
         }
       });
