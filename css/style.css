@@ -661,6 +661,10 @@ a:hover {
     text-align: center;
 }
 
+#wordpress-plugins #jump-to-plugins {
+    flex-direction: column !important;
+}
+
 #wordpress-plugins .section.one,
 #wordpress-plugins .section.three {
     flex-direction: column;
