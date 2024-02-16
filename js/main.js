@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var footerLinks = document.querySelectorAll(".footer .links a");
   openSlideInLinks(displayEl, footerLinks);
   var pluginLinks = document.querySelectorAll(
-    ".container .custom-content .open-slide"
+    ".container .custom-content .slide-in"
   );
   openSlideInLinks(displayEl, pluginLinks, false);
 
