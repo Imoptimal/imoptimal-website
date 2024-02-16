@@ -144,25 +144,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 contentEl.innerHTML = partialContent;
               });
           }
-        } else if (github == false) {
-          // if getting outside links
-          var link = clickedEl.dataset.href;
-          if (clickedEl.classList.contains("slide-in")) {
-            clickedEl.classList.add("displayed");
-            slideInEl.classList.add("displayed");
-            fetch(link)
-              .then(function (response) {
-                // When the page is loaded convert it to text
-                return response.text();
-              })
-              .then(function (html) {
-                // Initialize the DOM parser
-                var parser = new DOMParser();
-                // Parse the text
-                var fullPage = parser.parseFromString(html, "text/html");
-                contentEl.innerHTML = fullPage;
-              });
-          }
         }
       });
     });
@@ -183,10 +164,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var displayEl = document.querySelector("#slide-in");
   var footerLinks = document.querySelectorAll(".footer .links a");
   openSlideInLinks(displayEl, footerLinks);
-  var pluginLinks = document.querySelectorAll(
-    ".container .custom-content .slide-in"
-  );
-  openSlideInLinks(displayEl, pluginLinks, false);
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
