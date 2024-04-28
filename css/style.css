@@ -8,12 +8,11 @@ Content:
     2c. Why Website Page
     2d. Why Wordpress Page
     2e. WordPress Plugins Page
-        2f. Beyond WordPress Page
+                                                                                                                                                                                                                                                                2f. Beyond SEO Page
 3. Footer
 4. Calendly
 5. Cookies Consent
-6. Animations
-7. Responsive Design
+6. Shooping cart (Ecwid) 7. Animations 8. Responsive Design
 */
 
 /* 0. General Styles */
@@ -581,44 +580,6 @@ a:hover {
     text-align: center;
 }
 
-#services .ecsp {
-    color: #fbf0de !important;
-    background-color: #061228 !important;
-    text-align: center !important;
-}
-
-#services .ecsp div,
-#services .ecsp label {
-    color: #fbf0de !important;
-    margin: 5px auto !important;
-    text-align: center !important;
-}
-
-#services .ecsp span {
-    color: #fbf0de !important;
-    margin: 5px auto !important;
-    text-align: left !important;
-}
-
-#services .ecsp button {
-    background-color: #061228 !important;
-    border: #37b800 5px solid !important;
-    color: #37b800 !important;
-    font-weight: bold !important;
-    margin: 5px auto !important;
-}
-
-#services .ecsp button:hover {
-    border: #fbf0de 5px solid !important;
-    color: #fbf0de !important;
-}
-
-#services .ec-minicart {
-    position: fixed !important;
-    bottom: 25px !important;
-    right: 25px !important;
-}
-
 #services .convincing {
     color: #fbf0de;
     margin: 10px auto;
@@ -871,7 +832,22 @@ a:hover {
     display: none !important;
 }
 
-/* 6. Animations */
+/* 6. Shooping cart (Ecwid)*/
+
+#ecwid_body .ec-storefront-v2.ec-minicart {
+    position: fixed !important;
+    right: 25px !important;
+    bottom: 25px !important;
+    background-color: #fbf0de !important;
+    border-color: #061228 solid 2px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+/* 7. Animations */
 
 @keyframes fadeIn {
     0% {
@@ -883,7 +859,7 @@ a:hover {
         }
         }
 
-/* 7. Responsive Design */
+/* 8. Responsive Design */
 
 @media screen and (max-width: 1200px) {
     .footer {
