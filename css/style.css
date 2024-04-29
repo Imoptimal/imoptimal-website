@@ -8,7 +8,7 @@ Content:
     2c. Why Website Page
     2d. Why Wordpress Page
     2e. WordPress Plugins Page
-                                                                                                                                                                                                                                                                2f. Beyond SEO Page
+                2f. Beyond SEO Page
 3. Footer
 4. Calendly
 5. Cookies Consent
@@ -469,7 +469,8 @@ a:hover {
 #about-me .section.just-text,
 #why-website .section.just-text,
 #why-wordpress .section.just-text,
-#wordpress-plugins .section.just-text {
+#wordpress-plugins .section.just-text,
+#beyond-seo .section.just-text {
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -492,7 +493,8 @@ a:hover {
 #why-website .section.one,
 #why-website .section.three,
 #why-website .section.five,
-#why-wordpress .section.two {
+#why-wordpress .section.two,
+#beyond-seo .section.two {
     justify-content: flex-start !important;
     align-items: center !important;
 }
@@ -502,7 +504,9 @@ a:hover {
 #why-website .section.two,
 #why-website .section.four,
 #why-wordpress .section.one,
-#why-wordpress .section.three {
+#why-wordpress .section.three,
+#beyond-seo .section.one,
+#beyond-seo .section.three {
     justify-content: flex-end !important;
     align-items: center !important;
 }
@@ -654,7 +658,7 @@ a:hover {
     width: 100%;
 }
 
-/* 2f. Beyond WordPress Page */
+/* 2f. Beyond SEO Page */
 /* 3. Footer */
 
 .footer {
