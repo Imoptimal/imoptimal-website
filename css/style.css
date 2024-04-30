@@ -514,7 +514,8 @@ a:hover {
 #about-me .section .story p,
 #why-website .section .story p,
 #why-wordpress .section .story p,
-#wordpress-plugins .section .story p {
+#wordpress-plugins .section .story p,
+#beyond-seo .section .story p {
     background-color: #061228 !important;
     color: #fbf0de !important;
     box-shadow: none !important;
