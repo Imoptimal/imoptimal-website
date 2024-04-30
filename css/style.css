@@ -660,6 +660,13 @@ a:hover {
 }
 
 /* 2f. Beyond SEO Page */
+#beyond-seo ul {
+    width: 90%;
+}
+
+#beyond-seo ul li {
+    max-width: 400px;
+}
 /* 3. Footer */
 
 .footer {
