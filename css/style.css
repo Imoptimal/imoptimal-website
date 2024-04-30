@@ -924,7 +924,8 @@ a:hover {
     }
 
     #why-website .section .story,
-    #why-wordpress .section .story {
+        #why-wordpress .section .story,
+        #beyond-seo .section .story {
         order: 3 !important;
         width: 90% !important;
     }
