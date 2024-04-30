@@ -595,7 +595,8 @@ a:hover {
 
 #why-website .section.just-text p,
 #why-wordpress .section.just-text p,
-#wordpress-plugins .section.just-text p {
+#wordpress-plugins .section.just-text p,
+#beyond-seo .section.just-text p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -955,7 +956,8 @@ a:hover {
 
     #why-website .section.just-text p,
     #why-wordpress .section.just-text p,
-    #wordpress-plugins .section.just-text p {
+    #wordpress-plugins .section.just-text p,
+    #beyond-seo .section.just-text p {
         max-width: 90%;
     }
 }
