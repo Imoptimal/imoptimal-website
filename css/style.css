@@ -10,7 +10,7 @@ Content:
     2e. WordPress Plugins Page
                 2f. Beyond SEO Page
 3. Footer
-4. Calendly
+4. Scheduling CTA
 5. Cookies Consent
 6. Shooping cart (Ecwid) 7. Animations 8. Responsive Design
 */
@@ -611,9 +611,9 @@ a:hover {
     text-align: center;
 }
 
-#why-website .calendly,
-#why-wordpress .calendly,
-#wordpress-plugins .calendly {
+#why-website .scheduling,
+#why-wordpress .scheduling,
+#wordpress-plugins .scheduling {
     text-align: center;
 }
 
@@ -784,13 +784,13 @@ a:hover {
     align-items: flex-end;
 }
 
-/* 4. Calendly */
+/* 4. Scheduling CTA */
 
-.calendly {
+.scheduling {
     margin-top: 25px;
 }
 
-.calendly button {
+.scheduling button {
     text-align: center;
     background-color: #061228;
     color: #37b800;
@@ -805,16 +805,16 @@ a:hover {
     -o-border-radius: 25px;
 }
 
-.calendly button:hover {
+.scheduling button:hover {
     border: 2px solid #fbf0de;
 }
 
-.calendly button a {
+.scheduling button a {
     font-weight: bold;
     text-decoration: none;
 }
 
-.footer .calendly {
+.footer .scheduling {
     align-self: center;
 }
 
