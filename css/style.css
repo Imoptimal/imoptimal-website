@@ -440,7 +440,9 @@ a:hover {
 }
 
 #homepage .section.six a,
-.just-text a {
+.just-text a,
+#slide-in .section a,
+#about-me #portfolio .item a {
     font-weight: bold;
     text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
     letter-spacing: 2px;
@@ -537,6 +539,20 @@ a:hover {
     align-items: center !important;
 }
 
+#about-me #portfolio,
+#about-me #portfolio .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me #portfolio .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 #about-me .section.six p {
     font-size: 20px;
     font-weight: 400;
@@ -753,12 +769,6 @@ a:hover {
     width: 100%;
 }
 
-#slide-in .section a {
-    font-weight: bold;
-    text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
-    letter-spacing: 2px;
-}
-
 #slide-in .section input {
     border: solid 2px #061228;
 }
@@ -973,6 +983,19 @@ a:hover {
     #beyond-seo .section.just-text p {
         max-width: 90%;
     }
+
+    #about-me #portfolio .item {
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    #about-me #portfolio .item img {
+        order: 1;
+    }
+
+    #about-me #portfolio .item .description {
+        order: 2;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -983,4 +1006,5 @@ a:hover {
     .section.just-text p {
         width: 90% !important;
     }
+
 }
