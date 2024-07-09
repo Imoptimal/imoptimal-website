@@ -183,9 +183,8 @@ a:hover {
 }
 
 .masthead .slide-in ul li {
-    margin: 5px;
-    padding: 5px 5px 15px 5px;
-    border-bottom: solid 2px #37b800;
+    margin: 5px 5px 15px 5px;
+    padding: 5px;
 }
 
 .masthead .slide-in li a {
