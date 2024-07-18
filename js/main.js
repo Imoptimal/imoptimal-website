@@ -9,23 +9,11 @@
     7. Custom progress bar instead of default scrollbar
     8. Mark current page in menu
     */
+
 // When page has loaded
 document.addEventListener("DOMContentLoaded", function() {
-  /* 1. Cookie consent */
-  cookieconsent.run({
-    notice_banner_type: "simple",
-    consent_type: "headline",
-    palette: "light",
-    language: "en",
-    page_load_consent_levels: ["strictly-necessary"],
-    notice_banner_reject_button_hide: true,
-    preferences_center_close_button_hide: false,
-    page_refresh_confirmation_buttons: false,
-    website_name: "Small Business Website Expert - imoptimal.com",
-    website_privacy_policy_url: "#privacy",
-  });
 
-  /* 2. Prevent img right click */
+  /* 1. Prevent img right click */
   var imgs = document.querySelectorAll("img");
   imgs.forEach(function (img) {
     img.addEventListener("contextmenu", function (e) {
@@ -33,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  /* 3. Lazy loading images */
+  /* 2. Lazy loading images */
   function isElementInViewport(element) {
     var el = element.getBoundingClientRect();
 
@@ -77,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("resize", triggerOnChange);
   window.addEventListener("orientationChange", triggerOnChange);
 
-  /* 4. Add border to header on scroll */
+  /* 3. Add border to header on scroll */
   function headerOnScroll() {
     setTimeout(function () {
       var pageHeader = document.querySelector(".masthead");
@@ -93,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // On scroll
   document.addEventListener("scroll", headerOnScroll);
 
-  /* 5. Menu slide in */
+  /* 4. Menu slide in */
   function slideMenu() {
     var menuButton = document.querySelector(".masthead .nav button");
     var slideIn = document.querySelector(".masthead .nav .slide-in");
@@ -111,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var closeMenu = document.querySelector(".masthead .nav .close");
   closeMenu.addEventListener("click", slideMenu);
 
-  /* 6. Display loaded pages in slide-in */
+  /* 5. Display loaded pages in slide-in */
   function openSlideInLinks(slideInEl, links, github = true) {
     var contentEl = document.querySelector("#slide-in .loaded-content");
     var pageHeader = document.querySelector(".masthead");
@@ -165,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var footerLinks = document.querySelectorAll(".footer .links a");
   openSlideInLinks(displayEl, footerLinks);
 
-  /* 7. Custom progress bar instead of default scrollbar */
+  /* 6. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
   const progressBar = document.querySelector("#progressBar");
   let totalPageHeight = document.body.scrollHeight - window.innerHeight;
@@ -202,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  /* 8. Mark current page in menu */
+  /* 7. Mark current page in menu */
   var menuLinks = document.querySelectorAll(".masthead .slide-in ul li a");
   if (menuLinks) {
     // Get current page url and compare it to menuLinks, and add class name current to the item that matches
