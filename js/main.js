@@ -1,13 +1,12 @@
 /* Main Script File 
     Content:
-    1. Cookie consent
-    2. Prevent img right click
-    3. Lazy loading images
-    4. Add border to header on scroll
-    5. Menu slide in
-    6. Open links in slide-in
-    7. Custom progress bar instead of default scrollbar
-    8. Mark current page in menu
+    1. Prevent img right click
+    2. Lazy loading images
+    3. Add border to header on scroll
+    4. Menu slide in
+    5. Open links in slide-in
+    6. Custom progress bar instead of default scrollbar
+    7. Mark current page in menu
     */
 
 // When page has loaded
