@@ -8,7 +8,7 @@ Content:
     2c. Why Website Page
     2d. Why Wordpress Page
     2e. WordPress Plugins Page
-                2f. Beyond SEO Page
+    2f. Essentials Page
 3. Footer
 4. Scheduling CTA
 5. Cookies Consent
@@ -472,7 +472,7 @@ a:hover {
 #why-website .section.just-text,
 #why-wordpress .section.just-text,
 #wordpress-plugins .section.just-text,
-#beyond-seo .section.just-text {
+#essentials .section.just-text {
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -496,7 +496,7 @@ a:hover {
 #why-website .section.three,
 #why-website .section.five,
 #why-wordpress .section.two,
-#beyond-seo .section.two {
+#essentials .section.two {
     justify-content: flex-start !important;
     align-items: center !important;
 }
@@ -507,8 +507,8 @@ a:hover {
 #why-website .section.four,
 #why-wordpress .section.one,
 #why-wordpress .section.three,
-#beyond-seo .section.one,
-#beyond-seo .section.three {
+#essentials .section.one,
+#essentials .section.three {
     justify-content: flex-end !important;
     align-items: center !important;
 }
@@ -517,7 +517,7 @@ a:hover {
 #why-website .section .story p,
 #why-wordpress .section .story p,
 #wordpress-plugins .section .story p,
-#beyond-seo .section .story p {
+#essentials .section .story p {
     background-color: #061228 !important;
     color: #fbf0de !important;
     box-shadow: none !important;
@@ -613,7 +613,7 @@ a:hover {
 #why-website .section.just-text p,
 #why-wordpress .section.just-text p,
 #wordpress-plugins .section.just-text p,
-#beyond-seo .section.just-text p {
+#essentials .section.just-text p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -676,16 +676,16 @@ a:hover {
     width: 100%;
 }
 
-/* 2f. Beyond SEO Page */
+/* 2f. Essentials Page */
 
-#beyond-seo .just-text ul {
+#essentials .just-text ul {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#beyond-seo .just-text ul li {
+#essentials .just-text ul li {
     max-width: 500px;
 }
 /* 3. Footer */
@@ -935,7 +935,7 @@ a:hover {
 
     #why-website .section .story,
         #why-wordpress .section .story,
-        #beyond-seo .section .story {
+        #essentials .section .story {
         order: 3 !important;
         width: 90% !important;
     }
@@ -980,7 +980,7 @@ a:hover {
     #why-website .section.just-text p,
     #why-wordpress .section.just-text p,
     #wordpress-plugins .section.just-text p,
-    #beyond-seo .section.just-text p {
+    #essentials .section.just-text p {
         max-width: 90%;
     }
 
