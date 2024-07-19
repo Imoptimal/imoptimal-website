@@ -5,8 +5,10 @@
     3. Add border to header on scroll
     4. Menu slide in
     5. Open links in slide-in
-    6. Custom progress bar instead of default scrollbar
-    7. Mark current page in menu
+    6. Open newsletter form
+    7. Custom progress bar instead of default scrollbar
+    8. Mark current page in menu
+    9. Mark and scroll to content section on a landing page
     */
 
 // When page has loaded
@@ -151,8 +153,10 @@ document.addEventListener("DOMContentLoaded", function() {
   var displayEl = document.querySelector("#slide-in");
   var footerLinks = document.querySelectorAll(".footer .links a");
   openSlideInLinks(displayEl, footerLinks);
+  
+  /* 6. Open newsletter form */
 
-  /* 6. Custom progress bar instead of default scrollbar */
+  /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
   const progressBar = document.querySelector("#progressBar");
   let totalPageHeight = document.body.scrollHeight - window.innerHeight;
@@ -189,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  /* 7. Mark current page in menu */
+  /* 8. Mark current page in menu */
   var menuLinks = document.querySelectorAll(".masthead .slide-in ul li a");
   if (menuLinks) {
     // Get current page url and compare it to menuLinks, and add class name current to the item that matches
@@ -200,4 +204,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
+  
+  /* 9. Mark and scroll to content section on a landing page */
 });
