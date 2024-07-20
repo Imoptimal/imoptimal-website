@@ -722,7 +722,7 @@ a:hover {
     width: 95vw;
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
-    z-index: 103;
+    z-index: 203;
 }
 
 .masthead.hidden {
@@ -739,7 +739,7 @@ a:hover {
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
-    z-index: 104;
+    z-index: 204;
 }
 
 #slide-in .close-slide-in:hover {
