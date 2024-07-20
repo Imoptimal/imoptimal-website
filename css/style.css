@@ -678,6 +678,12 @@ a:hover {
 
 /* 2f. Essentials Page */
 
+#essrntials .section.just-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #essentials .just-text ul {
     width: 90%;
     display: flex;
