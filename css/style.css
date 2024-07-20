@@ -688,6 +688,14 @@ a:hover {
 #essentials .just-text ul li {
     max-width: 500px;
 }
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* 3. Footer */
 
 .footer {
@@ -800,7 +808,8 @@ a:hover {
     margin-top: 25px;
 }
 
-.scheduling button {
+.scheduling button,
+.newsletter button {
     text-align: center;
     background-color: #061228;
     color: #37b800;
@@ -819,9 +828,15 @@ a:hover {
     border: 2px solid #fbf0de;
 }
 
+
 .scheduling button a {
     font-weight: bold;
     text-decoration: none;
+}
+
+.newsletter button:hover {
+  border: 2px solid #fbf0de;
+  color: #fbf0de;
 }
 
 .footer .scheduling {
