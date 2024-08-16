@@ -161,7 +161,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (openButtons) {
       openButtons.forEach(function (button) {
         button.addEventListener("click", function() {
-          if (!button.classList.contains("opened")) {
             button.classList.add("opened");
             if(!alreadyAppended) {
               var file = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
@@ -186,9 +185,6 @@ document.addEventListener("DOMContentLoaded", function() {
               // If it's already loaded
               return;
             }
-          } else {
-            button.classList.remove("opened");
-          }
         });
       });
     }
