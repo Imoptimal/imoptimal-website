@@ -155,6 +155,53 @@ document.addEventListener("DOMContentLoaded", function() {
   openSlideInLinks(displayEl, footerLinks);
   
   /* 6. Open newsletter form */
+  function showNewsletter() {
+    var openButtons = document.querySelectorAll(".newsletter button");
+    var alreadyAppended = document.querySelector(".newsletter-div");
+    if (openButtons) {
+      openButtons.forEach(function (button) {
+        button.addEventListener("click", function() {
+          if (!button.classList.contains("opened")) {
+            button.classList.add("opened");
+            if(!alreadyAppended) {
+              var file = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
+              fetch(file)
+              .then(function(response) {
+                // When the page is loaded convert it to text
+                return response.text();
+              })
+              .then(function(html) {
+                // Initialize the DOM parser
+                var parser = new DOMParser();
+                // Parse the text
+                var page = parser.parseFromString(html, "text/html");
+                var appendedDiv = document.createElement("div");
+                appendedDiv.setAttribute("class", "newsletter-div");
+                var fullContent = page.outerHTML;
+                appendedDiv.innerHTML = fullContent;
+                var bodyEl = document.querySelector('body');
+                bodyEl.append(appendedDiv);
+              });
+            } else {
+              // If it's already loaded
+              return;
+            }
+          } else {
+            button.classList.remove("opened");
+          }
+        });
+      });
+    }
+    // Close the section
+    var closeButton = document.querySelector(".newsletter-div .close");
+    if (closeButton) {
+      closeButton.addEventListener("click", function() {
+        if (alreadyAppended.classList.contains("opened")) {
+          alreadyAppended.classList.remove("opened");
+        }
+      });
+    }
+  }
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");

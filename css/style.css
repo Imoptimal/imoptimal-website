@@ -12,7 +12,10 @@ Content:
 3. Footer
 4. Scheduling CTA
 5. Cookies Consent
-6. Shooping cart (Ecwid) 7. Animations 8. Responsive Design
+6. Shooping cart (Ecwid)
+7. Newsletter
+8. Animation
+9. Responsive Design
 */
 
 /* 0. General Styles */
@@ -695,14 +698,6 @@ a:hover {
     max-width: 500px;
 }
 
-.newsletter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-
 /* 3. Footer */
 
 .footer {
@@ -927,7 +922,34 @@ a:hover {
     -o-border-radius: 50% !important;
 }
 
-/* 7. Animations */
+/* 7. Newsletter */
+
+.newsletter-div {
+  position: relative;
+  display: none;
+}
+
+.newsletter-div.opened {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.newsletter-div.opened .newsletter-form {
+  min-width: 300px;
+  max-width: 80vw;
+  height: 100%;
+}
+
+.newsletter-div.opened .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+/* 8. Animations */
 
 @keyframes fadeIn {
     0% {
@@ -939,7 +961,7 @@ a:hover {
         }
         }
 
-/* 8. Responsive Design */
+/* 9. Responsive Design */
 
 @media screen and (max-width: 1200px) {
     .footer {
