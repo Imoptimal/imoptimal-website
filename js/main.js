@@ -203,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
   showNewsletter();
+  console.log("yhey");
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
