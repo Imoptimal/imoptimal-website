@@ -157,17 +157,12 @@ document.addEventListener("DOMContentLoaded", function() {
   /* 6. Open newsletter form */
   function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
-    console.log(openButtons);
     var alreadyAppended = document.querySelector(".newsletter-div");
-    console.log(alreadyAppended);
     if (openButtons) {
       openButtons.forEach(function (button) {
         button.addEventListener("click", function() {
-          console.log(button);
-            button.classList.add("opened");
             if(!alreadyAppended) {
               var file = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
-              console.log(file);
               fetch(file)
               .then(function(response) {
                 // When the page is loaded convert it to text
@@ -184,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 appendedDiv.innerHTML = fullContent;
                 var bodyEl = document.querySelector('body');
                 bodyEl.append(appendedDiv);
-                console.log(appendedDiv);
+                appendedDiv.classList.add("opened");
               });
             } else {
               // If it's already loaded
