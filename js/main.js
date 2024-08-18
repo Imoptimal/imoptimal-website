@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var page = parser.parseFromString(html, "text/html");
                 var appendedDiv = document.createElement("div");
                 appendedDiv.setAttribute("class", "newsletter-div");
-                var fullContent = page.outerHTML;
+                var fullContent = page.querySelector(". newsletter-form").outerHTML;
                 appendedDiv.innerHTML = fullContent;
                 var bodyEl = document.querySelector('body');
                 bodyEl.append(appendedDiv);
