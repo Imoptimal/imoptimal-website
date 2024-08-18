@@ -184,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 appendedDiv.innerHTML = fullContent;
                 var bodyEl = document.querySelector('body');
                 bodyEl.append(appendedDiv);
+                console.log(appendedDiv);
               });
             } else {
               // If it's already loaded
@@ -203,7 +204,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
   showNewsletter();
-  console.log("yhey");
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
