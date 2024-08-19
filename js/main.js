@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Parse the text
                 var page = parser.parseFromString(html, "text/html");
                 var fullContent = page.querySelector(".newsletter-form").outerHTML;
-                var newsletterDiv = document.querySelector(". newsletter-div");
+                var newsletterDiv = document.querySelector(".newsletter-div");
                 newsletterDiv.innerHTML = fullContent;
                 newsletterDiv.classList.add("opened");
                 
