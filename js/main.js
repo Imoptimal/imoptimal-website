@@ -193,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (closeButton) {
       closeButton.addEventListener("click", function() {
         var openedNewsletter = document.querySelector('.newsletter-div.opened');
+        console.log(openedNewsletter);
         if (openedNewsletter.classList.contains("opened")) {
           openedNewsletter.classList.remove("opened");
         }
