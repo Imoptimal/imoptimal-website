@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   /* 6. Open newsletter form */
   function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
-    var alreadyAppended = document.querySelector(".#brevo-form");
+    var alreadyAppended = document.querySelector("#brevo-form");
     if (openButtons) {
       openButtons.forEach(function (button) {
         button.addEventListener("click", function() {
