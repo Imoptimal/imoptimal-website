@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   /* 6. Open newsletter form */
   function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
-    var alreadyAppended = document.querySelector(".newsletter-form");
+    var alreadyAppended = document.querySelector(".#brevo-form");
     if (openButtons) {
       openButtons.forEach(function (button) {
         button.addEventListener("click", function() {
@@ -174,11 +174,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Parse the text
                 var page = parser.parseFromString(html, "text/html");
                 var brevoForm = page.querySelector(".newsletter-form").innerHTML;
-                console.log(brevoForm);
                 var newsletterDiv = document.querySelector(".newsletter-div");
-                console.log(newsletterDiv);
                 var newsletterForm = document.querySelector(".newsletter-form");
-                console.log(newsletterForm);
                 newsletterForm.innerHTML = brevoForm;
                 newsletterDiv.classList.add("opened");
               });
