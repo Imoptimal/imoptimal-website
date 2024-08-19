@@ -958,8 +958,12 @@ a:hover {
   position: absolute;
   top: 25px;
   right: 25px;
-  font-size: 32px
+  font-size: 32px;
   color: #37b800;
+}
+
+.newsletter-div.opened .close:hover {
+  color: #fbf0de;
 }
 
 /* 8. Animations */
