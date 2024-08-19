@@ -956,10 +956,11 @@ a:hover {
 
 .newsletter-div.opened .close {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 20px;
+  right: 20px;
   font-size: 32px;
   color: #37b800;
+  font-weight: bold;
 }
 
 .newsletter-div.opened .close:hover {
