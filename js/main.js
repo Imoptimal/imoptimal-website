@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var page = parser.parseFromString(html, "text/html");
                 var brevoForm = page.querySelector(".newsletter-form").innerHTML;
                 var newsletterDiv = document.querySelector(".newsletter-div");
-                var newsletterForm = ocument.querySelector(".newsletter-form");
+                var newsletterForm = document.querySelector(".newsletter-form");
                 newsletterForm.innerHTML = brevoForm;
                 newsletterDiv.classList.add("opened");
               });
