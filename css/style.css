@@ -687,6 +687,13 @@ a:hover {
   justify-content: center;
 }
 
+#essentials .newsletter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #essentials .just-text ul {
     width: 90%;
     display: flex;
