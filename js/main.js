@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   /* 6. Open newsletter form */
   function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
-    var alreadyAppended = document.querySelector(".newsletter-div");
+    var alreadyAppended = document.querySelector(".newsletter-form");
     if (openButtons) {
       openButtons.forEach(function (button) {
         button.addEventListener("click", function() {
@@ -173,18 +173,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 var parser = new DOMParser();
                 // Parse the text
                 var page = parser.parseFromString(html, "text/html");
-                var appendedDiv = document.createElement("div");
-                appendedDiv.setAttribute("class", "newsletter-div");
                 var fullContent = page.querySelector(".newsletter-form").outerHTML;
-                appendedDiv.innerHTML = fullContent;
-                var bodyEl = document.querySelector('body');
-                bodyEl.append(appendedDiv);
-                appendedDiv.classList.add("opened");
+                var newsletterDiv = document.querySelector(". newsletter-div");
+                newsletterDiv.innerHTML = fullContent;
+                newsletterDiv.classList.add("opened");
+                
               });
-              closeNewsletter();
             } else {
               // If it's already loaded
-              closeNewsletter();
               return;
             }
         });
@@ -204,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   }
+  closeNewsletter();
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
