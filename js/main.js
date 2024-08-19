@@ -178,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 var newsletterForm = ocument.querySelector(".newsletter-form");
                 newsletterForm.innerHTML = brevoForm;
                 newsletterDiv.classList.add("opened");
-                
               });
             } else {
               // If it's already loaded
