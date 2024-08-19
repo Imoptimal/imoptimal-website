@@ -181,26 +181,29 @@ document.addEventListener("DOMContentLoaded", function() {
                 bodyEl.append(appendedDiv);
                 appendedDiv.classList.add("opened");
               });
+              closeNewsletter();
             } else {
               // If it's already loaded
+              closeNewsletter();
               return;
             }
         });
       });
     }
-    // Close the section
+  }
+  showNewsletter();
+  
+  function closeNewsletter() {
     var closeButton = document.querySelector(".newsletter-div .close");
     if (closeButton) {
       closeButton.addEventListener("click", function() {
         var openedNewsletter = document.querySelector('.newsletter-div.opened');
-        console.log(openedNewsletter);
         if (openedNewsletter.classList.contains("opened")) {
           openedNewsletter.classList.remove("opened");
         }
       });
     }
   }
-  showNewsletter();
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
