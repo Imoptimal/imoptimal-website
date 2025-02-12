@@ -9,11 +9,11 @@
     7. Custom progress bar instead of default scrollbar
     8. Mark current page in menu
     9. Mark and scroll to content section on a landing page
+    10. Show only parts of landing pages (based on URL parameters)
     */
 
 // When page has loaded
-document.addEventListener("DOMContentLoaded", function() {
-
+document.addEventListener("DOMContentLoaded", function () {
   /* 1. Prevent img right click */
   var imgs = document.querySelectorAll("img");
   imgs.forEach(function (img) {
@@ -153,46 +153,48 @@ document.addEventListener("DOMContentLoaded", function() {
   var displayEl = document.querySelector("#slide-in");
   var footerLinks = document.querySelectorAll(".footer .links a");
   openSlideInLinks(displayEl, footerLinks);
-  
+
   /* 6. Open newsletter form */
   function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
     var alreadyAppended = document.querySelector("#brevo-form");
     if (openButtons) {
       openButtons.forEach(function (button) {
-        button.addEventListener("click", function() {
-            if(!alreadyAppended) {
-              var file = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
-              fetch(file)
-              .then(function(response) {
+        button.addEventListener("click", function () {
+          if (!alreadyAppended) {
+            var file =
+              "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
+            fetch(file)
+              .then(function (response) {
                 // When the page is loaded convert it to text
                 return response.text();
               })
-              .then(function(html) {
+              .then(function (html) {
                 // Initialize the DOM parser
                 var parser = new DOMParser();
                 // Parse the text
                 var page = parser.parseFromString(html, "text/html");
-                var brevoForm = page.querySelector(".newsletter-form").innerHTML;
+                var brevoForm =
+                  page.querySelector(".newsletter-form").innerHTML;
                 var newsletterDiv = document.querySelector(".newsletter-div");
                 var newsletterForm = document.querySelector(".newsletter-form");
                 newsletterForm.innerHTML = brevoForm;
                 newsletterDiv.classList.add("opened");
               });
-            } else {
-              // If it's already loaded
-              return;
-            }
+          } else {
+            // If it's already loaded
+            return;
+          }
         });
       });
     }
   }
   showNewsletter();
-  
+
   function closeNewsletter() {
     var closeButton = document.querySelector(".newsletter-div .close");
     if (closeButton) {
-      closeButton.addEventListener("click", function() {
+      closeButton.addEventListener("click", function () {
         var openedNewsletter = document.querySelector(".newsletter-div.opened");
         if (openedNewsletter.classList.contains("opened")) {
           openedNewsletter.classList.remove("opened");
@@ -250,6 +252,10 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
-  
+
   /* 9. Mark and scroll to content section on a landing page */
+
+  /* 10. Show only parts of landing pages (based on URL parameters) */
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams);
 });
