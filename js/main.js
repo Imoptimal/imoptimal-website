@@ -258,5 +258,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* 10. Show only parts of landing pages (based on URL parameters) */
   const urlParams = new URLSearchParams(window.location.search);
   const tutorial = urlParams.get("tutorial");
-  console.log(tutorial);
+  const tutorialId = "#" + tutorial;
+  const tutorialEl = document.querySelector(tutorialId);
+  tutorialEl.style.display = "block";
 });
