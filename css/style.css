@@ -9,6 +9,7 @@ Content:
     2d. Why Wordpress Page
     2e. WordPress Plugins Page
     2f. Essentials Page
+                                                                                                                                2z. Landing Pages
 3. Footer
 4. Scheduling CTA
 5. Cookies Consent
@@ -705,6 +706,13 @@ a:hover {
     max-width: 500px;
 }
 
+/* 2z. Landing Pages */
+
+#landing-page .custom-content {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
 /* 3. Footer */
 
 .footer {

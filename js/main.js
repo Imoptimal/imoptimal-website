@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function headerOnScroll() {
     setTimeout(function () {
       var pageHeader = document.querySelector(".masthead");
-      if (window.pageYOffset > pageHeader.offsetTop) {
+      if (window.scrollY > pageHeader.offsetTop) {
         pageHeader.classList.add("scrolling");
       } else {
         pageHeader.classList.remove("scrolling");
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener(
       "scroll",
       () => {
-        let newProgressHeight = window.pageYOffset / totalPageHeight;
+        let newProgressHeight = window.scrollY / totalPageHeight;
         progressBar.style.transform = `scale(1,${newProgressHeight})`;
         progressBar.style.opacity = `${newProgressHeight}`;
       },
