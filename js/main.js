@@ -257,8 +257,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* 10. Show only parts of landing pages (based on URL parameters) */
   const urlParams = new URLSearchParams(window.location.search);
+  const allTuts = document.querySelector("#one, #two, #three, #four, #five");
   if (urlParams.toString() === "") {
-    return; // No params found
+    allTuts.forEach((tutEl) => {
+      tutEl.style.display = "flex";
+    });
   } else {
     const newsletterEls = document.querySelectorAll(".newsletter");
     newsletterEls.forEach((element) => {
