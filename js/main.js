@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tutorialId = "#" + tutorial;
     if (tutorialId) {
       const tutorialEl = document.querySelector(tutorialId);
-      tutorialEl.style.display = "block";
+      tutorialEl.style.display = "flex";
     }
   }
 });
