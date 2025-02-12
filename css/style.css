@@ -721,10 +721,13 @@ a:hover {
 #landing-page #four,
 #landing-page #five {
     display: none;
+    text-align: center;
 }
+
 #landing-page img {
     max-height: 600px;
     width: auto;
+    margin: 25px auto;
 }
 
 #landing-page .text {
