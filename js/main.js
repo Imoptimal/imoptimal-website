@@ -259,6 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const tutorial = urlParams.get("tutorial");
   const tutorialId = "#" + tutorial;
+  console.log(tutorialId);
   const tutorialEl = document.querySelector(tutorialId);
   tutorialEl.style.display = "block";
 });

@@ -717,7 +717,8 @@ a:hover {
 #landing-page .intro,
 #landing-page #one,
 #landing-page #two,
-#landing-page #three #landing-page #four,
+#landing-page #three,
+#landing-page #four,
 #landing-page #five {
     display: none;
 }
