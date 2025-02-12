@@ -259,6 +259,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const allTuts = document.querySelector("#one, #two, #three, #four, #five");
   if (urlParams.toString() === "") {
+    console.log("hey");
+    console.log(allTuts);
     allTuts.forEach((tutEl) => {
       tutEl.style.display = "flex";
     });
