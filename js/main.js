@@ -257,9 +257,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* 10. Show only parts of landing pages (based on URL parameters) */
   const urlParams = new URLSearchParams(window.location.search);
-  const tutorial = urlParams.get("tutorial");
-  const tutorialId = "#" + tutorial;
-  console.log(tutorialId);
-  const tutorialEl = document.querySelector(tutorialId);
-  tutorialEl.style.display = "block";
+  if (urlParams.toString() === "") {
+    return; // No params found
+  } else {
+    const newsletterEls = document.querySelectorAll(".newsletter");
+    newsletterEls.forEach((element) => {
+      element.style.display = "none";
+    });
+    const tutorial = urlParams.get("tutorial");
+    const tutorialId = "#" + tutorial;
+    if (tutorialId) {
+      const tutorialEl = document.querySelector(tutorialId);
+      tutorialEl.style.display = "block";
+    }
+  }
 });
