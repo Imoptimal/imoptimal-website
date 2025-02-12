@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* 8. Mark current page in menu */
-  var menuLinks = document.querySelectorAll(".masthead .slide-in ul li a");
+  const menuLinks = document.querySelectorAll(".masthead .slide-in ul li a");
   if (menuLinks) {
     // Get current page url and compare it to menuLinks, and add class name current to the item that matches
     var currentPage = window.location.href;
@@ -254,13 +254,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* 9. Mark and scroll to content section on a landing page */
+  if (menuLinks) {
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        // Remove the 'active' class from all list items
+        menuLinks.forEach((link) => link.classList.remove("current"));
+        link.classList.add("current");
+      });
+    });
+  }
 
   /* 10. Show only parts of landing pages (based on URL parameters) */
-  const urlParams = new URLSearchParams(window.location.search);
   const allTuts = document.querySelectorAll("#one, #two, #three, #four, #five");
+  const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.toString() === "") {
-    console.log("hey");
-    console.log(allTuts);
     allTuts.forEach((tutEl) => {
       tutEl.style.display = "flex";
     });

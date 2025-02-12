@@ -726,6 +726,13 @@ a:hover {
         align-items: center;
 }
 
+#landing-page h2,
+#landing-page h3,
+#landing-page h4 {
+    text-align: center;
+    margin: 25px 5px
+}
+
 #landing-page img {
     max-height: 600px;
     width: auto;
