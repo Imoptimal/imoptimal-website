@@ -276,9 +276,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const tutorial = urlParams.get("tutorial");
     const menuItems = document.querySelectorAll(".masthead .nav li a");
     const menuLink = "#" + tutorial;
+    console.log(menuLink);
     menuItems.forEach((element) => {
       element.style.display = "none";
       if ((element.href = menuLink)) {
+        console.log(element.href);
         element.style.display = "block";
       }
     });
