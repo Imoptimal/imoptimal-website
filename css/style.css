@@ -34,8 +34,8 @@ Content:
     position: absolute;
     will-change: transform, opacity;
     background: linear-gradient(to top, #37b800, #fbf0de);
-    transform-origin: top center;
-    transform: scale(1, 0);
+    transform: scaleY(0);
+    transform-origin: top;
     opacity: 0;
 }
 

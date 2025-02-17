@@ -215,7 +215,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "scroll",
       () => {
         let newProgressHeight = window.scrollY / totalPageHeight;
-        progressBar.style.transform = `scale(1,${newProgressHeight})`;
+        progressBar.style.transform = `scaleY(${newProgressHeight})`;
+        progressBar.style.transformOrigin = "top";
         progressBar.style.opacity = `${newProgressHeight}`;
       },
       {
