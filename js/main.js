@@ -273,11 +273,20 @@ document.addEventListener("DOMContentLoaded", function () {
       tutEl.style.display = "flex";
     });
   } else {
+    const tutorial = urlParams.get("tutorial");
+    const menuItems = document.querySelectorAll(".masthead .nav li a");
+    const menuLink = "#" + tutorial;
+    menuItems.forEach((element) => {
+      element.style.display = "none";
+      if ((element.href = menuLink)) {
+        element.style.display = "block";
+      }
+    });
     const newsletterEls = document.querySelectorAll(".newsletter");
     newsletterEls.forEach((element) => {
       element.style.display = "none";
     });
-    const tutorial = urlParams.get("tutorial");
+
     const tutorialId = "#" + tutorial;
     if (tutorialId) {
       const tutorialEl = document.querySelector(tutorialId);
