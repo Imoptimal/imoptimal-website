@@ -275,12 +275,12 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     const tutorial = urlParams.get("tutorial");
     const menuItems = document.querySelectorAll(".masthead .nav li a");
-    const menuLink = "#" + tutorial;
-    console.log(menuLink);
     menuItems.forEach((element) => {
       element.style.display = "none";
-      if ((element.href = menuLink)) {
-        console.log(element.href);
+      if (
+        (element.href =
+          "https://imoptimal.com/lp/website-speed?tutorial=" + tutorial)
+      ) {
         element.style.display = "block";
       }
     });
