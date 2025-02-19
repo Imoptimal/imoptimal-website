@@ -708,6 +708,10 @@ a:hover {
 
 /* 2z. Landing Pages */
 
+#landing-page .nav a,
+#landing-page .content-overview a {
+    text-decoration: none;
+}
 #landing-page .custom-content {
     display: flex;
     flex-direction: column;
@@ -715,6 +719,25 @@ a:hover {
     align-items: center;
 }
 
+#landing-page .content-overview {
+    background-color: #000000;
+    border: solid 2px #37b800;
+    padding: 10px;
+}
+
+#landing-page .content-overview ol {
+    counter-reset: 0;
+}
+
+#landing-page .content-overview ol li {
+    display: block;
+    padding: 5px;
+}
+
+#landing-page .content-overview ol li:before {
+    content: counters(0, ".") " ";
+    counter-increment: 1;
+}
 #landing-page #one,
 #landing-page #two,
 #landing-page #three,
