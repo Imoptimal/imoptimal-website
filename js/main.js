@@ -269,12 +269,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const allTuts = document.querySelectorAll("#one, #two, #three, #four, #five");
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.toString() === "") {
+    // no params
     allTuts.forEach((tutEl) => {
       tutEl.style.display = "flex";
     });
   } else {
     const tutorial = urlParams.get("tutorial");
+    const pageTitle = document.querySelector("h1");
     const menuItems = document.querySelectorAll(".masthead .nav li a");
+    pageTitle.style.display = "none";
     menuItems.forEach((element) => {
       element.style.display = "none";
       if (

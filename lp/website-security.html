@@ -34,9 +34,9 @@
                 <button title="Page Content">Menu</button>
                 <div class="slide-in">
                     <ul>
-                        <li><a title="PHP version change tutorial" href="#one">a) PHP version</a></li>
-                        <li><a title="CDN setup tutorial" href="#two">b) CDN setup</a></li>
-                        <li><a title="Web cache tutorial" href="#three">c) Web cache</a></li>
+                        <li><a title="Data security & access restriction tutorial" href="#one">I. Data security & access restriction</a></li>
+                        <li><a title="Website updates & backup tutorial" href="#two">II. Website updates & backup</a></li>
+                        <li><a title="Additional security considerations" href="#three">III. Additional security considerations</a></li>
                     </ul>
                     <a class="close" title="Close the menu">X</a>
                 </div>
@@ -44,14 +44,499 @@
         </header>
         <div class="custom-content">
             <!-- Site Header - End -->
+            <h1>Small business website security (Towards better conversion rate)</h1>
             <div class="intro">
                 <div class="newsletter">
                     <button>Get 'Website foundations' checklist</button>
                     </div>
                     </div>
-            <div id="one"></div>
-            <div id="two"></div>
-            <div id="three"></div>
+            <div id="one">
+                <h2>I. Data security & access restriction</h2>
+                <div class="content-overview">
+                    <p>Sections:</p>
+                    <ol>
+                        <li><a href="#one-one">Why is website security foundational for user privacy?</a></li>
+                        <li><a href="#one-two">Data encryption (SSL certificate)</a></li>
+                        <li><a href="#one-three">Must-have website security features for any CMS</a></li>
+                        <ol>
+                            <li><a href="#one-three-one">Limit login attempts & two-factor authentication (2FA)</a></li>
+                            <li><a href="#one-three-two">Security scan</a></li>
+                        </ol>
+                    </ol>
+                </div>
+                <div class="full-content">
+                    <div id="one-one">
+                        <h3>1. Why is website security foundational for user privacy?</h3>
+                        <div class="text">
+                            <p>Data privacy concerns often lead to loss of clients, and prevent forming long-term relationship with
+                                them. But it's not enough just to have a good privacy policy - you need to stand by it and practice
+                                what you preach.</p>
+                            <p>Website security best practices are fundamental in ensuring that all the user data stays safe, and
+                                most importantly:</p>
+                            <ul>
+                                <li>it prevents you from loosing money on potential data breach lawsuits;</li>
+                                <li>it helps you avoid a variety of costly consequences of hacker attacks (malware, ransomware,
+                                    etc.).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="one-two">
+                        <h3>2. Data encryption (SSL certificate)</h3>
+                        <div class="text">
+                            <p>The first thing you need to ensure is that all of the data traffic on your website is encrypted
+                                (masked/hidden to any outsiders trying to exploit it). In other words you need a SSL certificate for
+                                your website, that usually comes in a package with your hosting plan. SSL doesn't only provide data
+                                encryption, it also verifies a server's identity - helping you gain trust with users. On top of
+                                that, most web browsers clearly mark websites without SSL certificate as unsafe. Sometimes you can't
+                                even access those unsafe websites.</p>
+                            <p>If your hosting package doesn't provide a free SSL certificate, I would recommend getting it through
+                                Cloudflare CDN (content delivery network). Cloudflare CDN doesn't only provide a free SSL
+                                certificate, but it offers a number of security features for free - ddos protection, spam and
+                                content scraping prevention. If your hosting plan includes SSL certificate, <a
+                                    href="#skip-to-here">SKIP THIS STEP</a>.</p>
+                            <p>I've shown Cloudflare account creation and encryption setup in one of the steps for website speed
+                                optimisation. If you need to create the SSL certificate, head over to the Cloudflare dashboard, and
+                                select your website. On the overview page for your website, open the main menu (located at the top
+                                left corner). Now tap the 'SSL/TLS' menu item, and open the 'Origin Server' settings page. [Check
+                                the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.1.webp"
+                            alt="Image 1.1 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>On this page you'll be able to create the origin certificate, that needs to be set on your server.
+                                Also, you'll
+                                find all of the needed information by tapping on the 'Origin server SSL/TLS documentation' link, at
+                                the very top
+                                of the page. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.2.webp"
+                            alt="Image 1.2 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Don't be intimidated by these technical terms - it's a quite straightforward proces. First you
+                                generate the
+                                certificate (in form of text), that you copy/paste in your hosting's dashboard (usually cPanel).</p>
+                            <p>You can generate the certificate by tapping the button 'Create Certificate' on the 'Origin Server'
+                                settings
+                                page. This will open the 'Origin Certificate Installation' section. In most cases, there's no need
+                                to change any
+                                of the default values. Simply scroll down the page and tap the 'Create' button. [Check the image
+                                below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.3.webp"
+                            alt="Image 1.3 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Now you'll see 2 important pieces of text - the 'Origin Certificate' and 'Private Key'. You should
+                                copy both of
+                                those values, by tapping the 'Click to copy' links below each section. IMPORTANT NOTE: you should
+                                store the
+                                private key to a text file you can access later if needed - since you won't be able to access it in
+                                the
+                                Cloudflare dashboard again. Otherwise, you'll need to revoke the existing certificate, and create
+                                the new one. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.4.webp"
+                            alt="Image 1.4 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Depending on the software used as your hosting dashboard (usually cPanel), the process of certificate
+                                installation is slightly different. I would suggest you to follow these tutorials, since they're
+                                accompanied by
+                                easy to follow screenshots - <a
+                                    href="https://www.namecheap.com/support/knowledgebase/article.aspx/795/14/how-to-install-ssl-certificates/"
+                                    target="_blank">How to install SSL certificates</a></p>
+                        </div>
+                    </div>
+                    <div id="one-three">
+                        <h3 id="skip-to-here">3. Must-have website security features for any CMS</h3>
+                        <div class="text">
+                            <p>Content management systems (CMS), like WordPress, simplify the creation and maintenance of websites
+                                of all types and sizes. In order to provide a bunch of features, every CMS requires many moving
+                                parts that often come from third-party sources. In case of WordPress, we're talking about the themes
+                                and plugins (including block libraries). You never know if those third-party pieces contain some
+                                malicious code or user data exploits. That's why you should regularly update all of the software
+                                behind your website. Also, you should periodically scan your website's files for vulnerabilities.
+                            </p>
+                            <p>On top of that, every CMS provides an option for users to log in and access a website's dashboard -
+                                from admins to many other types of regular users (in case of a membership or e-commerce website).
+                                This functionality comes with it's own potential security risks, related to unwanted access to your
+                                website's files or database.</p>
+                            <p>In case of WordPress, you can get most of the needed security features by installing a single plugin
+                                - 'Wordfence'. Best of all, this plugin offers those security features for free. First step is to
+                                install the plugin in your admin dashboard.</p>
+                            <p>Head over to the main menu, and find the 'Plugins' menu item. Tap on it to reveal the sub-menu items.
+                                Now tap on the 'Add New Plugin' to go to the 'Add Plugins' page.</p>
+                            <p>There you should type in the search input field the name of this plugin. Once it shows in your search
+                                results, tap the 'Install Now' button to install it. It will take few seconds for the installation
+                                to finish. You'll know it's finished, because the 'Install Now' button will be changed into
+                                'Activate' button. Tap on it to active the plugin. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.5.webp"
+                            alt="Image 1.5 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>After the plugin is installed and activated, you will need to activate the license (free). In your
+                                admin dashboard, you'll see the notification about the incomplete installation of the 'Wordfence'
+                                plugin. Tap on the 'RESUME INSTALLATION' button, that will lead you to their website. [Check the
+                                image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.6.webp"
+                            alt="Image 1.6 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>On their website, tap on the 'Get a Free License', to register for a free license. This will open a
+                                pop-up window, explaining the difference between a free and a paid license. [Check the image below]
+                            </p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.7.webp"
+                            alt="Image 1.7 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>The free license comes with a 30 days delay for updates to the firewall rules and malware signatures
+                                (that detect the newly discovered common threats). Tap on the 'I'm OK waiting 30 days for protection
+                                from new threats'. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.8.webp"
+                            alt="Image 1.8 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Now you'll need to fill out a short form - mainly to register an email address where you'll get the
+                                license confirmation link. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.9.webp"
+                            alt="Image 1.9 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Once you tap the 'Register' button, an email will be sent to your email address - titled 'Your
+                                Wordfence License'. You'll need to open the email message and tap on the 'Install My License
+                                Automatically' button. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.10.webp"
+                            alt="Image 1.10 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>This will lead you to your wp-admin dashboard, on a page where you'll see your email address and the
+                                license key already pasted in the input fields. Tap on the 'INSTALL LICENSE' button to finish the
+                                license setup process.</p>
+                            <p>'Wordfence' is a rare security plugin that offers firewall feature for free. One thing to note here -
+                                the plugin's firewall will be set to learning mode for the first week. This helps the plugin to set
+                                it's rules according to your specific case, based on your website features and activity. After the
+                                week has passed, firewall will be turned on automatically.</p>
+                        </div>
+                    </div>
+                    <div id="one-three-one">
+                        <h4>3.1 Limit login attempts & two-factor authentication (2FA)</h4>
+                        <div class="text">
+                            <p>One of the simplest, yet most effective security measures - is to restrict the access to your website
+                                through the user login page. There are few ways to prevent unwanted malicious access:</p>
+                            <ul>
+                                <li>Limit login attempts;</li>
+                                <li>Use 2-factor authentication (2FA).</li>
+                            </ul>
+                            <p>Go to your wp-admin dashboard and find the 'Wordfence' menu item, in the main menu. Tap on it to show
+                                the sub-menu items. Now tap on the 'Dashboard' submenu item to open the plugin's overview page. Tap
+                                on the 'Manage Firewall' link to open additional settings. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.11.webp"
+                            alt="Image 1.11 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>On this page titled 'Firewall Options', scroll down to the 'Brute Force Protection' section, and open
+                                it. You'll
+                                see that the login attempts are limited by default - set to 20 failed attempts before the user is
+                                temporarily
+                                locked out. You can change this and few other options. I would definitely lower it to 10. [Check the
+                                image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.12.webp"
+                            alt="Image 1.12 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>If you're unsure what each option stands for, tap on the question mark beside it's title. This will
+                                lead you to
+                                their documentation page with detailed explanations.</p>
+                            <p>When it comes to two-factor authentication settings, it's a bit more complicated. This method of
+                                logging
+                                security relies on something you know (login details) and something in your possession (phone or
+                                email). That's
+                                why it is referred to as “two-factor” because two factors are involved in authenticating you.</p>
+                            <p>It's important to additionally secure the accounts with administrator and editor permissions -
+                                because they have
+                                access to website files or the content, and you shouldn't risk it. For other regular users, without
+                                those
+                                permissions, it could be annoying to be required to use 2FA. For those users you can make it
+                                optional.</p>
+                            <p>In your wp-admin dashboard, head over to the 'Login Security' submenu item, in the 'Wordfence' main
+                                menu
+                                section. You'll see 2 tabs: 'Two-Factor Authentication'. and 'Settings'.</p>
+                            <p>The first and by default opened tab provides you with a scan code (entry key) to be used for
+                                registering your
+                                website on a authentication app of your choosing. Below that, you'll see a recovery code, that
+                                should be copied
+                                to a secure location - if you ever lose access to your authenticator device. At the bottom of this
+                                tab, you'll
+                                see an inpit field where you should copy the 6-digit code from your authentication app, to activate
+                                2FA for your
+                                own account. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.13.webp"
+                            alt="Image 1.13 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>The second tab titled 'Settings' starts with the list all of the available roles on your website,
+                                starting with
+                                administrator. By default, 2FA is set to optional for users set as administrators, and disabled for
+                                everyone
+                                else. As I said, I recommend you to set it to required for administrators and editors. Don't forget
+                                to tap the
+                                button 'SAVE' at the top. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.14.webp"
+                            alt="Image 1.14 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Below that you'll see an input field titled 'Grace Period', set to 10 days by default. This field
+                                refferes to
+                                time your website users will have to set up 2FA for their account, if you've set it to required for
+                                their user
+                                role. If they don't set it up by the end of the grace period, they will lose access to account. This
+                                is why you
+                                have an option to notify them by sending out an email - ny tapping on the 'NOTIFY' button. You'll
+                                need to do it
+                                manually, for each user role individually. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.15.webp"
+                            alt="Image 1.15 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>If the 2FA set to required is annoying to your users, or they don't set it up and use it (if it's set
+                                to
+                                optional) - consider using reCAPTCHA. Don't worry, it's the version 3 that doesn't require users to
+                                solve any
+                                puzzle. You just need to follow the instructions and register your website with Google, to get the
+                                free site
+                                key. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.16.webp"
+                            alt="Image 1.16 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                    </div>
+                    <div id="one-three-two">
+                        <h4>3.2 Security scan</h4>
+                        <div class="text">
+                            <p>'Wordfence' plugin offers many other features also, so feel free to explore. I'll just touch on the
+                                scan feature here, that you can check out by tapping the 'Scan' submenu item. There you'll see the
+                                scan reports if you scroll down. Based on their official documentation, they offer a daily basic
+                                scan and a deeper scan once per 3 days. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-1.17.webp"
+                            alt="Image 1.17 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                    </div>
+                </div>
+            </div>
+            <div id="two">
+                <h2>II. Website updates & backup</h2>
+                <div class="content-overview">
+                    <p>Sections:</p>
+                    <ol>
+                        <li><a href="#two-one">Updates in WordPress</a></li>
+                        <li><a href="#two-two">How to do a website backup in WordPress</a></li>
+                    </ol>
+                </div>
+                <div class="full-content">
+                    <div id="two-one">
+                        <h3>1. Updates in WordPress</h3>
+                        <div class="text">
+                            <p>Like any software, WordPress recieves updates regularly - to add new features, improve it's
+                                performance, and fix bugs or security issues. Besides the WordPress core, each theme and plugin also
+                                gets updates on a regular basis.</p>
+                            <p>It's important to know there are 2 different types of updates to the WordPress core:</p>
+                            <ul>
+                                <li>Major updates - that happen only few times per year, and include big changes (adding/modifying
+                                    features);</li>
+                                <li>Minor updates - usually related to fixing newly reported bugs or security issues (those updates
+                                    are more often).</li>
+                            </ul>
+                            <p>By default, your WordPress website executes minor updates automatically. That's because those updates
+                                usually won't break any functionality of the website.</p>
+                            <p>When it comes to major updates, you have an option to turn automatic updates as well - but I wouldn't
+                                advise it. It takes at least few days for the developers of most WordPress plugins, to update them
+                                and adapt to major changes in the WordPress core.</p>
+                            <p>You can always check for avilable update in your wp-admin dashboard. In the main menu, under the
+                                'Dashboard' menu item, you'll see the 'Updates' sub-menu item. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.1.webp"
+                            alt="Image 2.1 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Once you tap on it, 'WordPress Updates' settings page will be opened. There you'll see the available
+                                updates for the WordPress core, and all your the installed themes and plugins. [Check the image
+                                below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.2.webp"
+                            alt="Image 2.2 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>You don't need to constantly check for updates, because you'll clearly see a notification for it.
+                                That notification is presented as a number (of available updates), besides the mentioned 'Updates'
+                                submenu item.</p>
+                            <p>You should update everything on your website regularly. Just be mindful that after you manually
+                                update WordPress core with a major update - wait at least a week before updating everything else.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="two-two">
+                        <h3>2. How to do a website backup in WordPress</h3>
+                        <div class="text">
+                            <p>Even if you do everything right when it comes to your website security, there's still a possibility
+                                something will go wrong. It could be a consequence of actions you have no control over (like your
+                                hosting's server). In those situations you'll need to have a backup of your website files and
+                                database - to restore everything to it's previous state.</p>
+                            <p>Luckily, there's a WordPress plugin that provides everything needed related to website backups. Best
+                                of all, those features are available for free. The plugin I'm talking about is the 'UpdraftPlus -
+                                Backup/Restore'.</p>
+                            <p>Head over to the main menu, and find the 'Plugins' menu item. Tap on it to reveal the sub-menu items.
+                                Now tap on the 'Add New Plugin' to go to the 'Add Plugins' page.</p>
+                            <p>There you should type in the search input field the name of this plugin. Once it shows in your search
+                                results, tap the 'Install Now' button to install it. It will take few seconds for the installation
+                                to finish. You'll know it's finished, because the 'Install Now' button will be changed into
+                                'Activate' button. Tap on it to active the plugin. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.3.webp"
+                            alt="Image 2.3 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>After the plugin is installed and activated, you should find the 'UpdraftPlus' menu item (in the main
+                                menu). Tap on it to open the settings page for your website backups. You'll see many tabs, but don't
+                                be intimidated by all of the available options. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.4.webp"
+                            alt="Image 2.4 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>In most use cases, you'll only need to set the time interval for the automatic backups. Open the
+                                'Settings' tab, and change the settings for the files and database backups. From the default manual
+                                backups, set it to desired interval. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.5.webp"
+                            alt="Image 2.5 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>I would recommend setting it to 'Monthly', or even more often (twice per month or weekly). It really
+                                depends on how often do you update the content on your website (blogging, adding products, etc.).
+                            </p>
+                            <p>If you scroll further down, you can choose the desired location for your website backups - it can be
+                                sent to your email, or uploaded to many cloud storages (Google Drive, Dropbox, etc.). [Check the
+                                image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.6.webp"
+                            alt="Image 2.6 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Once you change the settings, don't forget to store those changes by tapping the button 'Save
+                                Changes' (it will appear at the top right corner of the screen).</p>
+                            <p>Now when you go back to the default tab ('Backup / Restore), you'll see when's the next backup
+                                scheduled. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.7.webp"
+                            alt="Image 2.7 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>Scroll down to see all of the previously stored backups. You can download them, or use to restore the
+                                website to it's previous state - in the worst case scenario. [Check the image below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-2.8.webp"
+                            alt="Image 2.8 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                    </div>
+                </div>
+            </div>
+            <div id="three">
+                <h2>III. Additional security considerations</h2>
+                <div class="content-overview">
+                    <p>Sections:</p>
+                    <ol>
+                        <li><a href="#three-one">Phone security</a></li>
+                        <li><a href="#three-two">Email/account security</a></li>
+                        <li><a href="#three-three">WiFi security</a></li>
+                    </ol>
+                </div>
+                <div class="full-content">
+                    <div id="three-one">
+                        <h3>1. Phone security</h3>
+                        <div class="text">
+                            <p>When it comes to online security, there's never enough caution. If you compromise the device you're
+                                accessing your website's admin dashboard - all of the previous security measures will be useless.
+                                That's why I'll share few useful tips about web security in general.</p>
+                            <p>It goes without saying that you should have a phone lock enabled. No matter the type of phone lock,
+                                it shouldn't be predictable - for example don't use a number like '0000' or '1234'.</p>
+                            <p>Even though the operating system of your phone provides some basic security features and scans, I
+                                recommend you to install an additional security application. I use 'AVG AntiVirus & Security' on my
+                                Android phone, because it offers most of the essential features for free. [Check the image below]
+                            </p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-3.1.webp"
+                            alt="Image 3.1 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>In the worst case scenario - if you loose your phone, make sure to force a logout from all of the
+                                accounts if possible (like Google, Apple, etc.). Search the web for the term 'force logout' in
+                                combination with the service name, to find out if and how it's possible to do so. [Check the image
+                                below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-3.2.webp"
+                            alt="Image 3.2 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                    </div>
+                    <div id="three-two">
+                        <h3>2. Email/account security</h3>
+                        <div class="text">
+                            <p>Your email account is usually linked to many other online services (social media, banking, app store,
+                                etc.). That's why you should do your best to secure it.</p>
+                            <p>Again, don't use a predictable password - add s combination of letters, numbers, and at least one
+                                special character.</p>
+                            <p>You should also enable the 2FA (two-factor authentication) for your email account, if it's available.
+                                Connect it to your phone number preferably, or an authentication app.</p>
+                            <p>My suggestion is to have two different email accounts. One should be used/connected to the most
+                                important things that are crucial for your livelihood (like banking & your website). The other one
+                                should be used for everything else - app store, social media, etc.</p>
+                            <p>The reason is simple - the less services connected to your email account, the smaller the chance it
+                                gets compromised. And once you stop using any online service, disconnect it from your email account.
+                                Search the web for the term 'revoke access to' in combination with the email service provider name,
+                                to see how to do so. [Check the image
+                                below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-3.3.webp"
+                            alt="Image 3.3 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                    </div>
+                    <div id="three-three">
+                        <h3>3. WiFi security</h3>
+                        <div class="text">
+                            <p>Lastly, if your using a WiFi connection to access the internet, there are few things to consider.</p>
+                            <p>As with anything else, don't use a predictable password for your WiFi network at home. If you're
+                                using a WiFi in a coffee shop, even if it's password protected - use a VPN service.</p>
+                            <p>VPN stands for a virtual private network. that encrypts all of the data - adding a security layer to
+                                the data traffic between your device and the web. I use a free service, in a form off an android
+                                phone app - 'VPN Proton'. [Check the image
+                                below]</p>
+                        </div>
+                        <img class="lazy-loading" data-src="../img/lp-website-security/small-business-website-security-3.4.webp"
+                            alt="Image 3.4 (Small business website security tutorial)" draggable="false" width="600"
+                            height="1000" />
+                        <div class="text">
+                            <p>If you're connected to a public WiFi hotspot, that usually has no password protection, use a VPN.
+                                Most importantly - avoid using services with sensitive data (like banking apps, or any payment
+                                processing).</p>
+                            <p>I'll leave you with one last advice - use only the services you truly need, and don't share your data
+                                without second-guessing each decision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- Site Footer - Start -->
     </div>
     <div id="slide-in">
