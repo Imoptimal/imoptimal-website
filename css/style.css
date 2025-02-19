@@ -727,7 +727,8 @@ a:hover {
 }
 
 #landing-page .content-overview ol {
-    counter-reset: 0;
+    counter-reset: item;
+        list-style: none;
 }
 
 #landing-page .content-overview ol li {
@@ -735,13 +736,23 @@ a:hover {
     padding: 5px;
 }
 
-#landing-page .content-overview ol li:before {
-    content: counters(0, ".") " ";
-    counter-increment: 1;
+#landing-page .content-overview ol li::before {
+    counter-increment: item;
+    content: counter(item)". ";
+}
+
+#landing-page .content-overview ol ol {
+    counter-reset: item 0;
+}
+
+#landing-page .content-overview ol ol::before {
+    counter-increment: item;
+    content: counters(item, ".") " ";
 }
 #landing-page .full-content>div {
     text-align: center;
 }
+
 #landing-page #one,
 #landing-page #two,
 #landing-page #three,
