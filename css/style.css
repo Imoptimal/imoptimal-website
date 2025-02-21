@@ -260,8 +260,9 @@ a:hover {
 
 .gtranslate_wrapper {
   position: absolute !important;
-  top: 200px !important;
+  top: 25px !important;
   right: 25px !important;
+  z-index: 10;
   }
 
 .section {
