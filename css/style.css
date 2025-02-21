@@ -8,8 +8,8 @@ Content:
     2c. Why Website Page
     2d. Why Wordpress Page
     2e. WordPress Plugins Page
-    2f. Essentials Page
-                                                                                                                                2z. Landing Pages
+    2f. Foundations Page
+    2z. Landing Page
 3. Footer
 4. Scheduling CTA
 5. Cookies Consent
@@ -257,6 +257,12 @@ a:hover {
     margin: 100px auto 0 auto;
     padding: 0;
 }
+
+.gtranslate_wrapper {
+  position: absolute;
+  top: 200px;
+  right: 25px;
+  }
 
 .section {
     display: flex;
@@ -680,9 +686,9 @@ a:hover {
     width: 100%;
 }
 
-/* 2f. Essentials Page */
+/* 2f. Foundations Page */
 
-#essrntials .section.just-text {
+#essentials .section.just-text {
   display: flex;
   align-items: center;
   justify-content: center;
