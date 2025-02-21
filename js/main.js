@@ -276,17 +276,9 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     const tutorial = urlParams.get("tutorial");
     const pageTitle = document.querySelector("h1");
-    const menuItems = document.querySelectorAll(".masthead .nav li a");
+    const navigation = document.querySelectorAll(".masthead .nav");
     pageTitle.style.display = "none";
-    menuItems.forEach((element) => {
-      element.style.display = "none";
-      if (
-        (element.href =
-          "https://imoptimal.com/lp/website-speed?tutorial=" + tutorial)
-      ) {
-        element.style.display = "block";
-      }
-    });
+    navigation.style.display = "none";
     const newsletterEls = document.querySelectorAll(".newsletter");
     newsletterEls.forEach((element) => {
       element.style.display = "none";

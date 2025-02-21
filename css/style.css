@@ -708,6 +708,12 @@ a:hover {
 
 /* 2z. Landing Pages */
 
+#landing-page .custom-content>div {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #landing-page .nav a,
 #landing-page .content-overview a {
     text-decoration: none;
@@ -745,25 +751,19 @@ a:hover {
     counter-reset: item 0;
 }
 
-#landing-page .content-overview ol ol::before {
+#landing-page .content-overview ol ol li::before {
     counter-increment: item;
     content: counters(item, ".") " ";
 }
-#landing-page .full-content>div {
-    text-align: center;
-}
 
-#landing-page #one,
-#landing-page #two,
-#landing-page #three,
-#landing-page #four,
-#landing-page #five {
-    display: none;
+#landing-page .full-content>div {
+    display: flex;
     flex-direction: column;
-        justify-content: center;
+    justify-content: center;
         align-items: center;
 }
 
+#landing-page h1,
 #landing-page h2,
 #landing-page h3,
 #landing-page h4 {
