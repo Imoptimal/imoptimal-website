@@ -260,7 +260,7 @@ a:hover {
 
 .gtranslate_wrapper {
   position: absolute !important;
-  top: 25px !important;
+  top: 10px !important;
   right: 25px !important;
   z-index: 10;
   }
