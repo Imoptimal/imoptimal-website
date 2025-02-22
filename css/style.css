@@ -254,14 +254,14 @@ a:hover {
 /* 2. Main Content */
 
 .custom-content {
-    margin: 100px auto 0 auto;
+    margin: 125px auto 0 auto;
     padding: 0;
 }
 
 .gtranslate_wrapper {
   position: absolute !important;
-  top: 15px !important;
-  right: 15px !important;
+  top: 25px !important;
+  right: 25px !important;
   z-index: 10;
   }
 
