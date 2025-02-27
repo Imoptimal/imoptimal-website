@@ -258,13 +258,6 @@ a:hover {
     padding: 0;
 }
 
-.gtranslate_wrapper {
-  position: fixed !important;
-  bottom: 10px !important;
-  right: 25px !important;
-  z-index: 10;
-  }
-
 .section {
     display: flex;
     flex-direction: row;
@@ -796,6 +789,13 @@ a:hover {
     padding: 10px;
 }
 /* 3. Footer */
+
+.gtranslate_wrapper {
+  position: fixed !important;
+  bottom: 10px !important;
+  right: 25px !important;
+  z-index: 10;
+  }
 
 .footer {
     width: 100%;
