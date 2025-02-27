@@ -283,10 +283,8 @@ document.addEventListener("DOMContentLoaded", function () {
     newsletterEls.forEach((element) => {
       element.style.display = "none";
     });
-    console.log(tutorial);
     const tutorialId = "#" + tutorial;
-    console.log(tutorialId);
-    if (tutorialId) {
+    if (tutorial) {
       const tutorialEl = document.querySelector(tutorialId);
       tutorialEl.style.display = "flex";
     }
