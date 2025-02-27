@@ -797,6 +797,11 @@ a:hover {
   right: 25px !important;
   z-index: 10;
   }
+  
+  .gtranslate_wrapper img {
+    width: 30px !important;
+    height: auto !important;
+    }
 
 .footer {
     width: 100%;
