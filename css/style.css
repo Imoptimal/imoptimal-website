@@ -800,7 +800,7 @@ a:hover {
   }
   
   .gtranslate_wrapper img {
-    width: 30px !important;
+    max-width: 30px !important;
     height: auto !important;
     }
 
