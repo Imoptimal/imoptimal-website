@@ -792,6 +792,7 @@ a:hover {
 
 .gtranslate_wrapper {
   position: fixed !important;
+  display: block !important;
   bottom: 10px !important;
   right: 25px !important;
   z-index: 10;
