@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tutorial = urlParams.get("tutorial");
     console.log("test");
     const pageTitle = document.querySelector("h1");
-    const navigation = document.querySelectorAll(".masthead .nav");
+    const navigation = document.querySelector(".masthead .nav");
     pageTitle.style.display = "none";
     navigation.style.display = "none";
     const newsletterEls = document.querySelectorAll(".newsletter");
