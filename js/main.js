@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   } else {
     const tutorial = urlParams.get("tutorial");
-    console.log(tutorial);
+    console.log("test");
     const pageTitle = document.querySelector("h1");
     const navigation = document.querySelectorAll(".masthead .nav");
     pageTitle.style.display = "none";
