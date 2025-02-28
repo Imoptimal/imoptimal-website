@@ -799,11 +799,16 @@ a:hover {
   z-index: 10;
   }
   
-  .gtranslate_wrapper img {
-    max-width: 30px !important;
-    height: auto !important;
-    margin: 0 5px !important;
-    }
+.gtranslate_wrapper img {
+  max-width: 30px !important;
+  height: auto !important;
+  margin: 0 5px !important;
+  }
+    
+.gtranslate_wrapper .gt-current-lang 
+    display: flex !important;
+    flex-direction: row !important;
+}
 
 .footer {
     width: 100%;
