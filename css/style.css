@@ -805,9 +805,10 @@ a:hover {
   margin: 0 5px !important;
   }
     
-.gtranslate_wrapper .gt-current-lang 
+.gtranslate_wrapper .gt-current-lang {
     display: flex !important;
     flex-direction: row !important;
+    flex-wrap: nowrap !important;
 }
 
 .footer {
