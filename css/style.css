@@ -477,7 +477,7 @@ a:hover {
 #why-website .section.just-text,
 #why-wordpress .section.just-text,
 #wordpress-plugins .section.just-text,
-#essentials .section.just-text {
+#foundations .section.just-text {
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -501,7 +501,7 @@ a:hover {
 #why-website .section.three,
 #why-website .section.five,
 #why-wordpress .section.two,
-#essentials .section.two {
+#foundations .section.two {
     justify-content: flex-start !important;
     align-items: center !important;
 }
@@ -512,8 +512,8 @@ a:hover {
 #why-website .section.four,
 #why-wordpress .section.one,
 #why-wordpress .section.three,
-#essentials .section.one,
-#essentials .section.three {
+#foundations .section.one,
+#foundations .section.three {
     justify-content: flex-end !important;
     align-items: center !important;
 }
@@ -522,7 +522,7 @@ a:hover {
 #why-website .section .story p,
 #why-wordpress .section .story p,
 #wordpress-plugins .section .story p,
-#essentials .section .story p {
+#foundations .section .story p {
     background-color: #061228 !important;
     color: #fbf0de !important;
     box-shadow: none !important;
@@ -618,7 +618,7 @@ a:hover {
 #why-website .section.just-text p,
 #why-wordpress .section.just-text p,
 #wordpress-plugins .section.just-text p,
-#essentials .section.just-text p {
+#foundations .section.just-text p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -683,27 +683,27 @@ a:hover {
 
 /* 2f. Foundations Page */
 
-#essentials .section.just-text {
+#foundations .section.just-text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#essentials .newsletter {
+#foundations .newsletter {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#essentials .just-text ul {
+#foundations .just-text ul {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#essentials .just-text ul li {
+#foundations .just-text ul li {
     max-width: 500px;
 }
 
@@ -1113,7 +1113,7 @@ a:hover {
 
     #why-website .section .story,
         #why-wordpress .section .story,
-        #essentials .section .story {
+        #foundations .section .story {
         order: 3 !important;
         width: 90% !important;
     }
@@ -1158,7 +1158,7 @@ a:hover {
     #why-website .section.just-text p,
     #why-wordpress .section.just-text p,
     #wordpress-plugins .section.just-text p,
-    #essentials .section.just-text p {
+    #foundations .section.just-text p {
         max-width: 90%;
     }
 
