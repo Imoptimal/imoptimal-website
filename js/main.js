@@ -270,23 +270,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.toString() === "") {
     // no params
-    allTuts.forEach((tutEl) => {
+    if (allTuts) {
+      allTuts.forEach((tutEl) => {
       tutEl.style.display = "flex";
     });
+    }
   } else {
     const tutorial = urlParams.get("tutorial");
     const pageTitle = document.querySelector("h1");
     const navigation = document.querySelector(".masthead .nav");
     pageTitle.style.display = "none";
     navigation.style.display = "none";
-    const newsletterEls = document.querySelectorAll(".newsletter");
-    newsletterEls.forEach((element) => {
-      element.style.display = "none";
-    });
     const tutorialId = "#" + tutorial;
     if (tutorial) {
       const tutorialEl = document.querySelector(tutorialId);
       tutorialEl.style.display = "flex";
+    }
+    const newsletterEls = document.querySelectorAll(".newsletter");
+    const onSocial = urlParams.get("social");
+    if (newsletterEls && (onSocial == "yes")) {
+      // don't hide newsletter buttons
+    } else { // no social parameter
+      newsletterEls.forEach((element) => {
+        element.style.display = "none";
+      });
     }
   }
 });
