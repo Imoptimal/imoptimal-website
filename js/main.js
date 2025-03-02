@@ -272,8 +272,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // no params
     if (allTuts) {
       allTuts.forEach((tutEl) => {
-      tutEl.style.display = "flex";
-    });
+        tutEl.style.display = "flex";
+      });
     }
   } else {
     const tutorial = urlParams.get("tutorial");
