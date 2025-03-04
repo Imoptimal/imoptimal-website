@@ -726,6 +726,14 @@ a:hover {
     align-items: center;
 }
 
+#landing-page .intro {
+    display: flex;
+}
+
+#landing-page .newsletter {
+    display: block;
+}
+
 #landing-page .content-overview {
     background-color: #000000;
     border: solid 2px #37b800;
