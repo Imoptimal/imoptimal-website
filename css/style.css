@@ -727,7 +727,7 @@ a:hover {
 }
 
 #landing-page .newsletter {
-    display: flex;
+    display: flex !important;
 }
 
 #landing-page .content-overview {
