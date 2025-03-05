@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // don't hide newsletter buttons
     } else { // no social parameter
       newsletterEls.forEach((element) => {
-        element.style.display = "none";
+        element.remove;
       });
     }
   }
