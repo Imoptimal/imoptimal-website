@@ -929,11 +929,12 @@ a:hover {
 .scheduling button,
 .newsletter button {
     text-align: center;
-    background-color: #061228;
-    color: #37b800;
+    background-color: #37b800;
+    color: #061228;
     font-size: 22px;
+    font-weight: bold;
     padding: 10px;
-    border: 2px solid #37b800;
+    border: 2px solid #061228;
     border-radius: 25px;
     margin: 25px;
     -webkit-border-radius: 25px;
