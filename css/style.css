@@ -921,6 +921,7 @@ a:hover {
 .scheduling button a {
     font-weight: bold;
     text-decoration: none;
+    color: #061228;
 }
 
 .newsletter button:hover {
