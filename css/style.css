@@ -544,41 +544,11 @@ a:hover {
     align-items: center !important;
 }
 
-#about-me #portfolio,
-#about-me #portfolio .items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#about-me #portfolio .item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 #about-me .section.six p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
     max-width: 550px;
-}
-
-#about-me .flip-card-front {
-    text-align: center !important;
-}
-
-#about-me .flip-card img {
-    width: auto !important;
-}
-
-#about-me .show-more {
-    width: auto !important;
-}
-
-#about-me .show-more p {
-    font-weight: bolder !important;
 }
 
 /* 2b. Services Page */
