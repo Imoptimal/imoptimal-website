@@ -482,7 +482,6 @@ a:hover {
     margin: 0;
     background-color: #fbf0de;
     color: #061228;
-    text-align: center;
 }
 
 #about-me .section.just-text p {
@@ -493,6 +492,10 @@ a:hover {
     max-width: 550px;
 }
 
+#about-me .just-text img {
+  margin: 25px auto;
+}
+
 #about-me .section.one,
 #about-me .section.three,
 #about-me .section.five,
@@ -501,7 +504,7 @@ a:hover {
 #why-website .section.five,
 #why-wordpress .section.two,
 #foundations .section.two,
-foundations .section.four {
+#foundations .section.four {
     justify-content: flex-start !important;
     align-items: center !important;
 }
@@ -649,6 +652,10 @@ foundations .section.four {
 
 #wordpress-plugins .section .story {
     width: 100%;
+}
+
+#wordpress-plugins .just-text button a {
+  text-shadow: none;
 }
 
 /* 2f. Foundations Page */
