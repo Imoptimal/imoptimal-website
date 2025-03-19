@@ -1,4 +1,4 @@
-/* Main Styles File 
+    /* Main Styles File 
 Content:
 0. General Styles
 1. Header
@@ -446,7 +446,6 @@ a:hover {
 #homepage .section.six a,
 .just-text a,
 #slide-in .section a,
-#about-me #portfolio .item a,
 #landing-page .text a {
     font-weight: bold;
     text-shadow: 0.5px 0.5px #061228, -0.5px -0.5px #061228, 0.5px -0.5px #061228, -0.5px 0.5px #061228, 1px 1px #061228, -1px -1px #061228, 1px -1px #061228, -1px 1px #061228, 1.5px 1.5px #061228, -1.5px -1.5px #061228, 1.5px -1.5px #061228, -1.5px 1.5px #061228, 2px 2px #061228, -2px -2px #061228, 2px -2px #061228, -2px 2px #061228, 2.5px 0 #061228, -2.5px 0 #061228, 0 -2.5px #061228, 0 2.5px #061228, 3px 0 #061228, -3px 0 #061228, 0 -3px #061228, 0 3px #061228;
@@ -501,7 +500,8 @@ a:hover {
 #why-website .section.three,
 #why-website .section.five,
 #why-wordpress .section.two,
-#foundations .section.two {
+#foundations .section.two,
+foundations .section.four {
     justify-content: flex-start !important;
     align-items: center !important;
 }
@@ -657,6 +657,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 #foundations .newsletter {
@@ -1136,19 +1137,6 @@ a:hover {
     #wordpress-plugins .section.just-text p,
     #foundations .section.just-text p {
         max-width: 90%;
-    }
-
-    #about-me #portfolio .item {
-        flex-wrap: wrap;
-        margin: 20px 0;
-    }
-
-    #about-me #portfolio .item img {
-        order: 1;
-    }
-
-    #about-me #portfolio .item .description {
-        order: 2;
     }
 }
 
