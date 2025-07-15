@@ -196,16 +196,17 @@ document.addEventListener("DOMContentLoaded", function () {
   showForm(schedulingButtons, schedulingContainer, schedulingTemplate, schedulingTemplateSelector)
 
   function closeForm() {
-    var closeButton = document.querySelector(".newsletter-div .close");
+    var closeButton = document.querySelector(".form-container .close");
     if (closeButton) {
       closeButton.addEventListener("click", function () {
-        var openedNewsletter = document.querySelector(".newsletter-div.opened");
+        var openedNewsletter = document.querySelector(".form-container.opened");
         if (openedNewsletter.classList.contains("opened")) {
           openedNewsletter.classList.remove("opened");
         }
       });
     }
   }
+  closeForm();
   
   function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
