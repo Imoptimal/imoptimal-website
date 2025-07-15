@@ -156,11 +156,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* 6. Open newsletter/scheduling form */
   var newsletterButtons = document.querySelectorAll(".newsletter button");
-  var newsletterContainer = document.querySelector("#brevo-form");
+  var newsletterContainer = document.querySelector("#brevo-iframe");
   var newsletterTemplate = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
   var newsletterTemplateSelector =".newsletter-form";
   var schedulingButtons = document.querySelectorAll(".scheduling-button");
-  var schedulingContainer = document.querySelector("#scheduling-form");
+  var schedulingContainer = document.querySelector("#scheduling-iframe");
   var schedulingTemplate = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/scheduling.html";
   var schedulingTemplateSelector =".scheduling-form";
   function showForm(openButtons, alreadyAppended, templateUrl, theFormSelector) {
