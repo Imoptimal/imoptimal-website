@@ -158,7 +158,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var newsletterButtons = document.querySelectorAll(".newsletter button");
   var newsletterContainer = document.querySelector("#brevo-form");
   var newsletterTemplate = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
-  function showForm(openButtons, alreadyAppended, templateUrl) {
+  var newsletterTemplateSelector =".newsletter-form";
+  var schedulingButtons = document.querySelectorAll(".scheduling-button");
+  var schedulingContainer = document.querySelector("#scheduling-form");
+  var schedulingTemplate = "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/scheduling.html";
+  var schedulingTemplateSelector =".scheduling-form";
+  function showForm(openButtons, alreadyAppended, templateUrl, theFormSelector) {
     if (openButtons) {
       openButtons.forEach(function (button) {
         button.addEventListener("click", function () {
@@ -173,12 +178,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 var parser = new DOMParser();
                 // Parse the text
                 var page = parser.parseFromString(html, "text/html");
-                var brevoForm =
-                  page.querySelector(".newsletter-form").innerHTML;
-                var newsletterDiv = document.querySelector(".newsletter-div");
-                var newsletterForm = document.querySelector(".newsletter-form");
-                newsletterForm.innerHTML = brevoForm;
-                newsletterDiv.classList.add("opened");
+                var getTheForm =
+                  page.querySelector(theFormSelector).innerHTML;
+                var destinationDiv = document.querySelector(".form-container");
+                var onPageForm = document.querySelector(".the-form");
+                onPageForm.innerHTML = getTheForm;
+                destinationDiv.classList.add("opened");
               });
           } else {
             // If it's already loaded
@@ -188,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+  showForm(schedulingButtons, schedulingContainer, schedulingTemplate, schedulingTemplateSelector)
 
   function closeForm() {
     var closeButton = document.querySelector(".newsletter-div .close");
