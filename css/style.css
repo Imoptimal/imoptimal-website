@@ -309,7 +309,7 @@ a:hover {
     text-align: center;
     background-color: #37b800;
     color: #061228;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     padding: 5px;
     border: 2px solid #061228;
@@ -320,10 +320,6 @@ a:hover {
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
  }
-
-#homepage .section.one button a {
-  
-}
 
 #homepage .section.two {
     justify-content: flex-start;
