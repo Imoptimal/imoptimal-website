@@ -1066,7 +1066,8 @@ a:hover {
   height: 90%;
 }
 
-.newsletter-div.opened p {
+.newsletter-div.opened p,
+form-container.opened p {
   font-weight: bold;
 }
 
