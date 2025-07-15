@@ -1042,12 +1042,14 @@ a:hover {
 
 /* 7. Newsletter */
 
-.newsletter-div {
+.newsletter-div,
+.form-container {
   position: relative;
   display: none;
 }
 
-.newsletter-div.opened {
+.newsletter-div.opened,
+.form-container.opened {
   position: fixed;
   top: 0;
   left: 0;
@@ -1060,7 +1062,8 @@ a:hover {
   background-color: #000000;
 }
 
-.newsletter-div.opened .newsletter-form {
+.newsletter-div.opened .newsletter-form,
+.form-container.opened .the-form {
   position: static;
   min-width: 300px;
   max-width: 90vw;
@@ -1071,12 +1074,14 @@ a:hover {
   font-weight: bold;
 }
 
-.newsletter-div.opened #brevo-iframe {
+.newsletter-div.opened #brevo-iframe,
+.form-container.opened #simplymeet-iframe {
   width: 100%;
   height: 100%;
 }
 
-.newsletter-div.opened .close {
+.newsletter-div.opened .close,
+.form-container.opened .close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1085,7 +1090,8 @@ a:hover {
   font-weight: bold;
 }
 
-.newsletter-div.opened .close:hover {
+.newsletter-div.opened .close:hover,
+.form-container.opened .close:hover {
   color: #fbf0de;
 }
 
