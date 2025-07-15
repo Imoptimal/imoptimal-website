@@ -5,7 +5,7 @@
     3. Add border to header on scroll
     4. Menu slide in
     5. Open links in slide-in
-    6. Open newsletter form
+    6. Open newsletter/scheduling form
     7. Custom progress bar instead of default scrollbar
     8. Mark current page in menu
     9. Mark and scroll to content section on a landing page
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var footerLinks = document.querySelectorAll(".footer .links a");
   openSlideInLinks(displayEl, footerLinks);
 
-  /* 6. Open newsletter form */
+  /* 6. Open newsletter/scheduling form */
   function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
     var alreadyAppended = document.querySelector("#brevo-form");
