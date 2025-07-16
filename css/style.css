@@ -572,6 +572,12 @@ a:hover {
     max-width: 550px;
 }
 
+#about-me .scheduling {
+  width: 100%;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 /* 2b. Services Page */
 
 #services .service {
