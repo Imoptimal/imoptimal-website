@@ -574,8 +574,7 @@ a:hover {
 
 #about-me .scheduling {
   width: 100%;
-  justify-content: center !important;
-  align-items: center !important;
+  fltext-align: center;
 }
 
 /* 2b. Services Page */
@@ -1073,14 +1072,14 @@ a:hover {
 }
 
 .newsletter-div.opened p,
-form-container.opened p {
+.form-container.opened p {
   font-weight: bold;
 }
 
 .newsletter-div.opened #brevo-iframe,
 .form-container.opened #simplymeet-iframe {
   width: 100%;
-  height: 100%;
+  min-height: 90vh;
 }
 
 .newsletter-div.opened .close,
