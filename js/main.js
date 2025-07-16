@@ -187,13 +187,15 @@ document.addEventListener("DOMContentLoaded", function () {
               });
           } else {
             // If it's already loaded
+            destinationDiv.classList.add("opened");
             return;
           }
         });
       });
     }
   }
-  showForm(schedulingButtons, schedulingContainer, schedulingTemplate, schedulingTemplateSelector)
+  showForm(schedulingButtons, schedulingContainer, schedulingTemplate, schedulingTemplateSelector);
+  showForm(newsletterButtons, newsletterContainer, newsletterTemplate, newsletterTemplateSelector);
 
   function closeForm() {
     var closeButton = document.querySelector(".form-container .close");
@@ -208,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   closeForm();
   
-  function showNewsletter() {
+  /*function showNewsletter() {
     var openButtons = document.querySelectorAll(".newsletter button");
     var alreadyAppended = document.querySelector("#brevo-form");
     if (openButtons) {
@@ -255,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
-  closeNewsletter();
+  closeNewsletter();*/
 
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
