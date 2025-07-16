@@ -494,6 +494,7 @@ a:hover {
 #why-wordpress .section.just-text,
 #wordpress-plugins .section.just-text,
 #foundations .section.just-text {
+    flex-direction: column;
     text-align: center;
     padding: 10px;
     margin: 0;
