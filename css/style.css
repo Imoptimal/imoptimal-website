@@ -944,7 +944,8 @@ a:hover {
     -o-border-radius: 25px;
 }
 
-.scheduling button:hover {
+.scheduling button:hover,
+.newsletter button:hover {
     border: 2px solid #fbf0de;
     background-color: #061228;
     color: #061228;
@@ -955,11 +956,6 @@ a:hover {
     font-weight: bold;
     text-decoration: none;
     color: #061228;
-}
-
-.newsletter button:hover {
-  border: 2px solid #fbf0de;
-  color: #fbf0de;
 }
 
 .footer .scheduling {
