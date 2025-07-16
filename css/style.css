@@ -1062,8 +1062,8 @@ a:hover {
 .form-container.opened .the-form {
   position: static;
   min-width: 300px;
-  max-width: 90vw;
-  height: 90%;
+  max-width: 100vw;
+  height: 90vh;
 }
 
 .newsletter-div.opened p,
