@@ -946,6 +946,8 @@ a:hover {
 
 .scheduling button:hover {
     border: 2px solid #fbf0de;
+    background-color: #061228;
+    color: #061228;
 }
 
 
