@@ -1075,8 +1075,8 @@ a:hover {
   font-weight: bold;
 }
 
-.newsletter-div.opened #brevo-iframe,
-.form-container.opened #simplymeet-iframe {
+.newsletter-div.opened iframe,
+.form-container.opened iframe {
   width: 100%;
   min-height: 90vh;
 }
