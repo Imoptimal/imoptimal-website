@@ -1078,7 +1078,7 @@ a:hover {
 .newsletter-div.opened iframe,
 .form-container.opened .the-form iframe {
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
 }
 
 .newsletter-div.opened .close,
