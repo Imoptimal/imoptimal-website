@@ -575,7 +575,7 @@ a:hover {
 
 #about-me .scheduling {
   width: 100%;
-  fltext-align: center;
+  text-align: center;
 }
 
 /* 2b. Services Page */
@@ -949,7 +949,7 @@ a:hover {
 .newsletter button:hover {
     border: 2px solid #fbf0de;
     background-color: #061228;
-    color: #061228;
+    color: #fbf0de;
 }
 
 
@@ -1042,13 +1042,11 @@ a:hover {
 
 /* 7. Newsletter */
 
-.newsletter-div,
 .form-container {
   position: relative;
   display: none;
 }
 
-.newsletter-div.opened,
 .form-container.opened {
   position: fixed;
   top: 0;
@@ -1062,7 +1060,6 @@ a:hover {
   background-color: #000000;
 }
 
-.newsletter-div.opened .newsletter-form,
 .form-container.opened .the-form {
   position: static;
   min-width: 300px;
@@ -1070,18 +1067,15 @@ a:hover {
   height: 90vh;
 }
 
-.newsletter-div.opened p,
 .form-container.opened p {
   font-weight: bold;
 }
 
-.newsletter-div.opened iframe,
 .form-container.opened .the-form iframe {
   width: 100%;
   height: 90vh;
 }
 
-.newsletter-div.opened .close,
 .form-container.opened .close {
   position: absolute;
   top: 20px;
@@ -1091,7 +1085,6 @@ a:hover {
   font-weight: bold;
 }
 
-.newsletter-div.opened .close:hover,
 .form-container.opened .close:hover {
   color: #fbf0de;
 }
