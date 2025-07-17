@@ -210,55 +210,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   closeForm();
   
-  /*function showNewsletter() {
-    var openButtons = document.querySelectorAll(".newsletter button");
-    var alreadyAppended = document.querySelector("#brevo-form");
-    if (openButtons) {
-      openButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-          if (!alreadyAppended) {
-            var file =
-              "https://raw.githubusercontent.com/Imoptimal/imoptimal-website/master/templates/newsletter.html";
-            fetch(file)
-              .then(function (response) {
-                // When the page is loaded convert it to text
-                return response.text();
-              })
-              .then(function (html) {
-                // Initialize the DOM parser
-                var parser = new DOMParser();
-                // Parse the text
-                var page = parser.parseFromString(html, "text/html");
-                var brevoForm =
-                  page.querySelector(".newsletter-form").innerHTML;
-                var newsletterDiv = document.querySelector(".newsletter-div");
-                var newsletterForm = document.querySelector(".newsletter-form");
-                newsletterForm.innerHTML = brevoForm;
-                newsletterDiv.classList.add("opened");
-              });
-          } else {
-            // If it's already loaded
-            return;
-          }
-        });
-      });
-    }
-  }
-  showNewsletter();
-
-  function closeNewsletter() {
-    var closeButton = document.querySelector(".newsletter-div .close");
-    if (closeButton) {
-      closeButton.addEventListener("click", function () {
-        var openedNewsletter = document.querySelector(".newsletter-div.opened");
-        if (openedNewsletter.classList.contains("opened")) {
-          openedNewsletter.classList.remove("opened");
-        }
-      });
-    }
-  }
-  closeNewsletter();*/
-
   /* 7. Custom progress bar instead of default scrollbar */
   const progressBarContainer = document.querySelector("#progressBarContainer");
   const progressBar = document.querySelector("#progressBar");
