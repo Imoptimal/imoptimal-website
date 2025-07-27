@@ -189,6 +189,7 @@ a:hover {
 .masthead .slide-in ul li {
     margin: 5px 5px 15px 5px;
     padding: 5px;
+    text-indent: 0;
 }
 
 .masthead .slide-in li a {
