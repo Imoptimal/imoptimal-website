@@ -183,6 +183,7 @@ a:hover {
 
 .masthead .slide-in ul {
     padding: 5px;
+    list-style: none;
 }
 
 .masthead .slide-in ul li {
