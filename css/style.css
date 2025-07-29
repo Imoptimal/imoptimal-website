@@ -201,6 +201,10 @@ a:hover {
     color: #fbf0de;
 }
 
+.masthead .slide-in ul .just-for-indexing {
+    display: none !important;  
+}
+
 .masthead .slide-in .social {
     position: absolute;
     align-self: flex-end;
