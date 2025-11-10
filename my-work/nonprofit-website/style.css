@@ -1,0 +1,632 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #16463c;
+    text-align: center;
+    padding: 0;
+    min-width: 100vw;
+}
+
+body {
+    background-color: #ebeadc;
+    color: #16463c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+body * {
+    box-sizing: border-box;
+    position: relative;
+    word-wrap: break-word !important;
+    text-align: left;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+img {
+    height: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+}
+
+header a {
+    display: block;
+}
+
+header a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+header img {
+    max-width: 50px;
+}
+
+header .menu {
+    position: fixed;
+    background-color: #ebeadc;
+    z-index: 101;
+    padding: 5px;
+}
+
+header nav {
+    display: none;
+    background-color: #16463c;
+    color: #ebeadc;
+    margin-top: 60px;
+    min-height: 100vh;
+    padding: 5px;
+}
+
+header nav.open {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header nav span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.cosmetics header nav,
+.cleaning header nav {
+    padding: 5px 0;
+}
+
+.cosmetics header nav.open,
+.cleaning header nav.open {
+    max-width: 62px;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 20px;
+    text-align: center;
+}
+
+#about .logo img {
+    width: 200px;
+}
+
+#about p {
+    margin: 15px 0 0 0;
+}
+
+#about span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #3f8850;
+    text-shadow: #16463c 1px 1px 1px;
+}
+
+#about div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#about div img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#about .see-more {
+    text-align: center;
+}
+
+#about .see-more span {
+    color: #b86e19;
+    font-weight: bold;
+    text-shadow: #16463c 1px 1px 1px;
+}
+
+#about .see-more .arrow {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url("img/arrow-down.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-right: 10px;
+    margin: 10px auto;
+}
+
+#about .see-more .arrow.animate-on-scroll.on {
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#mission {
+    position: relative;
+    min-height: 500px;
+    width: 105%;
+    margin: 0 -20px;
+    color: #ebeadc;
+}
+
+#mission .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#mission .background img {
+    width: 100%;
+    height: 100%;
+}
+
+#mission .overlay {
+    position: relative;
+    z-index: 10;
+    min-height: 500px;
+    background-color: #16463c;
+    padding: 25px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mission .overlay * {
+    opacity: 1;
+}
+
+#mission .overlay.animate-on-scroll.on {
+    animation: fadeIn 3s forwards;
+    -webkit-animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+#mission .overlay div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    max-width: 600px;
+}
+
+#mission .overlay img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+#get-involved {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-involved div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#get-involved .petition {
+    align-items: flex-start;
+}
+
+#get-involved .donate {
+    align-items: center;
+}
+
+#get-involved .volunteer {
+    align-items: flex-end;
+}
+
+#get-involved a {
+    display: block;
+    width: 150px;
+    font-weight: bolder;
+    background-color:#b86e19;
+    color:#ebeadc;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 100px 10px 100px 10px;
+    -moz-border-radius: 100px 10px 100px 10px;
+    -ms-border-radius: 100px 10px 100px 10px;
+    -o-border-radius: 100px 10px 100px 10px;
+    -webkit-border-radius: 100px 10px 100px 10px;
+}
+
+#get-involved a:hover {
+    background-color: #16463c;
+}
+
+#get-involved a.animate-on-scroll.on {
+    animation: shake 3s infinite;
+    -webkit-animation: shake 3s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#why-it-matters {
+    opacity: 0.9;
+    width: 100%;
+    font-size: 20px;
+    background-color: #16463c;
+    color: #ebeadc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+#why-it-matters .problem,
+#why-it-matters .solution,
+#why-it-matters .point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#why-it-matters .point img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+#why-it-matters .cover {
+    overflow-x: hidden;
+}
+
+#why-it-matters .cover img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+#why-it-matters .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 50%;
+}
+
+#why-it-matters .text p {
+    max-width: 600px;
+}
+
+#shop {
+    width: 100%;
+    font-size: 20px;
+    background-color: #ebeadc;
+    color: #16463c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#shop h2 {
+    max-width: 600px;
+}
+
+#shop div {
+    max-width: 600px !important;
+}
+
+#shop .grid-product__wrap-inner {
+    background-color: #16463c !important;
+    color: #ebeadc !important;
+}
+
+#shop .grid-product__title-inner {
+    color: #ebeadc !important;
+    text-align: center !important;
+}
+
+#shop .grid-product__button {
+    text-align: center !important;
+}
+
+#shop .grid-product__wrap-inner button {
+    background-color: #b86e19 !important;
+    color: #ebeadc !important;
+    font-weight: bolder !important;
+    text-align: center !important;
+}
+
+#blog {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#blog .post-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#blog .post-list a {
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+    color:#b86e19;
+    text-shadow: 1px 1px 0 #000000,
+            -1px 1px 0 #000000,
+            1px -1px 0 #000000,
+            -1px -1px 0 #000000,
+            0px 1px 0 #000000,
+            0px -1px 0 #000000,
+            -1px 0px 0 #000000,
+            1px 0px 0 #000000,
+            2px 2px 0 #000000,
+            -2px 2px 0 #000000,
+            2px -2px 0 #000000,
+            -2px -2px 0 #000000,
+            0px 2px 0 #000000,
+            0px -2px 0 #000000,
+            -2px 0px 0 #000000,
+            2px 0px 0 #000000,
+            1px 2px 0 #000000,
+            -1px 2px 0 #000000,
+            1px -2px 0 #000000,
+            -1px -2px 0 #000000,
+            2px 1px 0 #000000,
+            -2px 1px 0 #000000,
+            2px -1px 0 #000000,
+            -2px -1px 0 #000000;
+    letter-spacing: 2px;
+}
+
+#blog .post-list a:hover {
+    color: #ebeadc;
+}
+
+footer {
+    width: 100%;
+    background-color: #16463c;
+    color: #ebeadc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer * {
+    text-align: center;
+}
+
+footer p {
+    flex-basis: 40%;
+    font-weight: bold;
+}
+
+footer .logo {
+    flex-basis: 20%;
+}
+
+footer .logo img {
+    width: 100px;
+}
+
+footer a {
+    flex-basis: 40%;
+    color: #ebeadc;
+}
+
+footer a:hover {
+    color: #b86e19;
+}
+
+.cosmetics,
+.cleaning {
+    margin-top: 70px;
+}
+
+.cosmetics header,
+.cleaning header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #ebeadc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.cosmetics header > img,
+.cleaning header > img {
+    margin: 0 20px;
+}
+
+.cosmetics header > a,
+.cleaning header > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cosmetics header nav,
+.cleaning header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cosmetics main,
+.cleaning main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cosmetics section,
+.cleaning section {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.cosmetics .intro,
+.cleaning .intro,
+.cosmetics .conclusion,
+.cleaning .conclusion {
+    background-color: #16463c;
+    color: #ebeadc;
+}
+
+.cosmetics .main-content,
+.cleaning .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cosmetics .main-content .image,
+.cleaning .main-content .image {
+    margin: 20px 10px;
+}
+
+.cosmetics .main-content img,
+.cleaning .main-content img {
+    max-width: 90%;
+}
+
+.cosmetics .main-content .text ,
+.cleaning .main-content .text  {
+    background-color: #000000;
+    color: #ebeadc;
+    margin: 20px 10px;
+    padding: 75px 25px;
+    border-radius: 25% 0% 25% 0% / 25% 25% 25% 25%;
+}
+
+.cosmetics h3,
+.cleaning h3 {
+    text-align: center;
+}
+
+.cosmetics p,
+.cleaning p {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.cosmetics ul,
+.cleaning ul,
+.cosmetics ol,
+.cleaning ol {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+} 
+
+@media screen and (max-width: 800px) {
+
+    #about,
+    #mission .overlay,
+    #get-involved,
+    #why-it-matters,
+    #shop {
+        padding: 0 10px;
+    }
+    #why-it-matters .problem,
+    #why-it-matters .solution {
+        flex-wrap: wrap-reverse;
+    }
+
+    #why-it-matters .text {
+        width: 90%;
+    }
+
+    .cosmetics .main-content,
+    .cleaning .main-content {
+        flex-wrap: wrap;
+    }
+}
