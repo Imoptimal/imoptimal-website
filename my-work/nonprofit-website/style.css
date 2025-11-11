@@ -582,8 +582,9 @@ footer a:hover {
 .cleaning .main-content .text section {
     background-color: #000000;
     color: #ebeadc;
-    margin: 20px 10px;
-    padding: 75px 25px;
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 10px 10px 5px #16463c;
 }
 
 .cosmetics h3,
