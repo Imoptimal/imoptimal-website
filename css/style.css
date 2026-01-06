@@ -617,11 +617,18 @@ a:hover {
     max-width: 550px;
 }
 
+#services .invoice-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #services .invoice {
   background-color: #37b800 !important;
   color: #061228 !important;
   font-weight: bold !important;
-  font-size: 24px !important;
+  font-size: 16px !important;
+  text-align: center !important;
   padding: 10px !important;
   margin: 20px 0 !important;
   border-radius: 25px !important;
