@@ -620,7 +620,8 @@ a:hover {
 #services .invoice {
   background-color: #37b800 !important;
   color: #061228 !important;
-  font-weight: 400 !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
   padding: 10px !important;
   margin: 20px 0 !important;
   border-radius: 25px !important;
