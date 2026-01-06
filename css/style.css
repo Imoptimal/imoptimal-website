@@ -620,8 +620,14 @@ a:hover {
 #services .invoice {
   background-color: #37b800 !important;
   color: #061228 !important;
-  padding: 10px;
-  margin: 20px 0;
+  font-weight: 400 !important;
+  padding: 10px !important;
+  margin: 20px 0 !important;
+  border-radius: 25px !important;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 /* 2c. Why Website Page */
