@@ -758,6 +758,8 @@ a:hover {
 
 #landing-page .newsletter {
     display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 #landing-page .content-overview {
