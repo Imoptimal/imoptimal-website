@@ -171,7 +171,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .masthead .nav .slide-in.clicked {
@@ -1156,6 +1156,10 @@ a:hover {
 @media screen and (max-width: 600px) {
     .masthead {
         padding: 0 20px;
+    }
+    
+    .masthead .nav .slide-in {
+      align-items: flex-start;
     }
 
     .section.just-text p {
