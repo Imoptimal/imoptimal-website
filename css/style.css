@@ -13,10 +13,9 @@ Content:
 3. Footer
 4. Scheduling CTA
 5. Cookies Consent
-6. Shooping cart (Ecwid)
-7. Newsletter
-8. Animation
-9. Responsive Design
+6. Newsletter
+7. Animation
+8. Responsive Design
 */
 
 /* 0. General Styles */
@@ -1025,53 +1024,7 @@ a:hover {
     display: none !important;
 }
 
-/* 6. Shooping cart (Ecwid)*/
-
-#services .ecsp {
-    color: #fbf0de !important;
-    background-color: #061228 !important;
-    text-align: center !important;
-}
-
-#services .ecsp div,
-#services .ecsp label {
-    color: #fbf0de !important;
-    margin: 5px auto !important;
-    text-align: center !important;
-}
-
-#services .ecsp span {
-    color: #fbf0de !important;
-    margin: 5px auto !important;
-    text-align: left !important;
-}
-
-#services .ecsp button {
-    background-color: #061228 !important;
-    border: #37b800 5px solid !important;
-    color: #37b800 !important;
-    font-weight: bold !important;
-    margin: 5px auto !important;
-}
-
-#services .ecsp button:hover {
-    border: #fbf0de 5px solid !important;
-    color: #fbf0de !important;
-}
-#ecwid_body .ec-storefront-v2.ec-minicart {
-    position: fixed !important;
-    right: 25px !important;
-    bottom: 25px !important;
-    background-color: #fbf0de !important;
-    border-color: #061228 solid 2px !important;
-    border-radius: 50% !important;
-    -webkit-border-radius: 50% !important;
-    -moz-border-radius: 50% !important;
-    -ms-border-radius: 50% !important;
-    -o-border-radius: 50% !important;
-}
-
-/* 7. Newsletter */
+/* 6. Newsletter */
 
 .form-container {
   position: relative;
@@ -1120,7 +1073,7 @@ a:hover {
   color: #fbf0de;
 }
 
-/* 8. Animations */
+/* 7. Animations */
 
 @keyframes fadeIn {
     0% {
@@ -1132,7 +1085,7 @@ a:hover {
         }
         }
 
-/* 9. Responsive Design */
+/* 8. Responsive Design */
 
 @media screen and (max-width: 1200px) {
     .footer {
