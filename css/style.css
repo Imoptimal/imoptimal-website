@@ -171,7 +171,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .masthead .nav .slide-in.clicked {
@@ -213,7 +213,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    bottom: 25px;
+    bottom: 100px;
     right: 0;
     width: 100%;
 }
