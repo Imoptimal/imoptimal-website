@@ -166,7 +166,7 @@ a:hover {
     right: -2500px;
     background-color: #000000;
     height: 100vh;
-    width: 75vw;
+    width: 50vw;
     padding-top: 25px;
     display: flex;
     flex-direction: column;
@@ -1159,6 +1159,7 @@ a:hover {
     }
     
     .masthead .nav .slide-in {
+      width: 75 vw;
       align-items: flex-start;
     }
 
