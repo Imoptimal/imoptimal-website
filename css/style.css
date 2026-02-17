@@ -1106,6 +1106,10 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  
+    .masthead .nav .slide-in {
+        width: 75vw;
+    }
 
     .section.one img,
     .section.two img,
@@ -1155,7 +1159,6 @@ a:hover {
     }
     
     .masthead .nav .slide-in {
-      width: 75 vw;
       align-items: flex-start;
     }
 
