@@ -207,15 +207,11 @@ a:hover {
 }
 
 .masthead .slide-in .social {
-    position: absolute;
     align-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    bottom: 100px;
-    right: 0;
-    width: 100%;
 }
 
 .masthead .social span {
