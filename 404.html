@@ -21,14 +21,19 @@
         overflow-x: hidden;
         margin: 0 !important;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     
     body * {
         word-wrap: break-word !important;
+    }
+    
+    div.content {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     h2 {
@@ -50,6 +55,8 @@
         color: #fbf0de !important;
     }
 </style>
-<img src="../img/small-business-website-logo.webp" alt="Logo for imoptimal.com - small business website expert" draggable="false" width="300" height="300" />
-<h2>404 - This page could not be found</h2>
-<p>Go back to <a href="https://imoptimal.com/">homepage</a></p>
+<div class="content">
+    <img src="../img/small-business-website-logo.webp" alt="Logo for imoptimal.com - small business website expert" draggable="false" width="300" height="300" />
+    <h2>404 - This page could not be found</h2>
+    <p>Go back to <a href="https://imoptimal.com/">homepage</a></p>
+</div>
