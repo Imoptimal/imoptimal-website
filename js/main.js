@@ -289,10 +289,8 @@ document.addEventListener("DOMContentLoaded", function () {
     pageTitle.style.display = "none";
     navigation.style.display = "none";
     const tutorialId = "#" + tutorial;
-    if (tutorial) {
-      const tutorialEl = document.querySelector(tutorialId);
-      tutorialEl.style.display = "flex";
-    }
+    const tutorialEl = document.querySelector(tutorialId);
+    tutorialEl.style.display = "flex";
     const newsletterEls = document.querySelectorAll(".newsletter");
     const onSocial = urlParams.get("social");
     if (newsletterEls && (onSocial == "yes")) {
