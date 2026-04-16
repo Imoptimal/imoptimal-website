@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
         element.remove();
       });
     }
-  } else if (landingPage) {
+  } else if (landingPage) { // turn regular into landing page
     const header = document.querySelector("header.masthead");
     if (landingPage == "yes") {
       header.style.display = "none";
