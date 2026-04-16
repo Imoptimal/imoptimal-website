@@ -302,8 +302,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   } else if (landingPage) { // turn regular into landing page
     const header = document.querySelector("header.masthead");
+    const content = document.querySelector(".custom-content");
     if (landingPage == "yes") {
       header.style.display = "none";
+      content.style.margin = "0 auto";
     }
   }
 });
