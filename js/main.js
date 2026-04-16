@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const content = document.querySelector(".custom-content");
     if (landingPage == "yes") {
       header.style.display = "none";
-      content.style.margin = "0 auto";
+      content.style.margin = "-100px auto 0 auto";
     }
   }
 });
