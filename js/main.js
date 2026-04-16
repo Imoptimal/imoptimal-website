@@ -306,7 +306,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header.masthead");
     if (landingPage == "yes") {
       header.style.display = "none";
-      pageTitle.style.display = "block";
     }
   }
 });
