@@ -301,5 +301,10 @@ document.addEventListener("DOMContentLoaded", function () {
         element.remove();
       });
     }
+    const landingPage = urlParams.get("lp");
+    const header = document.querySelector("header.masthead");
+    if (landingPage == "yes") {
+      header.style.display = "none";
+    }
   }
 });
