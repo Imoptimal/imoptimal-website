@@ -274,6 +274,8 @@ document.addEventListener("DOMContentLoaded", function () {
   /* 10. Show only parts of landing pages (based on URL parameters) */
   const allTuts = document.querySelectorAll("#one, #two, #three, #four, #five");
   const urlParams = new URLSearchParams(window.location.search);
+  const tutorial = urlParams.get("tutorial");
+  const landingPage = urlParams.get("lp");
   if (urlParams.toString() === "") {
     // no params
     if (allTuts) {
@@ -281,8 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tutEl.style.display = "flex";
       });
     }
-  } else {
-    const tutorial = urlParams.get("tutorial");
+  } else if (tutorial) {
     const pageTitle = document.querySelector("h1");
     const navigation = document.querySelector(".masthead .nav");
     pageTitle.style.display = "none";
@@ -301,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
         element.remove();
       });
     }
-    const landingPage = urlParams.get("lp");
+  } else if (landingPage) {
     const header = document.querySelector("header.masthead");
     if (landingPage == "yes") {
       header.style.display = "none";
