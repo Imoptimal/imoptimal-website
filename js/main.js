@@ -302,10 +302,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   } else if (landingPage) { // turn regular into landing page
     const header = document.querySelector("header.masthead");
-    const content = document.querySelector(".custom-content");
+    const content = document.querySelector("#foundations");
+    const pageTitle = document.querySelector(".page-title");
     if (landingPage == "yes") {
       header.style.display = "none";
       content.style.margin = "-150px auto 0 auto !important";
+      pageTitle.style.marginTop = "-50px !important";
     }
   }
 });
