@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   } else if (landingPage) { // turn regular into landing page
     const header = document.querySelector("header.masthead");
-    const content = document.querySelector("#foundations");
+    const content = document.querySelector(".container");
     const pageTitle = document.querySelector(".page-title");
     if (landingPage == "yes") {
       header.style.display = "none";
