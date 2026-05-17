@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (landingPage == "yes") {
       header.style.display = "none";
       content.style.margin = "-150px auto 0 auto";
-      pageTitle.style.marginTop = "50px";
+      pageTitle.style.marginTop = "125px";
     }
   }
 });
