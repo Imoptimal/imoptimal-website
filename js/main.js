@@ -310,4 +310,4 @@ document.addEventListener("DOMContentLoaded", function () {
       pageTitle.style.marginTop = "125px";
     }
   }
-});
+);
