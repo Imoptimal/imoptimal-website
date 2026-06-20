@@ -304,6 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header.masthead");
     const content = document.querySelector(".container");
     const pageTitle = document.querySelector(".page-title");
+    const otherHiddenEls = document.querySelector(".lp-hidden");
     if (landingPage == "yes") {
       header.style.display = "none";
       content.style.margin = "-150px auto 0 auto";
