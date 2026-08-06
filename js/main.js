@@ -309,6 +309,7 @@ document.addEventListener("DOMContentLoaded", function () {
       header.style.display = "none";
       content.style.margin = "-150px auto 0 auto";
       pageTitle.style.marginTop = "125px";
+      otherHiddenEls.style.display = "none";
     }
   }
 );
