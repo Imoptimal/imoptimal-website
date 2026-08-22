@@ -312,4 +312,4 @@ document.addEventListener("DOMContentLoaded", function () {
       otherHiddenEls.style.display = "none";
     }
   }
-);
+});
