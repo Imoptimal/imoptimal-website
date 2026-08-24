@@ -741,10 +741,12 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
 #landing-page .nav a,
 #landing-page .content-overview a {
     text-decoration: none;
 }
+
 #landing-page .custom-content {
     display: flex;
     flex-direction: column;
@@ -822,6 +824,7 @@ a:hover {
     box-shadow: 10px 10px grey;
     padding: 10px;
 }
+
 /* 3. Footer */
 
 .gtranslate_wrapper {
