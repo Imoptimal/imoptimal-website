@@ -742,6 +742,9 @@ a:hover {
     align-items: center;
 }
 
+#landing-page.cro .custom-content .full-content {
+    text-align: center;
+}
 #landing-page .nav a,
 #landing-page .content-overview a {
     text-decoration: none;
