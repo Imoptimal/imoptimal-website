@@ -749,6 +749,9 @@ a:hover {
     text-align: center;
 }
 
+#landing-page.cro .custom-content .text p {
+    max-width: 98%;
+}
 #landing-page .nav a,
 #landing-page .content-overview a {
     text-decoration: none;
