@@ -1180,4 +1180,7 @@ a:hover {
         width: 90% !important;
     }
 
+        #landing-page.cro .custom-content .text p {
+            max-width: 95%;
+        }
 }
